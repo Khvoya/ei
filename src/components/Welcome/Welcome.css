@@ -1,0 +1,39 @@
+ .Welcome {
+     background-image: url("../../media/bg_image.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     height: 900px;
+     width: 1600px;
+ }
+ .Welcome__text {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 749px;
+     height: 110px;
+ }
+ h2 {
+     opacity: 0.48;
+     color: #ffffff;
+     font-family: Roboto;
+     font-size: 37px;
+     font-weight: 400;
+     line-height: 120px;
+     text-transform: uppercase;
+     letter-spacing: 2.28px;
+     margin: 0px;
+ }
+ h1 {
+     color: #ffffff;
+     font-family: Roboto;
+     font-size: 96px;
+     font-weight: 400;
+     line-height: 120px;
+     letter-spacing: 5.76px;
+     margin: 0px;
+ }
