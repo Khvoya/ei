@@ -17,6 +17,9 @@
      width: 749px;
      height: 110px;
  }
+ .Welcome__button-wrap {
+     margin-top: 40px;
+ }
  h2 {
      opacity: 0.48;
      color: #ffffff;

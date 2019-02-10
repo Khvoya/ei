@@ -6,7 +6,7 @@ import "./Header.css";
 class Header extends Component {
     render() {
         const items = HEADER_ITEMS.map(item => {
-           return <HeaderItem name={item}/>
+           return <HeaderItem key={item} name={item}/>
         });
         return (
             <div className="Header">
