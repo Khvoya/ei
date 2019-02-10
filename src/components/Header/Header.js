@@ -10,12 +10,11 @@ class Header extends Component {
         });
         return (
             <div className="Header">
-                <div className="Header__logo">
-                </div>
+                <div className="Header__logo"></div>
                 <div className="Header__item-wrap">
                     {items}
                 </div>
-                <div className="Language">
+                    <div className="Language">
                 </div>
             </div>
         );

@@ -5,5 +5,5 @@ export const HEADER_ITEMS = [
     'video',
     'photo',
     'shop',
-    'concerts',
+    'concerts'
 ];
