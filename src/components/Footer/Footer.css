@@ -1,0 +1,74 @@
+.Footer {
+    width: 100%;
+    height: 123px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 11.7%;
+}
+.Footer__coop, .Footer__social, .Footer__dev-info {
+    width: 300px;
+    height: 48px;
+    align-self: center;
+}
+.Footer__coop-key {
+    opacity: 0.48;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    align-self: start;
+    text-align: left;
+    min-width: 100%;
+    min-height: 50%;
+}
+.Footer__coop-value {
+    opacity: 0.96;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    min-width: 100%;
+    min-height: 50%;
+}
+.Footer__social-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Footer__social-wrap a {
+    margin: 5px;
+    cursor: pointer;
+}
+.Footer__social-title {
+    opacity: 0.48;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.Footer__dev-info {
+    display: flex;
+    flex-direction: column;
+}
+.Footer__dev-info-r {
+    opacity: 0.96;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33.79px;
+}
+.Footer__dev-info-d {
+    opacity: 0.48;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}

@@ -1,0 +1,32 @@
+.Concerts {
+  height: 720px;
+  padding: 100px 11.7%;
+  display: flex;
+  flex-direction: row;
+}
+.Concerts__image,
+.Concerts__content {
+  width: 50%;
+  height: 100%;
+}
+
+.Concerts__image {
+  background-image: url("../../media/concerts_bg.png"),
+    url("../../media/concerts-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Concerts__image span {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 73.79px;
+}
+
+.Concerts__content {
+    width: 50%;
+}

@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
 import News from "./components/News/News";
 import AboutUs from "./components/AboutUs/AboutUs";
-import Music from "./components/Music/Music";
+// import Music from "./components/Music/Music";
 import Albums from "./components/Albums/Albums";
 import Video from "./components/Video/Video";
 import Photo from "./components/Photo/Photo";
@@ -20,7 +20,7 @@ class App extends Component {
         <Welcome/>
         <News/>
         <AboutUs/>
-        <Music/>
+        {/*<Music/>*/}
         <Albums/>
         <Video/>
         <Photo/>
