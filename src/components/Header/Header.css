@@ -9,16 +9,18 @@
     display: flex;
     flex-direction: row;
     height: 104px;
-    width: 1560px;
     margin: 20px;
+}
+.Welcome__text-el {
+    color: #ffffff;
 }
 .Header__item-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
-    width: 100%;
-    justify-content: space-around;
+
+    justify-content: space-between;
 }
 .Header__logo {
     background-image: url("../../media/logo.png");
@@ -27,8 +29,4 @@
     height: 62px;
     width: 80px;
     align-items: center;
-}
-.Language {
-    height: 62px;
-    width: 80px;
 }

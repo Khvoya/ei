@@ -6,34 +6,23 @@
      align-items: center;
      justify-content: space-around;
      flex-direction: column;
-     height: 900px;
-     width: 1600px;
+     box-sizing: border-box;
+     padding: 20% 30%;
  }
  .Welcome__text {
      display: flex;
      align-items: center;
      justify-content: space-around;
      flex-direction: column;
-     width: 749px;
-     height: 110px;
  }
  .Welcome__button-wrap {
      margin-top: 40px;
  }
- h2 {
-     opacity: 0.48;
-     color: #ffffff;
-     font-family: Roboto;
-     font-size: 37px;
-     font-weight: 400;
-     line-height: 120px;
-     text-transform: uppercase;
-     letter-spacing: 2.28px;
+ .Welcome__text-wrap h2 {
      margin: 0px;
  }
- h1 {
+ .Welcome__text-wrap h1 {
      color: #ffffff;
-     font-family: Roboto;
      font-size: 96px;
      font-weight: 400;
      line-height: 120px;

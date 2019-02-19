@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import { Modal } from 'react-bootstrap';
 import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
 import News from "./components/News/News";

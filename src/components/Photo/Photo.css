@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .Photo h1 {
-    width: 100%;
+
     opacity: 0.96;
     color: #000000;
     font-family: Roboto;
@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
-    width: 100%;
+
     height: 614px;
     padding: 0 11.7%;
     margin-bottom: 120px;

@@ -1,6 +1,6 @@
 .AboutUs {
     display: flex;
-    width: 100%;
+
     height: 680px;
     flex-direction: row;
 }

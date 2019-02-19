@@ -16,7 +16,7 @@ class News extends Component {
       />
     ));
     return (
-      <div className="News">
+      <div id="News">
         <h1 className="News__title">News</h1>
         <div className="News__posts">{posts}</div>
           <Button name="show more"/>
