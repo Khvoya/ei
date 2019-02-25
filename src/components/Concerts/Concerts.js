@@ -13,7 +13,7 @@ class Concerts extends Component {
             club={item.club}
         />);
         return (
-            <div className="Concerts">
+            <div id="concerts" className="Concerts">
                 <div className="Concerts__image">
                     <span>Concerts</span>
                 </div>

@@ -1,26 +1,22 @@
 import React, { Component } from "react";
 import "./Welcome.css";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "../../components/helpers/Button/Button";
 
 class Welcome extends Component {
   render() {
     return (
-        <Container className="Welcome">
-          <Row className="justify-content-md-center" md="auto">
-            <Col >
-              <h2>welcome to the</h2>
-              <h1 className="Welcome__text-el">Electric Indians</h1>
-              <div className="Welcome__button-wrap">
-                <Button name="veiw album"/>
-              </div>
-            </Col>
+      <div className="Welcome">
+        <Container className="justify-content-center Welcome__text">
+          <Row className="Welcome__text-pre-title">welcome to the</Row>
+          <Row className="Welcome__text-title">Electric Indians</Row>
+          <Row className="Welcome__text-button">
+            <Button name="veiw album" />
           </Row>
         </Container>
+      </div>
     );
   }
 }
-
-;
 
 export default Welcome;

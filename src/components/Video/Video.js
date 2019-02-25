@@ -7,7 +7,7 @@ class Video extends Component {
     render() {
         const videos = VIDEO.map(item => <Item key={item.id} id={item.id}/>);
         return (
-            <div className="Video">
+            <div id="video" className="Video">
                 <h1>Video</h1>
                 <div className="Video__item-wrap">
                     {videos}

@@ -14,7 +14,7 @@ class Shop extends Component {
       />
     ));
     return (
-      <div className="Shop">
+      <div id="shop" className="Shop">
         <h1>Shop</h1>
         <div className="Shop__wrap">
           {items}

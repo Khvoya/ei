@@ -1,32 +1,24 @@
-.Header {
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    text-transform: uppercase;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    height: 104px;
-    margin: 20px;
-}
-.Welcome__text-el {
-    color: #ffffff;
-}
-.Header__item-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-
-    justify-content: space-between;
-}
 .Header__logo {
     background-image: url("../../media/logo.png");
+    background-size: auto;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 62px;
-    width: 80px;
-    align-items: center;
+    margin: 20px;
+    width: 82px;
+    height: 64px;
+}
+.Header__lang {
+    margin: 20px;
+    width: 82px;
+    height: 64px;
+}
+.Header__link {
+    text-transform: uppercase;
+    color: #ffffff;
+    align-self: center;
+}
+.navbar-toggler{
+    margin-right: 20px;
+}
+.navbar, .Header__container{
+    background-color: #7213f6;
 }

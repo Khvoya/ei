@@ -7,7 +7,7 @@ class Photo extends Component {
     render() {
         const photoItems = PHOTOS.map(item => <PhotoItem key={item.photo} photo={item.photo}/>);
         return (
-            <div className="Photo">
+            <div id="photo" className="Photo">
                 <h1>Photo</h1>
                 <div className="Photo__wrap">
                     {photoItems}

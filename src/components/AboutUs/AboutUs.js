@@ -4,7 +4,7 @@ import "./AboutUs.css";
 class AboutUs extends Component {
     render() {
         return (
-            <div className="AboutUs">
+            <div id="band" className="AboutUs">
                 <div className="AboutUs__picture">
 
                 </div>

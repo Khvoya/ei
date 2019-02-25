@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Modal } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
 import News from "./components/News/News";
@@ -17,17 +17,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Welcome/>
-        <News/>
-        <AboutUs/>
-        {/*<Music/>*/}
-        <Albums/>
-        <Video/>
-        <Photo/>
-        <Shop/>
-        <Concerts/>
-        <Footer/>
+          <Header />
+          <Welcome />
+          <News />
+          {/*<AboutUs />*/}
+          {/*<Music/>*/}
+          {/*<Albums />*/}
+          {/*<Video />*/}
+          {/*<Photo />*/}
+          {/*<Shop />*/}
+          {/*<Concerts />*/}
+          {/*<Footer />*/}
       </div>
     );
   }
