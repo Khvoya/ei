@@ -7,7 +7,6 @@ class Concerts extends Component {
     render() {
         const concerts = CONCERTS.map(item => <ConcertItem
             key={item.id}
-            icon={item.icon}
             date={item.date}
             country={item.country}
             club={item.club}

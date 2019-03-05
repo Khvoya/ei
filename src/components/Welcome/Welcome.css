@@ -1,33 +1,53 @@
  .Welcome {
-     background-image: url("../../media/bg_image.png");
+     display: grid;
+     background-image: url("../../media/here's the light.jpg");
      background-color: #000000;
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
+     height: 80vw;
  }
- .Welcome__text {
+ .Welcome .container {
+     align-self: end;
+ }
+ .Welcome__logo-container {
+     height: 15vw;
      display: flex;
-     align-items: center;
-     justify-content: space-between;
-     flex-direction: column;
-     padding: 25% 0 20% 0;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+ .Welcome__logo-container a {
+     position: relative;
+     width: 6vw;
+     height: 6vw;
+     border-radius: 50%;
+     border: 3px white;
+ }
+ .Welcome__logo {
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 6vw;
+     height: 6vw;
+     border-radius: 50%;
+ }
+ .Welcome__logo:hover {
+     border: 7vw white;
+     top: -5px;
+     left:-5px;
+     width: 7vw;
+     height: 7vw;
+     box-shadow: 0 0 20px 5px white , 0 0 20px 5px white inset;
+     transition: all .4s;
+ }
+ .Welcome__logo:active {
+     border: 7vw white;
+     top: -5px;
+     left:-5px;
+     width: 7vw;
+     height: 7vw;
+     box-shadow: 0 0 20px 5px white , 0 0 20px 5px white inset;
+     transition: all .4s;
  }
 
- .Welcome__text-pre-title {
-     margin: 0px;
-     font-size: 5vh;
-     opacity: 0.48;
-     color: #ffffff;
-     text-transform: uppercase;
-     letter-spacing: 2.28px;
- }
- .Welcome__text-title {
-     color: #ffffff;
-     font-size: 10vh;
-     font-weight: 400;
-     letter-spacing: 0.3vw;
-     margin: 0px;
- }
- .Welcome__text-button {
-     margin-top: 20px;
- }
+

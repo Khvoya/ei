@@ -1,17 +1,24 @@
 .Header__logo {
-    background-image: url("../../media/logo.png");
-    background-size: auto;
+    background-image: url("../../media/BY_OUTgnFUs.jpg");
+    background-size: 70px;
+    background-position: center;
     background-repeat: no-repeat;
-    margin: 20px;
-    width: 82px;
-    height: 64px;
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 1px floralwhite;
+}
+
+.Header__logo:hover {
+    box-shadow: 0 0 20px 1px white;
 }
 .Header__lang {
     margin: 20px;
     width: 82px;
     height: 64px;
 }
-.Header__link {
+.Header__link, .nav-link {
     text-transform: uppercase;
     color: #ffffff;
     align-self: center;
@@ -20,5 +27,7 @@
     margin-right: 20px;
 }
 .navbar, .Header__container{
-    background-color: #7213f6;
+    background-color: black;
+    box-shadow: 0 0 10px 1px white;
+    padding: 10px 40px;
 }
