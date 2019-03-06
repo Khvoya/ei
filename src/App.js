@@ -20,9 +20,7 @@ class App extends Component {
           <Header />
           <Welcome />
           <AboutUs />
-          {/*<Albums />*/}
-          {/*<Video />*/}
-          {/*<Photo />*/}
+          <Photo />
           {/*<Shop />*/}
           {/*<Concerts />*/}
           {/*<Footer />*/}

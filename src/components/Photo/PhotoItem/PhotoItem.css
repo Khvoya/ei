@@ -1,5 +1,4 @@
 .PhotoItem {
     cursor: pointer;
-    height: 204px;
-    width: 204px;
+    max-height: 200px;
 }

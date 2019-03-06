@@ -1,4 +1,5 @@
  .Welcome {
+     margin-top: 90px;
      display: grid;
      background-image: url("../../media/here's the light.jpg");
      background-color: #000000;
@@ -6,6 +7,7 @@
      background-position: center;
      background-repeat: no-repeat;
      height: 80vw;
+     min-height: 375px;
  }
  .Welcome .container {
      align-self: end;

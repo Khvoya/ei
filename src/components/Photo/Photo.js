@@ -1,20 +1,67 @@
 import React, { Component } from "react";
-import {PHOTOS} from "../../constants/photos";
-import PhotoItem from './PhotoItem/PhotoItem';
+import { PHOTOS } from "../../constants/photos";
+import { Container, Col, Row } from "react-bootstrap";
+import PhotoItem from "./PhotoItem/PhotoItem";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 import "./Photo.css";
 
 class Photo extends Component {
-    render() {
-        const photoItems = PHOTOS.map(item => <PhotoItem key={item.photo} photo={item.photo}/>);
-        return (
-            <div id="photo" className="Photo">
-                <h1>Photo</h1>
-                <div className="Photo__wrap">
-                    {photoItems}
-                </div>
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
+
+  render() {
+    const { photoIndex, isOpen } = this.state;
+
+    const photoItems = PHOTOS.map(item => (
+      <button
+        type="button"
+        onClick={() =>
+          this.setState({ isOpen: true, photoIndex: PHOTOS.indexOf(item) })
+        }
+      >
+        <PhotoItem key={item} photo={item} />
+      </button>
+    ));
+    return (
+      <Container id="photo" fluid className="Photo">
+        <Row>
+          <Col>
+            <h1>Photo</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="Photo__wrap">{photoItems}</Col>
+
+          {isOpen && (
+            <Lightbox
+              mainSrc={PHOTOS[photoIndex]}
+              nextSrc={PHOTOS[(photoIndex + 1) % PHOTOS.length]}
+              prevSrc={PHOTOS[(photoIndex + PHOTOS.length - 1) % PHOTOS.length]}
+              onCloseRequest={() => this.setState({ isOpen: false })}
+              onMovePrevRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + PHOTOS.length - 1) % PHOTOS.length
+                })
+              }
+              onMoveNextRequest={() =>
+                this.setState({
+                  photoIndex: (photoIndex + 1) % PHOTOS.length
+                })
+              }
+            />
+          )}
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default Photo;
+

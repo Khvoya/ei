@@ -7,21 +7,25 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    box-shadow: 0 0 6px 1px floralwhite;
+    box-shadow: 0 0 6px 5px white;
 }
 
 .Header__logo:hover {
-    box-shadow: 0 0 20px 1px white;
+    box-shadow: 0 0 6px 5px white inset;
+    transition: all .4s;
 }
-.Header__lang {
-    margin: 20px;
-    width: 82px;
-    height: 64px;
-}
-.Header__link, .nav-link {
+
+.navbar-dark .navbar-nav .nav-link {
+    opacity: 1;
     text-transform: uppercase;
     color: #ffffff;
     align-self: center;
+    padding: 15px;
+    border-radius: 30%;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    box-shadow: 0 0 6px 5px white inset;
 }
 .navbar-toggler{
     margin-right: 20px;
