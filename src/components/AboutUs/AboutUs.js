@@ -22,16 +22,10 @@ class AboutUs extends Component {
         <Col xl="6" lg="12" md="12" sm="12" xs="12" className="AboutUs__text">
           <h1>Band</h1>
           <p>
-            "On the other hand, we denounce with righteous indignation and
-            dislike men who are so beguiled and demoralized by the charms of
-            pleasure of the moment, so blinded by desire, that they cannot
-            foresee the pain and trouble that are bound to ensue; and equal
-            blame belongs to those who fail in their duty through weakness of
-            will, which is the same as saying through shrinking from toil and
-            pain. These cases are perfectly simple and easy to distinguish. In a
-            free hour, when our power of choice is untrammelled and when nothing
-            prevents our being able to do what we like best, every pleasure is
-            to be welcomed and every pain avoided.
+            In ordinary life we are three engineers and teacher but when we get together- we are "Electric Indians".
+            Despite the fact that this project was formed in 2016, each of us has the experience of playing in groups of different directions from electronic music to metal, which we unite in our music using an ambient transitions, african and jungle-beats, vocal performances with processor and looper etc.
+            It's not capable of "sticking to the shore" of a particular style: the mood, the shade of genres and even language can vary from song to song withiout losing the spirit of rock and metal schools, of course.
+            Also, using the work with lighting devices, any of our shows turns into a kind of "ritual",  which will not leave indifferent any participant of the event..
           </p>
         </Col>
       </div>

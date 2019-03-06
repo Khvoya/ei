@@ -33,7 +33,7 @@ class Welcome extends Component {
             <a href="https://electricindians.bandcamp.com/" target="blank">
               <img className="Welcome__logo" src={bandcamp} />
             </a>
-            <a href="https://twitter.com/electricindians" target="blank">
+            <a href="https://twitter.com/Electricindian2" target="blank">
               <img className="Welcome__logo" src={twitter} />
             </a>
           </Row>
