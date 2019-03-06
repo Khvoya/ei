@@ -30,7 +30,7 @@ class Photo extends Component {
       </button>
     ));
     return (
-      <Container id="photo" fluid className="Photo">
+      <Container id="photo" className="Photo">
         <Row>
           <Col>
             <h1>Photo</h1>
@@ -41,6 +41,7 @@ class Photo extends Component {
 
           {isOpen && (
             <Lightbox
+              animationOnKeyInput={true}
               mainSrc={PHOTOS[photoIndex]}
               nextSrc={PHOTOS[(photoIndex + 1) % PHOTOS.length]}
               prevSrc={PHOTOS[(photoIndex + PHOTOS.length - 1) % PHOTOS.length]}

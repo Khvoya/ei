@@ -1,23 +1,6 @@
-.Shop {
-    background-color: #ebebeb;
-
-    height: 440px;
-    padding: 60px 0;
-}
-.Shop__wrap {
-    height: 256px;
+.Shop__items-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    box-sizing: padding-box;
-    padding: 0 11.7%;
 }
-.Shop h1 {
-    opacity: 0.96;
-    color: #000000;
-    font-family: Roboto;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 73.79px;
-    margin-bottom: 60px;
-}
+

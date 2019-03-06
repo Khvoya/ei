@@ -21,7 +21,7 @@ class App extends Component {
           <Welcome />
           <AboutUs />
           <Photo />
-          {/*<Shop />*/}
+          <Shop />
           {/*<Concerts />*/}
           {/*<Footer />*/}
       </div>

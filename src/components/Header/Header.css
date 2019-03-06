@@ -35,3 +35,6 @@
     box-shadow: 0 0 10px 1px white;
     padding: 10px 40px;
 }
+.navbar-toggler {
+    margin: 0;
+}
