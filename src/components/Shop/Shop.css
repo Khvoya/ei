@@ -1,6 +1,8 @@
+.Shop__title {
+    margin-bottom: 6vw;
+}
 .Shop__items-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-

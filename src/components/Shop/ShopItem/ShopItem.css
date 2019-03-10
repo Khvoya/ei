@@ -1,6 +1,10 @@
 .ShopItem {
+    width: 300px;
     box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.16), 0 4px 6px 1px rgba(0, 0, 0, 0.24);
-    margin-top: 20px;
+}
+.ShopItem__wrap {
+    display: flex;
+    justify-content: center;
 }
 .ShopItem:hover {
     cursor: pointer;
@@ -12,9 +16,9 @@
     line-height: 24px;
     text-align: start;
 }
-.ShopItem__text-wrap {
-    padding: 16px;
-}
+/*.ShopItem__text-wrap {*/
+    /*padding: 16px;*/
+/*}*/
 .ShopItem__price {
     text-align: start;
     font-size: 18px;

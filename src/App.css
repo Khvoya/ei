@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
   font-family: Roboto;
   opacity: 0.96;
   color: #000000;
@@ -17,5 +16,8 @@
   line-height: 120px;
   text-transform: uppercase;
   letter-spacing: 2.28px;
+}
+:focus {
+  outline: none
 }
 
