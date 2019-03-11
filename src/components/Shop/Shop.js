@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Shop.css";
 import {Container, Col, Row} from 'react-bootstrap';
+import leftArrow from '../../media/icons/arrow-pointing-to-left.svg'
+import rightArrow from '../../media/icons/arrow-pointing-to-right.svg'
 import TinySlider from "tiny-slider-react";
 import { SHOP_ITEMS } from "../../constants/shop";
 import ShopItem from "../../components/Shop/ShopItem/ShopItem";
@@ -13,12 +15,10 @@ class Shop extends Component {
       lazyload: true,
       nav: false,
       mouseDrag: true,
-      autoWidth: true,
+      auoWidth: true,
+      speed: 500,
       controls: false,
       responsive: {
-        1600: {
-          items: 4,
-        },
         1200: {
           items: 3,
         },
@@ -46,8 +46,12 @@ class Shop extends Component {
           <TinySlider settings={settings} ref={ts => this.ts = ts}>
             {items}
           </TinySlider>
-        <button type="button" onClick={() => this.onGoTo('prev')}/>
-        <button type="button" onClick={() =>  this.onGoTo('next')}/>
+        <button className="Shop__slider-arrow" type="button" onClick={() => this.onGoTo('prev')}>
+          <img src={leftArrow} width="50px" height="50px"/>
+        </button>
+        <button className="Shop__slider-arrow" type="button" onClick={() =>  this.onGoTo('next')}>
+          <img src={rightArrow} width="50px" height="50px"/>
+        </button>
       </Container>
     );
   }

@@ -11,8 +11,7 @@
 }
 
 .Concerts__image {
-  background-image: url("../../media/concerts_bg.png"),
-    url("../../media/concerts-bg2.png");
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
