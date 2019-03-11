@@ -13,7 +13,13 @@ class Shop extends Component {
   render() {
     const settings = {
       lazyload: true,
+      loop: false,
       nav: false,
+      rewind: true,
+      prevButton: 'Shop__slider-arrow-left',
+      nextButton: 'Shop__slider-arrow-right',
+      controlsContainer: 'Shop__button-wrap',
+      arrowKeys: true,
       mouseDrag: true,
       autoWidth: true,
       speed: 500,
@@ -42,16 +48,18 @@ class Shop extends Component {
             <h1 className="Shop__title">Shop</h1>
           </Col>
         </Row>
-
+        <div className="Shop__button-wrap">
+          <button className="Shop__slider-arrow Shop__slider-arrow-left" type="button" onClick={() => this.onGoTo('prev')}>
+            <img src={leftArrow} width="50px" height="50px"/>
+          </button>
+          <button className="Shop__slider-arrow Shop__slider-arrow-right" type="button" onClick={() =>  this.onGoTo('next')}>
+            <img src={rightArrow} width="50px" height="50px"/>
+          </button>
           <TinySlider settings={settings} ref={ts => this.ts = ts}>
             {items}
           </TinySlider>
-        <button className="Shop__slider-arrow" type="button" onClick={() => this.onGoTo('prev')}>
-          <img src={leftArrow} width="50px" height="50px"/>
-        </button>
-        <button className="Shop__slider-arrow" type="button" onClick={() =>  this.onGoTo('next')}>
-          <img src={rightArrow} width="50px" height="50px"/>
-        </button>
+        </div>
+
       </Container>
     );
   }
