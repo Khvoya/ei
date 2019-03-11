@@ -11,13 +11,13 @@ import "./Footer.css";
 class Footer extends Component {
   render() {
     return (
-      <div className="Footer__container">
+      <div className="Footer__bg">
         <Container className="Footer">
-          <Row>
-            <Col className="Footer__coop" lg={4} xl={4} md={4} sm={12} xs={12}>
+          <Row className="Footer__wrap">
+            <Col className="Footer__coop" lg={4} xl={4} md={4} >
               <a href="mailto:electricindiansband@gmail.com">electricindiansband@gmail.com</a>
             </Col>
-            <Col className="Footer__social"lg={4} xl={4} md={4} sm={12} xs={12}>
+            <Col className="Footer__social"lg={4} xl={4} md={4} >
               <div className="Footer__social-wrap">
                 <a href="https://www.instagram.com/electricindians/" target="blank">
                   <img className="Footer__social-icon" src={instagram} />
@@ -42,7 +42,7 @@ class Footer extends Component {
                 </a>
               </div>
             </Col>
-            <Col className="Footer__year" lg={4} xl={4} md={4} sm={12} xs={12}>
+            <Col className="Footer__year" lg={4} xl={4} md={4} sm={12} >
               <span className="Footer__dev-info-r">Electric Indians 2019 ©</span>
             </Col>
           </Row>

@@ -33,7 +33,7 @@
      height: 6vw;
      border-radius: 50%;
  }
- .Welcome__logo:hover, .Welcome__logo:active {
+ .Welcome__logo:hover {
      border: 7vw white;
      top: -5px;
      left:-5px;
