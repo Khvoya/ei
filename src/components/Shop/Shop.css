@@ -10,10 +10,10 @@
   z-index: 1;
 }
 .Shop__slider-arrow-left {
-  left: -50px;
+  left: -40px;
 }
 .Shop__slider-arrow-right {
-  right: -50px;
+  right: -40px;
 }
 
 .Shop__slider-arrow:focus,
