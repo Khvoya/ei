@@ -29,3 +29,8 @@
     text-align: center;
     font-size: 18px;
 }
+@media screen and (max-width: 500px) {
+    .ShopItem {
+        width: 260px;
+    }
+}

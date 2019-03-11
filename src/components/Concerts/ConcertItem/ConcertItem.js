@@ -6,9 +6,6 @@ class ConcertItem extends Component {
         const props = this.props;
         return (
             <div className="ConcertItem">
-                <div className="ConcertItem__icon">
-                    <img src={props.icon} alt={props.country}></img>
-                </div>
                 <div className="ConcertItem__date">{props.date}</div>
                 <div className="ConcertItem__country">{props.country}</div>
                 <div className="ConcertItem__club">{props.club}</div>

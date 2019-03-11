@@ -1,31 +1,21 @@
-.Concerts {
-  height: 720px;
-  padding: 100px 11.7%;
-  display: flex;
-  flex-direction: row;
+.Concerts__container {
+  background-color: black;
 }
-.Concerts__image,
+.Concerts__title {
+    margin: 6vw 0;
+    color: white;
+}
+.Concerts__text {
+    color: white;
+    margin-bottom: 6vw;
+}
+.Concerts__text a {
+    color: #545b62;
+}
+.Concerts__text a:hover {
+    cursor: pointer;
+    color: white;
+}
 .Concerts__content {
-  width: 50%;
-  height: 100%;
-}
-
-.Concerts__image {
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.Concerts__image span {
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 73.79px;
-}
-
-.Concerts__content {
-    width: 50%;
+    margin-bottom: 6vw;
 }

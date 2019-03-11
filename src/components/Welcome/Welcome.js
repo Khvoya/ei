@@ -18,7 +18,6 @@ class Welcome extends Component {
               <img className="Welcome__logo" src={instagram} />
             </a>
             <a href="https://www.facebook.com/electricindians/" target="blank">
-              {" "}
               <img className="Welcome__logo" src={facebook} />
             </a>
             <a href="https://vk.com/electricindians" target="blank">

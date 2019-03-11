@@ -30,36 +30,38 @@ class Photo extends Component {
       </button>
     ));
     return (
-      <Container id="photo" className="Photo">
-        <Row>
-          <Col>
-            <h1>Photo</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="Photo__wrap">{photoItems}</Col>
+      <div className="Photo__container">
+        <Container id="photo" className="Photo">
+          <Row>
+            <Col>
+              <h1>Photo</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="Photo__wrap">{photoItems}</Col>
 
-          {isOpen && (
-            <Lightbox
-              animationOnKeyInput={true}
-              mainSrc={PHOTOS[photoIndex]}
-              nextSrc={PHOTOS[(photoIndex + 1) % PHOTOS.length]}
-              prevSrc={PHOTOS[(photoIndex + PHOTOS.length - 1) % PHOTOS.length]}
-              onCloseRequest={() => this.setState({ isOpen: false })}
-              onMovePrevRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + PHOTOS.length - 1) % PHOTOS.length
-                })
-              }
-              onMoveNextRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + 1) % PHOTOS.length
-                })
-              }
-            />
-          )}
-        </Row>
-      </Container>
+            {isOpen && (
+              <Lightbox
+                animationOnKeyInput={true}
+                mainSrc={PHOTOS[photoIndex]}
+                nextSrc={PHOTOS[(photoIndex + 1) % PHOTOS.length]}
+                prevSrc={PHOTOS[(photoIndex + PHOTOS.length - 1) % PHOTOS.length]}
+                onCloseRequest={() => this.setState({ isOpen: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + PHOTOS.length - 1) % PHOTOS.length
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % PHOTOS.length
+                  })
+                }
+              />
+            )}
+          </Row>
+        </Container>
+      </div>
     );
   }
 }

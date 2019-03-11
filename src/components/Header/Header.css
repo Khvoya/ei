@@ -53,7 +53,6 @@
 
 .dropdown-item:hover {
   color: #ffffff;
-  /*box-shadow: 0 0 6px 5px white inset, 0 0 6px 5px white;*/
 }
 .dropdown-item:active,
 .dropdown-item:focus,

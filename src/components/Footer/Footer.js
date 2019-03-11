@@ -1,51 +1,52 @@
 import React, { Component } from "react";
-import fb from "../../media/socialIcons/fb.png";
-// import tw from '../../media/socialIcons/tw.png'
-import inst from "../../media/socialIcons/inst.png";
-import vk from "../../media/socialIcons/vk.png";
+import {Container, Col, Row} from 'react-bootstrap';
+import instagram from "../../../src/media/icons/instagram-logo.svg";
+import facebook from "../../../src/media/icons/facebook-logo-button.svg";
+import vk from "../../../src/media/icons/vk-social-logotype.svg";
+import youtube from "../../../src/media/icons/youtube-logotype.svg";
+import twitter from "../../../src/media/icons/twitter-logo-button.svg";
+import bandcamp from "../../../src/media/icons/bandcamp-logo.svg";
 import "./Footer.css";
 
 class Footer extends Component {
   render() {
     return (
-      <div className="Footer">
-        <div className="Footer__coop">
-          <span className="Footer__coop-key"> On co-operation write to:</span>
-          <span className="Footer__coop-value">info@electric_indians.com</span>
-        </div>
-        <div className="Footer__social">
-          <span className="Footer__social-title">We are in social media:</span>
-          <div className="Footer__social-wrap">
-            <a
-              href="https://www.facebook.com/electricindians/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={fb} alt="fb" className="Footer__social-item" />
-            </a>
-            {/*<a href="#">*/}
-            {/*<img src={tw} alt="tw" className="Footer__social-item" />*/}
-            {/*</a>*/}
-            <a
-              href="https://www.instagram.com/electricindians/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={inst} alt="inst" className="Footer__social-item" />
-            </a>
-            <a
-              href="https://vk.com/electricindians"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={vk} alt="vk" className="Footer__social-item" />
-            </a>
-          </div>
-        </div>
-        <div className="Footer__dev-info">
-          <span className="Footer__dev-info-r">Electric Indians 2018 ©</span>
-          <span className="Footer__dev-info-d">Disigned by Eugene Tumanov</span>
-        </div>
+      <div className="Footer__container">
+        <Container className="Footer">
+          <Row>
+            <Col className="Footer__coop" lg={4} xl={4} md={4} sm={12} xs={12}>
+              <a href="mailto:electricindiansband@gmail.com">electricindiansband@gmail.com</a>
+            </Col>
+            <Col className="Footer__social"lg={4} xl={4} md={4} sm={12} xs={12}>
+              <div className="Footer__social-wrap">
+                <a href="https://www.instagram.com/electricindians/" target="blank">
+                  <img className="Footer__social-icon" src={instagram} />
+                </a>
+                <a href="https://www.facebook.com/electricindians/" target="blank">
+                  <img className="Footer__social-icon" src={facebook} />
+                </a>
+                <a href="https://vk.com/electricindians" target="blank">
+                  <img className="Footer__social-icon" src={vk} />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img className="Footer__social-icon" src={youtube} />
+                </a>
+                <a href="https://electricindians.bandcamp.com/" target="blank">
+                  <img className="Footer__social-icon" src={bandcamp} />
+                </a>
+                <a href="https://twitter.com/Electricindian2" target="blank">
+                  <img className="Footer__social-icon" src={twitter} />
+                </a>
+              </div>
+            </Col>
+            <Col className="Footer__year" lg={4} xl={4} md={4} sm={12} xs={12}>
+              <span className="Footer__dev-info-r">Electric Indians 2019 ©</span>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

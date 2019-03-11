@@ -27,7 +27,7 @@ class Header extends Component {
                 <Nav.Link href="#shop">Shop</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#concerts">Concerts</Nav.Link>
+                <Nav.Link href="#concerts">Gigs</Nav.Link>
               </Nav.Item>
               <NavDropdown title="Links" id="basic-nav-dropdown">
                 <NavDropdown.Item href="https://www.instagram.com/electricindians/" target="blank">

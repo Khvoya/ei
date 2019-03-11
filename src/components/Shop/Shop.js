@@ -15,7 +15,7 @@ class Shop extends Component {
       lazyload: true,
       nav: false,
       mouseDrag: true,
-      auoWidth: true,
+      autoWidth: true,
       speed: 500,
       controls: false,
       responsive: {
