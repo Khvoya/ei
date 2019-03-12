@@ -6,12 +6,12 @@ import vk from "../../../src/media/icons/vk-social-logotype.svg";
 import youtube from "../../../src/media/icons/youtube-logotype.svg";
 import twitter from "../../../src/media/icons/twitter-logo-button.svg";
 import bandcamp from "../../../src/media/icons/bandcamp-logo.svg";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 class Welcome extends Component {
   render() {
     return (
-      <div className="Welcome">
+      <div id="welcome" className="Welcome">
         <Container>
           <Row className="Welcome__logo-container align-content-center justify-content-around ">
             <a href="https://www.instagram.com/electricindians/" target="blank">
