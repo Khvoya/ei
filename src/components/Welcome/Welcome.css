@@ -1,5 +1,5 @@
  .Welcome {
-     margin-top: 90px;
+     margin-top: 113px;
      display: grid;
      background-image: url("../../media/here_s_the_light2.jpg");
      background-color: #000000;
@@ -7,7 +7,7 @@
      background-position: center;
      background-repeat: no-repeat;
      height: 80vw;
-     min-height: 375px;
+     min-height: 84vh;
  }
  .Welcome .container {
      align-self: end;
@@ -43,7 +43,11 @@
      transition: all .4s;
  }
 
-@media (min-width: 0) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .Welcome {
+        background-size: 150%;
+        background-position: top;
+    }
     .Welcome__logo {
         width: 10vw;
         height: 10vw;
