@@ -14,37 +14,37 @@ class Header extends Component {
     return (
       <Navbar collapseOnSelect="true" fixed="top" expand="md" variant="dark">
         <Container>
-          <AnchorLink offset="100" href="#welcome">
-            <Nav.Link href="#welcome">
+          <AnchorLink offset="100" href="#welcome" className="Header__logo-container">
             <Navbar.Brand className="Header__logo" />
-            </Nav.Link>
           </AnchorLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-around container-fluid mr-auto">
+            <Nav className=" justify-content-around align-items-center container-fluid">
               <Nav.Item>
-                <Nav.Link href="#band">
-                <AnchorLink href="#band">
+                <AnchorLink className="Header__link" href="#band">
                   Band
                 </AnchorLink>
-                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <AnchorLink href="#photo">
-                  <Nav.Link href="#photo">Photo</Nav.Link>
+                <AnchorLink className="Header__link" href="#photo">
+                  Photo
                 </AnchorLink>
               </Nav.Item>
               <Nav.Item>
-                <AnchorLink href="#shop">
-                  <Nav.Link href="#shop">Shop</Nav.Link>
+                <AnchorLink className="Header__link" href="#shop">
+                  Shop
                 </AnchorLink>
               </Nav.Item>
               <Nav.Item>
-                <AnchorLink href="#concerts">
-                  <Nav.Link href="#concerts">Gigs</Nav.Link>
+                <AnchorLink className="Header__link" href="#concerts">
+                  Gigs
                 </AnchorLink>
               </Nav.Item>
-              <NavDropdown title="Links" id="basic-nav-dropdown">
+              <NavDropdown
+                className="Header__link-dropdown"
+                title="Links"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item
                   href="https://www.instagram.com/electricindians/"
                   target="blank"

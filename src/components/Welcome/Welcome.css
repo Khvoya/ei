@@ -7,12 +7,16 @@
      background-position: center;
      background-repeat: no-repeat;
      height: 80vw;
-     min-height: 84vh;
+     min-height: 70vh;
  }
  .Welcome .container {
      align-self: end;
  }
  .Welcome__logo-container {
+     background-color: black;
+     margin: -2px 0;
+ }
+ .Welcome__logo-container-wrap {
      height: 15vw;
      display: flex;
      flex-direction: row;
