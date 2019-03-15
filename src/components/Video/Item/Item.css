@@ -1,6 +1,0 @@
-.Item {
-    box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.16), 0 4px 6px 1px rgba(0, 0, 0, 0.24);
-}
-.Item:hover {
-    box-shadow: 0 4px 19px 1px rgba(0, 0, 0, 0.16), 0 9px 13px 1px rgba(0, 0, 0, 0.24);
-}

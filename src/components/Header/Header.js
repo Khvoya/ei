@@ -14,30 +14,44 @@ class Header extends Component {
     return (
       <Navbar collapseOnSelect="true" fixed="top" expand="md" variant="dark">
         <Container>
-          <AnchorLink offset="100" href="#welcome" className="Header__logo-container">
-            <Navbar.Brand className="Header__logo" />
+          <AnchorLink
+            offset="100"
+            href="#welcome"
+            className="Header__logo-container"
+          >
+            <Nav.Link as="span" href="#welcome">
+              <Navbar.Brand className="Header__logo" />
+            </Nav.Link>
           </AnchorLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className=" justify-content-around align-items-center container-fluid">
               <Nav.Item>
                 <AnchorLink className="Header__link" href="#band">
-                  Band
+                  <Nav.Link as="span" href="#band">
+                    Band
+                  </Nav.Link>
                 </AnchorLink>
               </Nav.Item>
               <Nav.Item>
                 <AnchorLink className="Header__link" href="#photo">
-                  Photo
+                  <Nav.Link as="span" href="#photo">
+                    Photo
+                  </Nav.Link>
                 </AnchorLink>
               </Nav.Item>
               <Nav.Item>
                 <AnchorLink className="Header__link" href="#shop">
-                  Shop
+                  <Nav.Link as="span" href="#shop">
+                    Shop
+                  </Nav.Link>
                 </AnchorLink>
               </Nav.Item>
               <Nav.Item>
                 <AnchorLink className="Header__link" href="#concerts">
-                  Gigs
+                  <Nav.Link as="span" href="#concerts">
+                    Gigs
+                  </Nav.Link>
                 </AnchorLink>
               </Nav.Item>
               <NavDropdown
