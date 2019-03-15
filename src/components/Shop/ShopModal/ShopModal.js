@@ -19,8 +19,8 @@ class ShopModal extends Component {
         </Modal.Header>
         <Modal.Body>
           <p>
-            You have chosen <strong>{props.itemName}</strong> , please fill the form and we contact
-            you as soon as possible
+            You have chosen <strong>{props.itemname}</strong> , please fill the form
+            and we contact you as soon as possible
           </p>
           <Form>
             <Form.Group controlId="name">

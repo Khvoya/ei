@@ -11,18 +11,18 @@ class ShopItem extends Component {
   }
   render() {
     let modalClose = () => this.setState({ modalShow: false });
-    const props = this.props;
+    const {src, name, price} = this.props;
     return (
       <ButtonToolbar>
         <Button onClick={() => this.setState({ modalShow: true })}>
           <div className="ShopItem__wrap">
             <div className="ShopItem">
               <div className="ShopItem__image">
-                <img src={props.src} alt={props.name} />
+                <img src={src} alt={name} />
               </div>
               <div className="ShopItem__text-wrap">
-                <div className="ShopItem__name">{props.name}</div>
-                <div className="ShopItem__price">{props.price}</div>
+                <div className="ShopItem__name">{name}</div>
+                <div className="ShopItem__price">{price}</div>
               </div>
             </div>
           </div>
@@ -30,8 +30,7 @@ class ShopItem extends Component {
         <ShopModal
           show={this.state.modalShow}
           onHide={modalClose}
-          itemId={props.id}
-          itemName={props.name}
+          itemname={name}
         />
       </ButtonToolbar>
     );
