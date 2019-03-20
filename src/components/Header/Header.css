@@ -19,7 +19,7 @@
   transition: all 0.4s;
 }
 .nav-item {
-  padding: 15px;
+  padding-top: 15px;
 }
 .Header__link,
 .navbar-dark .navbar-nav .nav-link  {

@@ -1,18 +1,5 @@
-import ph1 from '../media/photos/7.png'
-import ph2 from '../media/photos/4.png'
-import ph3 from '../media/photos/15.png'
-
 export const ABOUT_US_PHOTOS = [
-  {
-    id: 1,
-    photo: ph1,
-  },
-  {
-    id: 2,
-    photo: ph2,
-  },
-  {
-    id: 3,
-    photo: ph3,
-  }
+  'https://firebasestorage.googleapis.com/v0/b/electricindians.appspot.com/o/aboutUs%2F1.jpg?alt=media&token=d44a1f5e-9d47-46b3-8558-3daa53ea0bc4',
+  'https://firebasestorage.googleapis.com/v0/b/electricindians.appspot.com/o/aboutUs%2F2.jpg?alt=media&token=d44a1f5e-9d47-46b3-8558-3daa53ea0bc4',
+  'https://firebasestorage.googleapis.com/v0/b/electricindians.appspot.com/o/aboutUs%2F3.jpg?alt=media&token=d44a1f5e-9d47-46b3-8558-3daa53ea0bc4'
 ];

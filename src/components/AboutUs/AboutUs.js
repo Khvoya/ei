@@ -4,13 +4,14 @@ import { ABOUT_US_PHOTOS } from "../../constants/aboutUs";
 import "./AboutUs.css";
 
 class AboutUs extends Component {
+
   render() {
-    const photos = ABOUT_US_PHOTOS.map(item => (
-      <Carousel.Item key={item.id}>
+    const photos = ABOUT_US_PHOTOS.map((item, index) => (
+      <Carousel.Item key={index}>
         <img
           className="d-block w-100"
-          src={item.photo}
-          alt="First slide"
+          alt="slide"
+          src={item}
         />
       </Carousel.Item>
     ));

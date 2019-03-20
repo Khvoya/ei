@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
+import {sendEmail} from "../../../helpers/mailer.js";
 
 class ShopModal extends Component {
+  async emailSender() {
+  }
   render() {
     const props = this.props;
     return (
@@ -20,7 +23,7 @@ class ShopModal extends Component {
         <Modal.Body>
           <p>
             You have chosen <strong>{props.itemname}</strong> , please fill the form
-            and we contact you as soon as possible
+            and we'll contact you as soon as possible.
           </p>
           <Form>
             <Form.Group controlId="name">
@@ -35,7 +38,7 @@ class ShopModal extends Component {
               <Form.Text className="text-muted">
               </Form.Text>
             </Form.Group>
-            <Button variant="dark" type="submit" onClick={props.onHide}>
+            <Button variant="dark" type="submit" onClick={this.emailSender}>
               Submit
             </Button>
           </Form>
