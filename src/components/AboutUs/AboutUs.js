@@ -1,12 +1,26 @@
 import React, { Component } from "react";
-import { Carousel, Row, Col, Container } from "react-bootstrap";
-import { ABOUT_US_PHOTOS } from "../../constants/aboutUs";
+import { Carousel, Col} from "react-bootstrap";
 import "./AboutUs.css";
+import { getImages } from "../../helpers/getImages";
 
 class AboutUs extends Component {
+  constructor(props) {
+    super(props);
+    this.getUrls = this.getUrls.bind(this);
+    this.state = {
+      urls: [],
+      }
+    };
+    componentDidMount() {
+      this.getUrls();
+    };
 
+    getUrls() {
+      getImages('aboutUs', 3).then( urls =>this.setState({ urls }));
+    }
   render() {
-    const photos = ABOUT_US_PHOTOS.map((item, index) => (
+    const {urls} = this.state;
+    const photos = urls.map((item, index) => (
       <Carousel.Item key={index}>
         <img
           className="d-block w-100"

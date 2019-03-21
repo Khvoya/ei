@@ -7,20 +7,47 @@ import youtube from "../../../src/media/icons/youtube-logotype.svg";
 import twitter from "../../../src/media/icons/twitter-logo-button.svg";
 import bandcamp from "../../../src/media/icons/bandcamp-logo.svg";
 import { Container, Row } from "react-bootstrap";
+import { getImages } from "../../helpers/getImages";
 
 class Welcome extends Component {
+  constructor(props) {
+    super(props);
+    this.getUrls = this.getUrls.bind(this);
+    this.state = {
+      url: ''
+    };
+  }
+
+  componentDidMount() {
+    this.getUrls();
+  }
+
+  getUrls() {
+    getImages("welcome", 1, true).then(url => {
+      this.setState({url});
+    });
+  }
   render() {
     return (
       <div>
-        <div id="welcome" className="Welcome">
-        </div>
+        <div
+          id="welcome"
+          className="Welcome"
+          style={{ backgroundImage: `url(${this.state.url})` }}
+        />
         <div className="Welcome__logo-container">
-          <Container >
+          <Container>
             <Row className="Welcome__logo-container-wrap align-content-center justify-content-around ">
-              <a href="https://www.instagram.com/electricindians/" target="blank">
+              <a
+                href="https://www.instagram.com/electricindians/"
+                target="blank"
+              >
                 <img className="Welcome__logo" src={instagram} />
               </a>
-              <a href="https://www.facebook.com/electricindians/" target="blank">
+              <a
+                href="https://www.facebook.com/electricindians/"
+                target="blank"
+              >
                 <img className="Welcome__logo" src={facebook} />
               </a>
               <a href="https://vk.com/electricindians" target="blank">

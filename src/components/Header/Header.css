@@ -18,9 +18,7 @@
   box-shadow: 0 0 6px 5px white inset;
   transition: all 0.4s;
 }
-.nav-item {
-  padding-top: 15px;
-}
+
 .Header__link,
 .navbar-dark .navbar-nav .nav-link  {
   text-transform: uppercase;
@@ -67,4 +65,9 @@
 .dropdown-item:visited {
   background-color: black;
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-item {
+    padding-top: 15px;
+  }
 }

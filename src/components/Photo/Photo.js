@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { PHOTOS } from "../../constants/photos";
 import { Container, Col, Row } from "react-bootstrap";
+import {getImages} from "../../helpers/getImages";
 import PhotoItem from "./PhotoItem/PhotoItem";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
@@ -9,24 +9,30 @@ import "./Photo.css";
 class Photo extends Component {
   constructor(props) {
     super(props);
-
+    this.getUrls = this.getUrls.bind(this);
     this.state = {
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
+      urls: [],
     };
   }
+  componentDidMount() {
+    this.getUrls();
+  }
 
+  getUrls() {
+    getImages('photos', 10).then( urls =>this.setState({ urls }));
+  }
   render() {
-    const { photoIndex, isOpen } = this.state;
-
-    const photoItems = PHOTOS.map(item => (
+    const { photoIndex, isOpen, urls } = this.state;
+    const photoItems = urls.map((item, index)=> (
       <button
         type="button"
         onClick={() =>
-          this.setState({ isOpen: true, photoIndex: PHOTOS.indexOf(item) })
+          this.setState({ isOpen: true, photoIndex: index })
         }
       >
-        <PhotoItem key={item} photo={item} />
+        <PhotoItem key={index} photo={item} />
       </button>
     ));
     return (
@@ -43,18 +49,18 @@ class Photo extends Component {
             {isOpen && (
               <Lightbox
                 animationOnKeyInput={true}
-                mainSrc={PHOTOS[photoIndex]}
-                nextSrc={PHOTOS[(photoIndex + 1) % PHOTOS.length]}
-                prevSrc={PHOTOS[(photoIndex + PHOTOS.length - 1) % PHOTOS.length]}
+                mainSrc={urls[photoIndex]}
+                nextSrc={urls[(photoIndex + 1) % urls.length]}
+                prevSrc={urls[(photoIndex + urls.length - 1) % urls.length]}
                 onCloseRequest={() => this.setState({ isOpen: false })}
                 onMovePrevRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + PHOTOS.length - 1) % PHOTOS.length
+                    photoIndex: (photoIndex + urls.length - 1) % urls.length
                   })
                 }
                 onMoveNextRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + 1) % PHOTOS.length
+                    photoIndex: (photoIndex + 1) % urls.length
                   })
                 }
               />
