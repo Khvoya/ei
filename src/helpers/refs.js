@@ -2,6 +2,7 @@ import {fbConfig} from "../constants/fbConfig";
 
 var firebase = require("firebase/app");
 require("firebase/storage");
+require("firebase/firestore");
 firebase.initializeApp(fbConfig);
 /**
  * Get array of photo Url's
@@ -11,7 +12,7 @@ firebase.initializeApp(fbConfig);
  * @param {Boolean} [alone=] - return only first url if true.
  * @returns {Array} - Array of URL of photos.
  */
-export const getImages = async (bucket ,counter, alone = false) => {
+export const refs = async (bucket , counter, alone = false) => {
   const result = [];
   const storageRef = firebase.storage().ref();
   for(let i = 1; i <= counter ; ++i) {
@@ -19,6 +20,7 @@ export const getImages = async (bucket ,counter, alone = false) => {
     const url = await getUrl(imagesRef);
     result.push(url);
   }
+  console.log(result);
   return alone ? result[0] : result ;
 };
 /**
@@ -27,13 +29,26 @@ export const getImages = async (bucket ,counter, alone = false) => {
  * @param {Object} ref - Refference of firebase storage.
  * @returns {Promise<any | void>}
  */
-const getUrl = async ref => {
+const getUrl = ref => {
   return new Promise((resolve, reject) => {
-    ref.getDownloadURL()
+    return ref.getDownloadURL()
       .then((image) => {
+
         resolve(image);
       })
       .catch((e) => reject(e));
   })
     .catch((err) => console.log(err));
+};
+
+var db = firebase.firestore();
+
+export const getConcerts = async () => {
+  const result = [];
+  await db.collection("concerts").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      result.push(doc.data());
+    });
+  });
+  return result ;
 };

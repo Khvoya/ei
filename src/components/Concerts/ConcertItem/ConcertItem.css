@@ -1,9 +1,13 @@
 .ConcertItem {
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    padding: 20px 30px;
-    justify-content: space-between;
-    background-color: white;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  padding: 20px 30px;
+  justify-content: space-between;
+  background-color: white;
 }
-
+.ConcertItem__link,
+.ConcertItem__link:hover,
+.ConcertItem__link:active {
+  color: black;
+}

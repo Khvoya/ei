@@ -63,42 +63,42 @@ class Header extends Component {
                   href="https://www.instagram.com/electricindians/"
                   target="blank"
                 >
-                  <img src={instagram} width="20px" height="20px" />
+                  <img src={instagram} width="20px" height="20px" alt="instagram" />
                   <span>Instagram</span>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="https://www.facebook.com/electricindians/"
                   target="blank"
                 >
-                  <img src={facebook} width="20px" height="20px" />
+                  <img src={facebook} width="20px" height="20px" alt="facebook"/>
                   <span>Facebook</span>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="https://vk.com/electricindians"
                   target="blank"
                 >
-                  <img src={vk} width="20px" height="20px" />
+                  <img src={vk} width="20px" height="20px" alt="vk"/>
                   <span>VK</span>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
                   target="blank"
                 >
-                  <img src={youtube} width="20px" height="20px" />
+                  <img src={youtube} width="20px" height="20px" alt="youtube"/>
                   <span>Youtube</span>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="https://electricindians.bandcamp.com/"
                   target="blank"
                 >
-                  <img src={bandcamp} width="20px" height="20px" />
+                  <img src={bandcamp} width="20px" height="20px" alt="bandcamp"/>
                   <span>Bandcamp</span>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="https://twitter.com/Electricindian2"
                   target="blank"
                 >
-                  <img src={twitter} width="20px" height="20px" />
+                  <img src={twitter} width="20px" height="20px" alt="twitter"/>
                   <span>Twitter</span>
                 </NavDropdown.Item>
               </NavDropdown>

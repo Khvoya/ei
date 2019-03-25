@@ -20,25 +20,25 @@ class Footer extends Component {
             <Col className="Footer__social"lg={4} xl={4} md={4} >
               <div className="Footer__social-wrap">
                 <a href="https://www.instagram.com/electricindians/" target="blank">
-                  <img className="Footer__social-icon" src={instagram} />
+                  <img className="Footer__social-icon" src={instagram} alt="instagram"/>
                 </a>
                 <a href="https://www.facebook.com/electricindians/" target="blank">
-                  <img className="Footer__social-icon" src={facebook} />
+                  <img className="Footer__social-icon" src={facebook} alt="facebook"/>
                 </a>
                 <a href="https://vk.com/electricindians" target="blank">
-                  <img className="Footer__social-icon" src={vk} />
+                  <img className="Footer__social-icon" src={vk} alt="vk"/>
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
                   target="blank"
                 >
-                  <img className="Footer__social-icon" src={youtube} />
+                  <img className="Footer__social-icon" src={youtube} alt="youtube"/>
                 </a>
                 <a href="https://electricindians.bandcamp.com/" target="blank">
-                  <img className="Footer__social-icon" src={bandcamp} />
+                  <img className="Footer__social-icon" src={bandcamp} alt="bandcamp"/>
                 </a>
                 <a href="https://twitter.com/Electricindian2" target="blank">
-                  <img className="Footer__social-icon" src={twitter} />
+                  <img className="Footer__social-icon" src={twitter} alt="twitter"/>
                 </a>
               </div>
             </Col>

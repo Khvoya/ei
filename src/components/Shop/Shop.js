@@ -30,12 +30,12 @@ class Shop extends Component {
         }
       }
     };
-    const items = SHOP_ITEMS.map(item => (
+    const items = SHOP_ITEMS.map((item, index) => (
       <ShopItem
         src={item.image}
         name={item.name}
         price={item.price}
-        key={item.name}
+        key={index}
       />
     ));
     return (
@@ -54,14 +54,14 @@ class Shop extends Component {
             type="button"
             onClick={this.onGoTo("prev")}
           >
-            <img src={leftArrow} width="50px" height="50px" />
+            <img src={leftArrow} width="50px" height="50px" alt="left-arrow"/>
           </button>
           <button
             className="Shop__slider-arrow Shop__slider-arrow-right"
             type="button"
             onClick={this.onGoTo("next")}
           >
-            <img src={rightArrow} width="50px" height="50px" />
+            <img src={rightArrow} width="50px" height="50px" alt="right-arrow"/>
           </button>
           <TinySlider settings={settings} ref={ts => (this.ts = ts)}>
             {items}

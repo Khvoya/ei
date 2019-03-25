@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
-import {sendEmail} from "../../../helpers/mailer.js";
 
 class ShopModal extends Component {
   async emailSender() {

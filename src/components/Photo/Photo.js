@@ -1,38 +1,37 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import {getImages} from "../../helpers/getImages";
+import {getImageRef} from "actionCreators/actionCreators";
 import PhotoItem from "./PhotoItem/PhotoItem";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import "./Photo.css";
+import {connect} from 'react-redux';
 
 class Photo extends Component {
   constructor(props) {
     super(props);
-    this.getUrls = this.getUrls.bind(this);
-    this.state = {
-      photoIndex: 0,
-      isOpen: false,
-      urls: [],
-    };
-  }
-  componentDidMount() {
     this.getUrls();
   }
 
-  getUrls() {
-    getImages('photos', 10).then( urls =>this.setState({ urls }));
-  }
+  state = {
+    activePhoto: null,
+  };
+
+   getUrls = () => {
+      this.props.dispatch(getImageRef('photos', 10));
+  };
   render() {
-    const { photoIndex, isOpen, urls } = this.state;
-    const photoItems = urls.map((item, index)=> (
+    const { urls} = this.props;
+    const {activePhoto} = this.state;
+    const photoItems = urls.map((img, index) => (
       <button
+        key={img}
         type="button"
         onClick={() =>
-          this.setState({ isOpen: true, photoIndex: index })
+          this.setState({activePhoto: index })
         }
       >
-        <PhotoItem key={index} photo={item} />
+        <PhotoItem photo={img} />
       </button>
     ));
     return (
@@ -46,21 +45,21 @@ class Photo extends Component {
           <Row>
             <Col className="Photo__wrap">{photoItems}</Col>
 
-            {isOpen && (
+            {activePhoto !== null && (
               <Lightbox
                 animationOnKeyInput={true}
-                mainSrc={urls[photoIndex]}
-                nextSrc={urls[(photoIndex + 1) % urls.length]}
-                prevSrc={urls[(photoIndex + urls.length - 1) % urls.length]}
-                onCloseRequest={() => this.setState({ isOpen: false })}
+                mainSrc={urls[activePhoto]}
+                nextSrc={urls[(activePhoto + 1) % urls.length]}
+                prevSrc={urls[(activePhoto + urls.length - 1) % urls.length]}
+                onCloseRequest={() => this.setState({ activePhoto: null })}
                 onMovePrevRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + urls.length - 1) % urls.length
+                    activePhoto: (activePhoto + urls.length - 1) % urls.length
                   })
                 }
                 onMoveNextRequest={() =>
                   this.setState({
-                    photoIndex: (photoIndex + 1) % urls.length
+                    activePhoto: (activePhoto + 1) % urls.length
                   })
                 }
               />
@@ -71,6 +70,8 @@ class Photo extends Component {
     );
   }
 }
-
-export default Photo;
+const mapStateToProps = (state) => ({
+  urls: state.photos.urls,
+});
+export default connect(mapStateToProps)(Photo);
 
