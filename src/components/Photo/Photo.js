@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import {getImageRef} from "actionCreators/actionCreators";
 import PhotoItem from "./PhotoItem/PhotoItem";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
@@ -8,18 +7,10 @@ import "./Photo.css";
 import {connect} from 'react-redux';
 
 class Photo extends Component {
-  constructor(props) {
-    super(props);
-    this.getUrls();
-  }
-
   state = {
     activePhoto: null,
   };
 
-   getUrls = () => {
-      this.props.dispatch(getImageRef('photos', 10));
-  };
   render() {
     const { urls} = this.props;
     const {activePhoto} = this.state;

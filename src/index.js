@@ -2,9 +2,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Root from './App';
+import App from './App'
 import * as serviceWorker from './serviceWorker';
+import Provider from "react-redux/es/components/Provider";
+import { store } from "store/store-index";
 
+function Root(){
+  return(
+    <Provider store={store}>
+      <App/>
+    </Provider>
+  )
+}
 ReactDOM.render(<Root />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

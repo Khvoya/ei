@@ -9,25 +9,14 @@ import twitter from "media/icons/twitter-logo-button.svg";
 import bandcamp from "media/icons/bandcamp-logo.svg";
 import { Container, Row } from "react-bootstrap";
 import {connect} from 'react-redux';
-import {getWelcomeBg} from "actionCreators/actionCreators";
 
 class Welcome extends Component {
   static propTypes = {
-    url: PropTypes.string.isRequired,
     isLoaded: PropTypes.bool.isRequired,
   };
 
-  constructor(props) {
-    super(props);
-    this.getBackground();
-  }
-  getBackground = () => {
-    console.log(this.props);
-    this.props.dispatch(getWelcomeBg('welcome', 1, true));
-  };
   render() {
     const {url, isLoaded} = this.props;
-    console.log(url);
     return (
       <div>
         {isLoaded && (
@@ -75,7 +64,7 @@ class Welcome extends Component {
   }
 }
 const mapStateToProps = (state) => ({
-  url: state.welcome.url,
   isLoaded: state.welcome.status === 'fulfilled',
+  url: state.welcome.url,
 });
 export default connect(mapStateToProps)(Welcome);

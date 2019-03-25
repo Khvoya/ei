@@ -20,7 +20,6 @@ export const refs = async (bucket , counter, alone = false) => {
     const url = await getUrl(imagesRef);
     result.push(url);
   }
-  console.log(result);
   return alone ? result[0] : result ;
 };
 /**

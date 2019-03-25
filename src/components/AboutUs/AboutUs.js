@@ -1,20 +1,9 @@
 import React, { Component } from "react";
 import { Carousel, Col } from "react-bootstrap";
 import "./AboutUs.css";
-import { getAboutUs } from "actionCreators/actionCreators";
 import {connect} from 'react-redux';
 
 class AboutUs extends Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-    this.getUrls();
-  }
-
-  getUrls() {
-    this.props.dispatch(getAboutUs("aboutUs", 3));
-  }
   render() {
     const { urls } = this.props;
     const photos = urls.map((item, index) => (

@@ -17,7 +17,12 @@ export const photos = (state = initialState, action) => {
         ...state,
         status: 'fulfiled',
         urls: action.payload
-      }
+      };
+    default: {
+      return {
+        ...state,
+      };
+    }
   }
-  return state;
+
 };

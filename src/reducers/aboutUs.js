@@ -17,7 +17,11 @@ export const aboutUs = (state = initialState, action) => {
         ...state,
         status: 'fulfiled',
         urls: action.payload
-      }
+      };
+    default: {
+      return {
+        ...state,
+      };
+    }
   }
-  return state;
 };

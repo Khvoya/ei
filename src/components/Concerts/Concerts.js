@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Concerts.css";
 import { Container, Col, Row } from "react-bootstrap";
-import {getConcertsData} from "actionCreators/actionCreators";
 import ConcertItem from "components/Concerts/ConcertItem/ConcertItem";
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
@@ -16,14 +15,6 @@ class Concerts extends Component {
         link: PropTypes.string.isRequired,
       }),
     ),
-  };
-
-  constructor(props) {
-    super(props);
-    this.getConcerts();
-  }
-  getConcerts = () => {
-    this.props.dispatch(getConcertsData());
   };
 
   render() {
