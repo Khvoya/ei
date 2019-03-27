@@ -1,16 +1,37 @@
 import React, { Component } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import instagram from "../../../src/media/icons/instagram-logo.svg";
-import facebook from "../../../src/media/icons/facebook-logo-button.svg";
-import vk from "../../../src/media/icons/vk-social-logotype.svg";
-import youtube from "../../../src/media/icons/youtube-logotype.svg";
-import twitter from "../../../src/media/icons/twitter-logo-button.svg";
-import bandcamp from "../../../src/media/icons/bandcamp-logo.svg";
+import { headerData, dropDownData } from 'constants/headerData'
 import "./Header.css";
 
 class Header extends Component {
   render() {
+
+    const headerItems = headerData.map(link => (
+      <Nav.Item>
+        <AnchorLink className="Header__link" href={link.href}>
+          <Nav.Link as="span" href={link.href}>
+            {link.name}
+          </Nav.Link>
+        </AnchorLink>
+      </Nav.Item>
+    ));
+
+    const headerDropdown = dropDownData.map(item => (
+      <NavDropdown.Item
+        href={item.href}
+        target="blank"
+      >
+        <img
+          src={item.img}
+          width="20px"
+          height="20px"
+          alt={item.name}
+        />
+        <span>{item.name}</span>
+      </NavDropdown.Item>
+    ));
+
     return (
       <Navbar collapseOnSelect="true" fixed="top" expand="md" variant="dark">
         <Container>
@@ -26,81 +47,13 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className=" justify-content-around align-items-center container-fluid">
-              <Nav.Item>
-                <AnchorLink className="Header__link" href="#band">
-                  <Nav.Link as="span" href="#band">
-                    Band
-                  </Nav.Link>
-                </AnchorLink>
-              </Nav.Item>
-              <Nav.Item>
-                <AnchorLink className="Header__link" href="#photo">
-                  <Nav.Link as="span" href="#photo">
-                    Photo
-                  </Nav.Link>
-                </AnchorLink>
-              </Nav.Item>
-              <Nav.Item>
-                <AnchorLink className="Header__link" href="#shop">
-                  <Nav.Link as="span" href="#shop">
-                    Shop
-                  </Nav.Link>
-                </AnchorLink>
-              </Nav.Item>
-              <Nav.Item>
-                <AnchorLink className="Header__link" href="#concerts">
-                  <Nav.Link as="span" href="#concerts">
-                    Gigs
-                  </Nav.Link>
-                </AnchorLink>
-              </Nav.Item>
+              {headerItems}
               <NavDropdown
                 className="Header__link-dropdown"
                 title="Links"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item
-                  href="https://www.instagram.com/electricindians/"
-                  target="blank"
-                >
-                  <img src={instagram} width="20px" height="20px" alt="instagram" />
-                  <span>Instagram</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="https://www.facebook.com/electricindians/"
-                  target="blank"
-                >
-                  <img src={facebook} width="20px" height="20px" alt="facebook"/>
-                  <span>Facebook</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="https://vk.com/electricindians"
-                  target="blank"
-                >
-                  <img src={vk} width="20px" height="20px" alt="vk"/>
-                  <span>VK</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
-                  target="blank"
-                >
-                  <img src={youtube} width="20px" height="20px" alt="youtube"/>
-                  <span>Youtube</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="https://electricindians.bandcamp.com/"
-                  target="blank"
-                >
-                  <img src={bandcamp} width="20px" height="20px" alt="bandcamp"/>
-                  <span>Bandcamp</span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="https://twitter.com/Electricindian2"
-                  target="blank"
-                >
-                  <img src={twitter} width="20px" height="20px" alt="twitter"/>
-                  <span>Twitter</span>
-                </NavDropdown.Item>
+                {headerDropdown}
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

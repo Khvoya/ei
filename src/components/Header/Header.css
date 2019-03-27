@@ -58,6 +58,8 @@
 }
 
 .dropdown-item:hover {
+  background-color: black;
+  outline: none;
   color: #ffffff;
 }
 .dropdown-item:active,
