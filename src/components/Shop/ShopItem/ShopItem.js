@@ -8,7 +8,7 @@ class ShopItem extends Component {
 
   render() {
     let modalClose = () => this.setState({ modalShow: false });
-    const {name, price, imageUrl, material} = this.props;
+    const {name, price, imageUrl, material, description, size} = this.props;
     return (
       <ButtonToolbar>
         <Button onClick={() => this.setState({ modalShow: true })}>
@@ -28,10 +28,12 @@ class ShopItem extends Component {
         <ShopModal
           show={this.state.modalShow}
           onHide={modalClose}
-          itemname={name}
+          name={name}
           price={price}
           image={imageUrl}
           material={material}
+          description={description}
+          size={size}
         />
       </ButtonToolbar>
     );

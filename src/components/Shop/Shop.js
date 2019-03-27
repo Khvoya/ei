@@ -37,7 +37,9 @@ class Shop extends Component {
         price={item.price}
         material={item.material}
         imageUrl={item.imageUrl}
+        description={item.description}
         key={index}
+        size={item.size}
       />
     ));
     return (
