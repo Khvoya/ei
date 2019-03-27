@@ -13,6 +13,7 @@ class ShopModal extends Component {
         aria-labelledby="contained-modal-title-vcenter"
         autoFocus={false}
         centered
+        scrollable="true"
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">

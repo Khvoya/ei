@@ -1,4 +1,4 @@
-import {fbConfig} from "../constants/fbConfig";
+import {fbConfig} from "constants/fbConfig";
 
 var firebase = require("firebase/app");
 require("firebase/storage");
@@ -41,10 +41,15 @@ const getUrl = ref => {
 };
 
 var db = firebase.firestore();
-
-export const getConcerts = async () => {
+/**
+ * Get collection data from db.
+ *
+ * @param {string} collectionName - Name of required collection.
+ * @returns {Promise<Array>}
+ */
+export const getDbCollection = async collectionName => {
   const result = [];
-  await db.collection("concerts").get().then((querySnapshot) => {
+  await db.collection(collectionName).get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
       result.push(doc.data());
     });

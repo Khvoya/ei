@@ -1,5 +1,8 @@
+#shop {
+  padding-bottom: 4vw;
+}
 .Shop__title {
-  margin: 6vw 0;
+  margin: 4vw 0;
 }
 .Shop__slider-arrow {
   border: none;
@@ -24,7 +27,6 @@
 .Shop__button-wrap {
   width: 100%;
   position: relative;
-  margin-bottom: 6vw;
 }
 
 .btn-primary,

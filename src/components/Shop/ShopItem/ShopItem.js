@@ -4,25 +4,23 @@ import  ShopModal  from '../ShopModal/ShopModal'
 import "./ShopItem.css";
 
 class ShopItem extends Component {
-  constructor(...args) {
-    super(...args);
+  state = { modalShow: false };
 
-    this.state = { modalShow: false };
-  }
   render() {
     let modalClose = () => this.setState({ modalShow: false });
-    const {src, name, price} = this.props;
+    const {name, price, imageUrl, material} = this.props;
     return (
       <ButtonToolbar>
         <Button onClick={() => this.setState({ modalShow: true })}>
           <div className="ShopItem__wrap">
             <div className="ShopItem">
               <div className="ShopItem__image">
-                <img src={src} alt={name} />
+                <img src={imageUrl} alt={name} />
               </div>
               <div className="ShopItem__text-wrap">
                 <div className="ShopItem__name">{name}</div>
                 <div className="ShopItem__price">{price}</div>
+                <div className="ShopItem__price">{material}</div>
               </div>
             </div>
           </div>
@@ -31,6 +29,9 @@ class ShopItem extends Component {
           show={this.state.modalShow}
           onHide={modalClose}
           itemname={name}
+          price={price}
+          image={imageUrl}
+          material={material}
         />
       </ButtonToolbar>
     );

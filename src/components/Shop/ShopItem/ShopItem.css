@@ -13,13 +13,12 @@
 }
 .ShopItem__image img {
     width: 100%;
+    max-height: 200px;
 }
 
 .ShopItem__name {
-    height: 48px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
     text-align: center;
     white-space: normal
 }

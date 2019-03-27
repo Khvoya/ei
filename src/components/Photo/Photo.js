@@ -30,7 +30,7 @@ class Photo extends Component {
         <Container id="photo" className="Photo">
           <Row>
             <Col>
-              <h1>Photo</h1>
+              <h1>Photos</h1>
             </Col>
           </Row>
           <Row>

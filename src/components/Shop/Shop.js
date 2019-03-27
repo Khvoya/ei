@@ -4,8 +4,8 @@ import { Container, Col, Row } from "react-bootstrap";
 import leftArrow from "../../media/icons/arrow-pointing-to-left.svg";
 import rightArrow from "../../media/icons/arrow-pointing-to-right.svg";
 import TinySlider from "tiny-slider-react";
-import { SHOP_ITEMS } from "../../constants/shop";
 import ShopItem from "../../components/Shop/ShopItem/ShopItem";
+import connect from "react-redux/es/connect/connect";
 
 class Shop extends Component {
   onGoTo = dir => () => this.ts.slider.goTo(dir);
@@ -30,11 +30,13 @@ class Shop extends Component {
         }
       }
     };
-    const items = SHOP_ITEMS.map((item, index) => (
+    const {shop} = this.props;
+    const items = shop.map((item, index) => (
       <ShopItem
-        src={item.image}
         name={item.name}
         price={item.price}
+        material={item.material}
+        imageUrl={item.imageUrl}
         key={index}
       />
     ));
@@ -54,22 +56,32 @@ class Shop extends Component {
             type="button"
             onClick={this.onGoTo("prev")}
           >
-            <img src={leftArrow} width="50px" height="50px" alt="left-arrow"/>
+            <img src={leftArrow} width="50px" height="50px" alt="left-arrow" />
           </button>
           <button
             className="Shop__slider-arrow Shop__slider-arrow-right"
             type="button"
             onClick={this.onGoTo("next")}
           >
-            <img src={rightArrow} width="50px" height="50px" alt="right-arrow"/>
+            <img
+              src={rightArrow}
+              width="50px"
+              height="50px"
+              alt="right-arrow"
+            />
           </button>
-          <TinySlider settings={settings} ref={ts => (this.ts = ts)}>
-            {items}
-          </TinySlider>
+          {items.length > 0 && (
+            <TinySlider settings={settings} ref={ts => (this.ts = ts)}>
+              {items}
+            </TinySlider>
+          )}
         </div>
       </Container>
     );
   }
 }
 
-export default Shop;
+const mapStateToProps = (state) => ({
+  shop: state.shop.shop,
+});
+export default connect(mapStateToProps)(Shop);
