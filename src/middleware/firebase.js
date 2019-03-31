@@ -32,7 +32,6 @@ const getUrl = ref => {
   return new Promise((resolve, reject) => {
     return ref.getDownloadURL()
       .then((image) => {
-
         resolve(image);
       })
       .catch((e) => reject(e));
