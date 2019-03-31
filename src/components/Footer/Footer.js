@@ -6,7 +6,7 @@ import "./Footer.css";
 class Footer extends Component {
   render() {
     const socialIcons = dropDownData.map(icon => (
-      <a href={icon.href} target="blank">
+      <a href={icon.href} target="blank" key={icon.name}>
         <img className="Footer__social-icon" src={icon.img} alt={icon.name}/>
       </a>
     ));

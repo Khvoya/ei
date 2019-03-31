@@ -15,7 +15,7 @@ export const sendEmail = (state = initialState, action) => {
     case `${SEND_ORDER_REQUEST_MAIL}_FULFILLED`:
       return {
         ...state,
-        status: "fulfiled",
+        status: "fulfilled",
         email: action.payload
       };
     default: {

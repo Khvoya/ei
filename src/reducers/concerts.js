@@ -15,7 +15,7 @@ export const concerts = (state = initialState, action) => {
     case `${FIREBASE_GET_CONCERTS}_FULFILLED`:
       return {
         ...state,
-        status: "fulfiled",
+        status: "fulfilled",
         concerts: action.payload.map(concert => concert.event)
       };
     default: {

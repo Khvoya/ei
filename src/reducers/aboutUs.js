@@ -15,7 +15,7 @@ export const aboutUs = (state = initialState, action) => {
     case `${FIREBASE_GET_ABOUT_US}_FULFILLED`:
       return {
         ...state,
-        status: 'fulfiled',
+        status: 'fulfilled',
         urls: action.payload
       };
     default: {

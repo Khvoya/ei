@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
 
     const headerItems = headerData.map(link => (
-      <Nav.Item>
+      <Nav.Item key={link.name}>
         <AnchorLink className="Header__link" href={link.href}>
           <Nav.Link as="span" href={link.href}>
             {link.name}
@@ -21,6 +21,7 @@ class Header extends Component {
       <NavDropdown.Item
         href={item.href}
         target="blank"
+        key={item.name}
       >
         <img
           src={item.img}

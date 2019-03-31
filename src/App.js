@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Photo from "./components/Photo/Photo";
+import Loader from "components/Loader/Loader";
 import Shop from "./components/Shop/Shop";
 import Concerts from "./components/Concerts/Concerts";
 import Footer from "./components/Footer/Footer";
@@ -13,7 +14,7 @@ import {
   getConcertsData,
   getImageRef,
   getWelcomeBg,
-  getShopData,
+  getShopData
 } from "actionCreators/actionCreators";
 import PropTypes from "prop-types";
 
@@ -31,7 +32,7 @@ class App extends Component {
   }
 
   render() {
-    return (
+    const body = (
       <div className="App">
         <Header />
         <Welcome />
@@ -42,6 +43,7 @@ class App extends Component {
         <Footer />
       </div>
     );
+    return this.props.isLoaded ? body : <Loader />;
   }
 }
 const mapDispatchToProps = {
@@ -52,7 +54,14 @@ const mapDispatchToProps = {
   getShopData
 };
 
+const mapStateToProps = state => ({
+  isLoaded:
+    state.welcome.status === "fulfilled" &&
+    state.photos.status === "fulfilled" &&
+    state.aboutUs.status === "fulfilled"
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App);

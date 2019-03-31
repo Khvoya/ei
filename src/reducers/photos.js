@@ -15,7 +15,7 @@ export const photos = (state = initialState, action) => {
     case `${FIREBASE_GET_IMAGE_REFS}_FULFILLED`:
       return {
         ...state,
-        status: 'fulfiled',
+        status: 'fulfilled',
         urls: action.payload
       };
     default: {

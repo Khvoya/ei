@@ -15,7 +15,7 @@ export const shop = (state = initialState, action) => {
     case `${FIREBASE_GET_SHOP}_FULFILLED`:
       return {
         ...state,
-        status: "fulfiled",
+        status: "fulfilled",
         shop: action.payload.map(shop => shop.item)
       };
     default: {
