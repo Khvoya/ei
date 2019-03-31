@@ -4,6 +4,7 @@ import {photos} from './photos';
 import {concerts} from './concerts';
 import {aboutUs} from './aboutUs';
 import {shop} from './shop';
+import {sendEmail} from './sendMail';
 
 export default combineReducers({
   welcome,
@@ -11,4 +12,5 @@ export default combineReducers({
   concerts,
   aboutUs,
   shop,
+  sendEmail,
 });

@@ -1,8 +1,45 @@
 import React, { Component } from "react";
 import { Button, Modal, Form, Container, Col, Row } from "react-bootstrap";
+import { sendOrderMail } from "actionCreators/actionCreators";
+import {connect} from 'react-redux';
 
 class ShopModal extends Component {
-  emailSender = () => {};
+  emailSender = () => {
+    const {
+      name,
+      price,
+      size,
+      onHide,
+    } = this.props;
+    const {userName, emailAddress, comment} = this.state;
+    const email = `Request to purchase: 
+    Item name: ${name},
+    Item size: ${size},
+    Item price: ${price},
+    
+    Contact data:
+    
+    Client name: ${userName},
+    Email address: ${emailAddress},
+    Additional comment: ${comment}
+    `;
+    onHide();
+    this.props.dispatch(sendOrderMail(email));
+
+  };
+
+  setClientName = (e) => {
+    this.setState({userName: e.target.value});
+  };
+
+  setClientEmail = (e) => {
+    this.setState({emailAddress: e.target.value});
+  };
+
+  setClientComment = (e) => {
+    this.setState({comment: e.target.value});
+  };
+
   render() {
     const {
       name,
@@ -13,6 +50,9 @@ class ShopModal extends Component {
       size,
       onHide
     } = this.props;
+
+
+
     return (
       <Modal
         {...this.props}
@@ -48,21 +88,21 @@ class ShopModal extends Component {
                 <Form>
                   <Form.Group controlId="name">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter name" />
+                    <Form.Control onChange={this.setClientName} type="text" placeholder="Enter name" />
                     <Form.Text className="text-muted" />
                   </Form.Group>
                   <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control onChange={this.setClientEmail} type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted" />
                   </Form.Group>
                   <Form.Group controlId="formComment">
                     <Form.Label>Write some comment here</Form.Label>
-                    <Form.Control as="textarea" rows="3" />
+                    <Form.Control onChange={this.setClientComment} as="textarea" rows="3" />
                   </Form.Group>
                   <Button
                     variant="dark"
-                    type="submit"
+                    type="button"
                     onClick={this.emailSender}
                   >
                     Submit
@@ -79,4 +119,7 @@ class ShopModal extends Component {
     );
   }
 }
-export default ShopModal;
+const mapStateToProps = (state) => ({
+  email: state.sendEmail.email,
+});
+export default connect(mapStateToProps)(ShopModal);
