@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Modal, Form, Container, Col, Row } from "react-bootstrap";
 import { sendOrderMail } from "actionCreators/actionCreators";
+import './ShopModal.css';
 import {connect} from 'react-redux';
 
 class ShopModal extends Component {
@@ -51,12 +52,10 @@ class ShopModal extends Component {
       onHide
     } = this.props;
 
-
-
     return (
       <Modal
         {...this.props}
-        size="md"
+        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         autoFocus={false}
         centered
@@ -70,21 +69,27 @@ class ShopModal extends Component {
         <Modal.Body>
           <Container>
             <Row>
-              <Col className="d-flex flex-column">
+              <Col className="ShopModal__item-info d-flex justify-content-around">
                 <img src={image} alt={name} />
-                <span><strong>{name}</strong></span>
-                <span><strong>Material:</strong> {material}</span>
-                <span><strong>Size:</strong> {size}</span>
-                <span><strong>Price:</strong> {price}</span>
-                <p>{description}</p>
+                <div className="d-flex flex-column justify-content-around">
+                  <span><strong>{name}</strong></span>
+                  <span><strong>Material:</strong> {material}</span>
+                  <span><strong>Size:</strong> {size}</span>
+                  <span><strong>Price:</strong> {price}</span>
+                  <p>{description}</p>
+                </div>
               </Col>
             </Row>
-            <Row>
+            <Row className="mt-3" >
               <Col>
                 <p>
                   For getting this stuff , please fill the form
                   and we'll contact you as soon as possible.
                 </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
                 <Form>
                   <Form.Group controlId="name">
                     <Form.Label>Name</Form.Label>

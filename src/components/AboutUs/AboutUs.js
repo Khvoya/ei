@@ -25,7 +25,7 @@ class AboutUs extends Component {
             controls={false}
             fade={true}
             pauseOnHover={false}
-            interval={7000}
+            interval={10000}
           >
             {photos}
           </Carousel>

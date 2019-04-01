@@ -1,7 +1,6 @@
 .Loader__wrap {
     width: 100vw;
     height: 100vh;
-    min-height: 700px;
     background-color: black;
     z-index: 100;
     position: absolute;

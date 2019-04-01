@@ -41,7 +41,7 @@ class Header extends Component {
             href="#welcome"
             className="Header__logo-container"
           >
-            <Nav.Link as="span" href="#welcome">
+            <Nav.Link className="Header__logo-link" as="span" href="#welcome">
               <Navbar.Brand className="Header__logo" />
             </Nav.Link>
           </AnchorLink>
