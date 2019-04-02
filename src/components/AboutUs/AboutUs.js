@@ -22,6 +22,7 @@ class AboutUs extends Component {
           xs="12"
         >
           <Carousel
+            slide={true}
             controls={false}
             fade={true}
             pauseOnHover={false}

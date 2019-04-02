@@ -1,18 +1,21 @@
 import React, { Component } from "react";
-import { Button, Modal, Form, Container, Col, Row, Carousel } from "react-bootstrap";
+import {
+  Button,
+  Modal,
+  Form,
+  Container,
+  Col,
+  Row,
+  Carousel
+} from "react-bootstrap";
 import { sendOrderMail } from "actionCreators/actionCreators";
-import './ShopModal.css';
-import {connect} from 'react-redux';
+import "./ShopModal.css";
+import { connect } from "react-redux";
 
 class ShopModal extends Component {
   emailSender = () => {
-    const {
-      name,
-      price,
-      size,
-      onHide,
-    } = this.props;
-    const {userName, emailAddress, comment} = this.state;
+    const { name, price, size, onHide } = this.props;
+    const { userName, emailAddress, comment } = this.state;
     const email = `Request to purchase: 
     Item name: ${name},
     Item size: ${size},
@@ -26,19 +29,18 @@ class ShopModal extends Component {
     `;
     onHide();
     this.props.dispatch(sendOrderMail(email));
-
   };
 
-  setClientName = (e) => {
-    this.setState({userName: e.target.value});
+  setClientName = e => {
+    this.setState({ userName: e.target.value });
   };
 
-  setClientEmail = (e) => {
-    this.setState({emailAddress: e.target.value});
+  setClientEmail = e => {
+    this.setState({ emailAddress: e.target.value });
   };
 
-  setClientComment = (e) => {
-    this.setState({comment: e.target.value});
+  setClientComment = e => {
+    this.setState({ comment: e.target.value });
   };
 
   render() {
@@ -57,13 +59,12 @@ class ShopModal extends Component {
         {...this.props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
-        autoFocus={false}
         centered
-        scrollable="true"
+        restoreFocus={false}
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Great choice!
+            <h1>Great choice!</h1>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -76,22 +77,36 @@ class ShopModal extends Component {
                   pauseOnHover={false}
                   interval={3000}
                 >
-                  {image.map(image => <img className="ShopModal__item-img" src={image} alt={name} />)}
+                  {image.map(image => (
+                    <img
+                      className="ShopModal__item-img"
+                      src={image}
+                      alt={name}
+                    />
+                  ))}
                 </Carousel>
-                <div className="d-flex flex-column justify-content-around">
-                  <span><strong>{name}</strong></span>
-                  <span><strong>Material:</strong> {material}</span>
-                  <span><strong>Size:</strong> {size}</span>
-                  <span><strong>Price:</strong> {price}</span>
+                <div className="ShopModal__item-info-text d-flex flex-column justify-content-around">
+                  <h2>
+                    <strong>{name}</strong>
+                  </h2>
+                  <span>
+                    <strong>Material:</strong> {material}
+                  </span>
+                  <span>
+                    <strong>Size:</strong> {size}
+                  </span>
+                  <span>
+                    <strong>Price:</strong> {price}
+                  </span>
                   <p>{description}</p>
                 </div>
               </Col>
             </Row>
-            <Row className="mt-3" >
+            <Row className="mt-3">
               <Col>
                 <p>
-                  For getting this stuff , please fill the form
-                  and we'll contact you as soon as possible.
+                  For getting this stuff , please fill the form and we'll
+                  contact you as soon as possible.
                 </p>
               </Col>
             </Row>
@@ -100,17 +115,30 @@ class ShopModal extends Component {
                 <Form>
                   <Form.Group controlId="name">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control onChange={this.setClientName} type="text" placeholder="Enter name" />
+                    <Form.Control
+                      onChange={this.setClientName}
+                      type="text"
+                      placeholder="Enter your name"
+                    />
                     <Form.Text className="text-muted" />
                   </Form.Group>
                   <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control onChange={this.setClientEmail} type="email" placeholder="Enter email" />
+                    <Form.Control
+                      onChange={this.setClientEmail}
+                      type="email"
+                      placeholder="Enter email"
+                    />
                     <Form.Text className="text-muted" />
                   </Form.Group>
                   <Form.Group controlId="formComment">
                     <Form.Label>Write some comment here</Form.Label>
-                    <Form.Control onChange={this.setClientComment} as="textarea" rows="3" />
+                    <Form.Control
+                      onChange={this.setClientComment}
+                      as="textarea"
+                      rows="3"
+                      placeholder="Any additional info (e.g. share your social profile or clarify something)"
+                    />
                   </Form.Group>
                   <Button
                     variant="dark"
@@ -131,7 +159,7 @@ class ShopModal extends Component {
     );
   }
 }
-const mapStateToProps = (state) => ({
-  email: state.sendEmail.email,
+const mapStateToProps = state => ({
+  email: state.sendEmail.email
 });
 export default connect(mapStateToProps)(ShopModal);
