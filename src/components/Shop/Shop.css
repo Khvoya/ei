@@ -8,15 +8,16 @@
   border: none;
   background-color: unset;
   position: absolute;
-  top: 102px;
+  top: 20vh;
   margin: 0;
   z-index: 1;
 }
 .Shop__slider-arrow-left {
-  left: -40px;
+  left: -60px;
 }
 .Shop__slider-arrow-right {
-  right: -40px;
+  right: -60px;
+  transform: rotate(180deg);
 }
 
 .Shop__slider-arrow:focus,
@@ -56,13 +57,9 @@
     margin: 50px 30px;
   }
 }
-@media screen and (min-width: 501px) {
+
+@media screen and (max-width: 400px) {
   .Shop__slider-arrow {
-    top: 125px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .Shop__slider-arrow {
-    top: 176px;
+    display: none;
   }
 }

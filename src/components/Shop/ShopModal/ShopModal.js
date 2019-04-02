@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Modal, Form, Container, Col, Row } from "react-bootstrap";
+import { Button, Modal, Form, Container, Col, Row, Carousel } from "react-bootstrap";
 import { sendOrderMail } from "actionCreators/actionCreators";
 import './ShopModal.css';
 import {connect} from 'react-redux';
@@ -70,7 +70,14 @@ class ShopModal extends Component {
           <Container>
             <Row>
               <Col className="ShopModal__item-info d-flex justify-content-around">
-                <img src={image} alt={name} />
+                <Carousel
+                  controls={false}
+                  fade={true}
+                  pauseOnHover={false}
+                  interval={3000}
+                >
+                  {image.map(image => <img className="ShopModal__item-img" src={image} alt={name} />)}
+                </Carousel>
                 <div className="d-flex flex-column justify-content-around">
                   <span><strong>{name}</strong></span>
                   <span><strong>Material:</strong> {material}</span>

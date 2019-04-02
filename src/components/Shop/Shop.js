@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Shop.css";
 import { Container, Col, Row } from "react-bootstrap";
 import leftArrow from "../../media/icons/arrow-pointing-to-left.svg";
-import rightArrow from "../../media/icons/arrow-pointing-to-right.svg";
 import TinySlider from "tiny-slider-react";
 import ShopItem from "../../components/Shop/ShopItem/ShopItem";
 import connect from "react-redux/es/connect/connect";
@@ -12,21 +11,31 @@ class Shop extends Component {
 
   render() {
     const settings = {
+      autoplay: true,
+      autoplayButtonOutput: false,
       lazyload: true,
       loop: false,
       nav: false,
       rewind: true,
+      gutter: 20,
       arrowKeys: true,
       mouseDrag: true,
-      autoWidth: true,
+      autoHeight: true,
       speed: 500,
       controls: false,
       responsive: {
+        1600: {
+          items: 4
+        },
         1200: {
           items: 3
         },
-        900: {
+        800: {
+          autoWidth: true,
           items: 2
+        },
+        0: {
+          items: 1,
         }
       }
     };
@@ -66,7 +75,7 @@ class Shop extends Component {
             onClick={this.onGoTo("next")}
           >
             <img
-              src={rightArrow}
+              src={leftArrow}
               width="50px"
               height="50px"
               alt="right-arrow"

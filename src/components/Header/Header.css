@@ -13,7 +13,7 @@
   border-radius: 50%;
   box-shadow: 0 0 6px 5px white;
   position: absolute;
-  left: -10px;
+  left: -20px;
 }
 
 .Header__logo-link {
@@ -80,4 +80,7 @@
   .nav-item {
     padding-top: 15px;
   }
+    .Header__logo {
+        left: 0;
+    }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Button, ButtonToolbar } from 'react-bootstrap';
-import  ShopModal  from '../ShopModal/ShopModal'
+import { Button, ButtonToolbar } from "react-bootstrap";
+import ShopModal from "../ShopModal/ShopModal";
 import "./ShopItem.css";
 
 class ShopItem extends Component {
@@ -8,20 +8,21 @@ class ShopItem extends Component {
 
   render() {
     let modalClose = () => this.setState({ modalShow: false });
-    const {name, price, imageUrl, material, description, size} = this.props;
+    const { name, price, imageUrl, material, description, size } = this.props;
     return (
       <ButtonToolbar>
-        <Button onClick={() => this.setState({ modalShow: true })}>
-          <div className="ShopItem__wrap">
-            <div className="ShopItem">
-              <div className="ShopItem__image">
-                <img src={imageUrl} alt={name} />
-              </div>
-              <div className="ShopItem__text-wrap">
-                <div className="ShopItem__name">{name}</div>
-                <div className="ShopItem__price">{price}</div>
-                <div className="ShopItem__price">{material}</div>
-              </div>
+        <Button
+          className="ShopItem__wrap"
+          onClick={() => this.setState({ modalShow: true })}
+        >
+          <div className="ShopItem">
+            <div className="ShopItem__image">
+              <img className="" src={imageUrl[0]} alt={name} />
+            </div>
+            <div className="ShopItem__text-wrap">
+              <div className="ShopItem__name">{name}</div>
+              <div className="ShopItem__price">{price}</div>
+              <div className="ShopItem__price">{material}</div>
             </div>
           </div>
         </Button>
