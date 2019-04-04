@@ -15,8 +15,8 @@ export const welcome = (state = initialState, action) => {
     case `${FIREBASE_GET_WELCOME_BG}_FULFILLED`:
       return {
         ...state,
-        status: 'fulfilled',
-        url: action.payload,
+        status: "fulfilled",
+        url: action.payload
       };
     default: {
       return {

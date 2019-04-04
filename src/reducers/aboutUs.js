@@ -1,26 +1,26 @@
-import {FIREBASE_GET_ABOUT_US} from "actionCreators/actionTypes";
+import { FIREBASE_GET_ABOUT_US } from "actionCreators/actionTypes";
 
 const initialState = {
-  status: 'pending',
-  urls: [],
+  status: "pending",
+  urls: []
 };
 export const aboutUs = (state = initialState, action) => {
   const type = action.type;
-  switch(type){
+  switch (type) {
     case FIREBASE_GET_ABOUT_US:
       return {
         ...state,
-        status: 'pending',
+        status: "pending"
       };
     case `${FIREBASE_GET_ABOUT_US}_FULFILLED`:
       return {
         ...state,
-        status: 'fulfilled',
+        status: "fulfilled",
         urls: action.payload
       };
     default: {
       return {
-        ...state,
+        ...state
       };
     }
   }

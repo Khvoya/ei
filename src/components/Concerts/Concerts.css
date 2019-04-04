@@ -2,21 +2,20 @@
   background-color: black;
 }
 .Concerts__title {
-    margin: 4vw 0;
-    color: white;
+  margin: 4vw 0;
+  color: white;
 }
 .Concerts__text {
-    color: white;
-    margin-bottom: 6vw;
+  color: white;
+  margin-bottom: 6vw;
 }
 .Concerts__text a {
-    color: #545b62;
+  color: #545b62;
 }
 .Concerts__text a:hover {
-    cursor: pointer;
-    color: white;
+  cursor: pointer;
+  color: white;
 }
 .Concerts__content {
-    margin-bottom: 6vw;
+  margin-bottom: 6vw;
 }
-

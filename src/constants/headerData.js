@@ -12,35 +12,35 @@ export const headerData = [
   { name: "gigs", href: "#concerts" }
 ];
 
-export const dropDownData = [
+export const socialData = [
   {
-    name: 'Instagram',
+    name: "Instagram",
     img: instagram,
-    href: 'https://www.instagram.com/electricindians/'
+    href: "https://www.instagram.com/electricindians/"
   },
   {
-    name: 'Facebook',
+    name: "Facebook",
     img: facebook,
-    href: 'https://www.facebook.com/electricindians/'
+    href: "https://www.facebook.com/electricindians/"
   },
   {
-    name: 'Vk',
+    name: "Vk",
     img: vk,
-    href: 'https://vk.com/electricindians'
+    href: "https://vk.com/electricindians"
   },
   {
-    name: 'Youtube',
+    name: "Youtube",
     img: youtube,
-    href: 'https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg'
+    href: "https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
   },
   {
-    name: 'Bandcamp',
+    name: "Bandcamp",
     img: bandcamp,
-    href: 'https://electricindians.bandcamp.com/'
+    href: "https://electricindians.bandcamp.com/"
   },
   {
-    name: 'Twitter',
+    name: "Twitter",
     img: twitter,
-    href: 'https://twitter.com/Electricindian2'
-  },
+    href: "https://twitter.com/Electricindian2"
+  }
 ];

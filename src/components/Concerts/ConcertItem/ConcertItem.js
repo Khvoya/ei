@@ -1,21 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ConcertItem.css";
+import PropTypes from "prop-types";
 
-class ConcertItem extends Component {
-  render() {
-    const props = this.props;
-    return (
-      <a
-        href={props.link}
-        className="ConcertItem__link ConcertItem"
-        target="blank"
-      >
-        <div>{props.date}</div>
-        <div className="ConcertItem__country">{props.country}</div>
-        <div>{props.club}</div>
-      </a>
-    );
-  }
-}
-
+const ConcertItem = props => {
+  const { link, date, club, country } = props;
+  return (
+    <a href={link} className="ConcertItem__link ConcertItem" target="blank">
+      <div>{date}</div>
+      <div className="ConcertItem__country">{country}</div>
+      <div>{club}</div>
+    </a>
+  );
+};
+ConcertItem.propTypes = {
+  club: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
 export default ConcertItem;

@@ -15,7 +15,7 @@
 }
 .ShopItem:hover {
   cursor: pointer;
-  box-shadow: 0 0 12px 3px black;
+  box-shadow: 0 0 10px 4px black;
 }
 .ShopItem__images {
   display: flex;

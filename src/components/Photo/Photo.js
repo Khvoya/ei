@@ -4,23 +4,26 @@ import PhotoItem from "./PhotoItem/PhotoItem";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import "./Photo.css";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class Photo extends Component {
+  static propTypes = {
+    urls: PropTypes.arrayOf(PropTypes.string).isRequired
+  };
+
   state = {
-    activePhoto: null,
+    activePhoto: null
   };
 
   render() {
-    const { urls} = this.props;
-    const {activePhoto} = this.state;
+    const { urls } = this.props;
+    const { activePhoto } = this.state;
     const photoItems = urls.map((img, index) => (
       <button
         key={img}
         type="button"
-        onClick={() =>
-          this.setState({activePhoto: index })
-        }
+        onClick={() => this.setState({ activePhoto: index })}
       >
         <PhotoItem photo={img} />
       </button>
@@ -61,8 +64,9 @@ class Photo extends Component {
     );
   }
 }
-const mapStateToProps = (state) => ({
-  urls: state.photos.urls,
-});
-export default connect(mapStateToProps)(Photo);
 
+const mapStateToProps = state => ({
+  urls: state.photos.urls
+});
+
+export default connect(mapStateToProps)(Photo);

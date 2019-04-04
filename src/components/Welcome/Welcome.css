@@ -1,60 +1,60 @@
- .Welcome {
-     margin-top: 68px;
-     display: grid;
-     background-color: #000000;
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 80vw;
-     min-height: 70vh;
- }
- .Welcome .container {
-     align-self: end;
- }
- .Welcome__logo-container {
-     background-color: black;
-     margin: -2px 0;
- }
- .Welcome__logo-container-wrap {
-     height: 15vw;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
- }
- .Welcome__logo-container a {
-     position: relative;
-     width: 6vw;
-     height: 6vw;
-     border-radius: 50%;
-     border: 3px white;
- }
- .Welcome__logo {
-     top: 0;
-     left: 0;
-     position: absolute;
-     width: 6vw;
-     height: 6vw;
-     border-radius: 50%;
- }
- .Welcome__logo:hover {
-     border: 7vw white;
-     top: -5px;
-     left:-5px;
-     width: 7vw;
-     height: 7vw;
-     box-shadow: 0 0 20px 5px white , 0 0 20px 5px white inset;
-     transition: all .4s;
- }
+.Welcome {
+  margin-top: 68px;
+  display: grid;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vw;
+  min-height: 70vh;
+}
+.Welcome .container {
+  align-self: end;
+}
+.Welcome__logo-container {
+  background-color: black;
+  margin: -2px 0;
+}
+.Welcome__logo-container-wrap {
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Welcome__logo-container a {
+  position: relative;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  border: 3px white;
+}
+.Welcome__logo {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+}
+.Welcome__logo:hover {
+  border: 7vw white;
+  top: -5px;
+  left: -5px;
+  width: 7vw;
+  height: 7vw;
+  box-shadow: 0 0 20px 5px white, 0 0 20px 5px white inset;
+  transition: all 0.4s;
+}
 
 @media screen and (max-width: 600px) {
-    .Welcome {
-        background-size: 150%;
-        background-position: top;
-    }
-    .Welcome__logo {
-        width: 10vw;
-        height: 10vw;
-        top: -6px;
-        left: -6px;
-    }
+  .Welcome {
+    background-size: 150%;
+    background-position: top;
+  }
+  .Welcome__logo {
+    width: 10vw;
+    height: 10vw;
+    top: -6px;
+    left: -6px;
+  }
 }

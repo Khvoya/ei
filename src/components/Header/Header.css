@@ -28,7 +28,7 @@
 }
 
 .Header__link,
-.navbar-dark .navbar-nav .nav-link  {
+.navbar-dark .navbar-nav .nav-link {
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 50%;
@@ -80,7 +80,7 @@
   .nav-item {
     padding-top: 15px;
   }
-    .Header__logo {
-        left: 0;
-    }
+  .Header__logo {
+    left: 0;
+  }
 }

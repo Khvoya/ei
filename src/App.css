@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: Roboto;
+  font-family: Roboto, serif;
   opacity: 0.96;
   color: #000000;
 }
@@ -14,7 +14,7 @@
   font-size: 20px;
 }
 :focus {
-  outline: none
+  outline: none;
 }
 a {
   color: white;

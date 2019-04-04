@@ -1,19 +1,19 @@
 .ShopModal__item-img {
-    max-height: 400px;
-    max-width: 500px;
-    border-radius: 20px;
+  max-height: 400px;
+  max-width: 500px;
+  border-radius: 20px;
 }
 .ShopModal__item-info-text {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 991px) {
-    .ShopModal__item-info {
-        flex-direction: column;
-    }
+  .ShopModal__item-info {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 991px) {
-    .ShopModal__item-info-text {
-        margin-top: 0;
-    }
+  .ShopModal__item-info-text {
+    margin-top: 0;
+  }
 }

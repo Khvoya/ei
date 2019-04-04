@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./PhotoItem.css";
+import PropTypes from "prop-types";
 
-class PhotoItem extends Component {
-  render() {
-    return <img alt="photoItem" className="PhotoItem" src={this.props.photo} />;
-  }
-}
+const PhotoItem = props => {
+  return <img alt="photoItem" className="PhotoItem" src={props.photo} />;
+};
+
+PhotoItem.propTypes = {
+  photo: PropTypes.string.isRequired
+};
 
 export default PhotoItem;

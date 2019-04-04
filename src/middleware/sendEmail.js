@@ -10,13 +10,13 @@ export const sendOrderEmail = email => {
     {
       method: "post",
       body: email,
-      mode: 'no-cors'
+      mode: "no-cors"
     }
   )
     .then(res => {
       return res.data;
     })
     .catch(res => {
-      console.error(res)
+      console.error(res);
     });
 };

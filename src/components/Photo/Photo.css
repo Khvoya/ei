@@ -1,23 +1,23 @@
 .Photo {
-    padding-top: 6vw;
-    padding-bottom: 6vw;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
 }
 .Photo__container {
-    background-color: black;
+  background-color: black;
 }
 .Photo h1 {
-    color: white;
+  color: white;
 }
 .Photo__wrap {
-    padding-top: 4vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+  padding-top: 4vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .Photo__wrap button {
-    padding: 0;
-    border: none;
+  padding: 0;
+  border: none;
 }

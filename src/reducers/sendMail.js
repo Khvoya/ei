@@ -2,7 +2,7 @@ import { SEND_ORDER_REQUEST_MAIL } from "actionCreators/actionTypes";
 
 const initialState = {
   status: "pending",
-  email: ''
+  email: ""
 };
 export const sendEmail = (state = initialState, action) => {
   const type = action.type;

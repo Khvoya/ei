@@ -11,10 +11,22 @@ import {
 import { sendOrderMail } from "actionCreators/actionCreators";
 import "./ShopModal.css";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class ShopModal extends Component {
+  static propTypes = {
+    description: PropTypes.string.isRequired,
+    image: PropTypes.arrayOf(PropTypes.string).isRequired,
+    material: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    hide: PropTypes.func.isRequired,
+    price: PropTypes.string.isRequired,
+    show: PropTypes.bool.isRequired,
+    size: PropTypes.string.isRequired
+  };
+
   emailSender = () => {
-    const { name, price, size, onHide } = this.props;
+    const { name, price, size, hide } = this.props;
     const { userName, emailAddress, comment } = this.state;
     const email = `Request to purchase: 
     Item name: ${name},
@@ -27,7 +39,9 @@ class ShopModal extends Component {
     Email address: ${emailAddress},
     Additional comment: ${comment}
     `;
-    onHide();
+
+    hide();
+
     this.props.dispatch(sendOrderMail(email));
   };
 
@@ -51,7 +65,8 @@ class ShopModal extends Component {
       image,
       material,
       size,
-      onHide
+      hide,
+      id
     } = this.props;
 
     return (
@@ -61,6 +76,7 @@ class ShopModal extends Component {
         aria-labelledby="contained-modal-title-vcenter"
         centered
         restoreFocus={false}
+        onHide={hide}
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
@@ -82,6 +98,7 @@ class ShopModal extends Component {
                       className="ShopModal__item-img"
                       src={image}
                       alt={name}
+                      key={id}
                     />
                   ))}
                 </Carousel>
@@ -145,7 +162,7 @@ class ShopModal extends Component {
                     type="button"
                     onClick={this.emailSender}
                   >
-                    Submit
+                    Purchase
                   </Button>
                 </Form>
               </Col>
@@ -153,7 +170,7 @@ class ShopModal extends Component {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={onHide}>Close</Button>
+          <Button onClick={hide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
