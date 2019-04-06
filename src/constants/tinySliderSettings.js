@@ -1,6 +1,6 @@
 export const settings = {
-  autoplay: true,
-  autoplayButtonOutput: false,
+  // autoplay: true,
+  // autoplayButtonOutput: false,
   lazyload: true,
   loop: false,
   nav: false,
@@ -23,7 +23,7 @@ export const settings = {
       items: 2
     },
     0: {
-      items: 1
+      items: 1,
     }
   }
 };

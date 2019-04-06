@@ -8,15 +8,15 @@
   border: none;
   background-color: unset;
   position: absolute;
-  top: 20vh;
+  top: 22vh;
   margin: 0;
   z-index: 1;
 }
 .Shop__slider-arrow-left {
-  left: -60px;
+  left: -40px;
 }
 .Shop__slider-arrow-right {
-  right: -60px;
+  right: -40px;
   transform: rotate(180deg);
 }
 
@@ -55,11 +55,5 @@
 @media screen and (max-width: 767px) {
   .Shop__slider-arrow {
     margin: 50px 30px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .Shop__slider-arrow {
-    display: none;
   }
 }

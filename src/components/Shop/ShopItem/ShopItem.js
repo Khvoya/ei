@@ -21,6 +21,13 @@ class ShopItem extends Component {
 
   render() {
     const { name, price, imageUrl, material, description, size } = this.props;
+
+    const images = imageUrl.map(image => (
+      <div className="ShopItem__images" key={image}>
+        <img className="ShopItem__image" src={image} alt={name} />
+      </div>
+    ));
+
     return (
       <ButtonToolbar>
         <Button
@@ -35,16 +42,7 @@ class ShopItem extends Component {
               pauseOnHover={false}
               interval={2000}
             >
-              <div className="ShopItem__images">
-                {imageUrl.map(image => (
-                  <img
-                    className="ShopItem__image"
-                    src={image}
-                    alt={name}
-                    key={image}
-                  />
-                ))}
-              </div>
+              {images}
             </Carousel>
 
             <div className="ShopItem__text-wrap">
@@ -56,7 +54,7 @@ class ShopItem extends Component {
         </Button>
         <ShopModal
           show={this.state.modalShow}
-          hide={this.modalClose}
+          onHide={this.modalClose}
           name={name}
           price={price}
           image={imageUrl}

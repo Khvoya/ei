@@ -7,7 +7,6 @@ import {
   SEND_ORDER_REQUEST_MAIL
 } from "./actionTypes";
 import { refs, getDbCollection } from "middleware/firebase";
-import { sendOrderEmail } from "middleware/sendEmail";
 
 export const getImageRef = (bucket, counter, alone = false) => ({
   type: FIREBASE_GET_IMAGE_REFS,
@@ -34,7 +33,24 @@ export const getShopData = () => ({
   payload: getDbCollection("shopItems")
 });
 
-export const sendOrderMail = email => ({
+export const sendOrderMail = ({ name, price, email, comment }) => ({
   type: SEND_ORDER_REQUEST_MAIL,
-  payload: sendOrderEmail(email)
+  payload: fetch(
+    "https://us-central1-electricindians.cloudfunctions.net/mailer/",
+    {
+      method: "POST",
+      mode: "no-cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name,
+        price,
+        email,
+        comment
+      })
+    }
+  )
 });

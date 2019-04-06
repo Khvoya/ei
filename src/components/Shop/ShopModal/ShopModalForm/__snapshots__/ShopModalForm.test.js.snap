@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShopModalForm should render correctly 1`] = `
+<Form
+  as="form"
+  inline={false}
+  noValidate={true}
+  onSubmit={[Function]}
+  validated={false}
+>
+  <FormGroup
+    as="div"
+    controlId="formBasicEmail"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Email address
+    </FormLabel>
+    <FormControl
+      as="input"
+      onChange={[Function]}
+      placeholder="Enter email"
+      required={true}
+      type="email"
+    />
+    <FormText
+      as="small"
+      className="text-muted"
+    />
+  </FormGroup>
+  <FormGroup
+    as="div"
+    controlId="formComment"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Write some comment here
+    </FormLabel>
+    <FormControl
+      as="textarea"
+      onChange={[Function]}
+      placeholder="Any additional info (e.g. share your social profile or clarify something)"
+      rows="3"
+    />
+  </FormGroup>
+  <Button
+    active={false}
+    disabled={false}
+    type="submit"
+    variant="dark"
+  >
+    Order item
+  </Button>
+</Form>
+`;

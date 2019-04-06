@@ -23,23 +23,29 @@ const APP_NAME = "Electric Indians";
 const app = express();
 
 app.post("/", (req, res) => {
+  const {name, price, comment, email: emailAddress} = JSON.parse(req.body);
+  const mail = `Request to purchase: 
+    Item name: ${name} ${price},
+    
+    Contact data:
+    
+    Email address: ${emailAddress},
+    Additional comment: ${comment || 'none'} 
+    `;
   const mailOptions = {
     from: `${APP_NAME} <noreply@firebase.com>`,
     to: gmailEmail,
-    text: req.body,
+    text: mail,
     subject: "New order request"
   };
-  return mailTransport
+
+  mailTransport
     .sendMail(mailOptions)
     .then(() => {
-      return res.send({
-        sent: true
-      });
+      return res.send({sent: true});
     })
     .catch(() => {
-      return res.send({
-        sent: false
-      });
+      return res.send({sent: false});
     });
 });
 exports.mailer = functions.https.onRequest(app);

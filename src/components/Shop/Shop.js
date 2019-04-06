@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Shop.css";
 import { Container, Col, Row } from "react-bootstrap";
-import leftArrow from "../../media/icons/arrow-pointing-to-left.svg";
+import leftArrow from "media/icons/arrow-pointing-to-left.svg";
 import TinySlider from "tiny-slider-react";
-import ShopItem from "../../components/Shop/ShopItem/ShopItem";
+import ShopItem from "components/Shop/ShopItem/ShopItem";
 import { settings } from "constants/tinySliderSettings";
 import connect from "react-redux/es/connect/connect";
 import PropTypes from "prop-types";

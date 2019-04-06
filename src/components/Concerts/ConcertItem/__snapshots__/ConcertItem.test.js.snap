@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConcertItem should render correctly 1`] = `
+<a
+  className="ConcertItem__link ConcertItem"
+  target="blank"
+>
+  <div />
+  <div
+    className="ConcertItem__country"
+  />
+  <div />
+</a>
+`;

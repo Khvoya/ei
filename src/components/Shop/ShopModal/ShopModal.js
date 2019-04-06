@@ -1,17 +1,8 @@
 import React, { Component } from "react";
-import {
-  Button,
-  Modal,
-  Form,
-  Container,
-  Col,
-  Row,
-  Carousel
-} from "react-bootstrap";
-import { sendOrderMail } from "actionCreators/actionCreators";
+import { Button, Modal, Container, Col, Row, Carousel } from "react-bootstrap";
 import "./ShopModal.css";
-import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import ShopModalForm from "./ShopModalForm/ShopModalForm";
 
 class ShopModal extends Component {
   static propTypes = {
@@ -19,42 +10,10 @@ class ShopModal extends Component {
     image: PropTypes.arrayOf(PropTypes.string).isRequired,
     material: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    hide: PropTypes.func.isRequired,
+    onHide: PropTypes.func.isRequired,
     price: PropTypes.string.isRequired,
     show: PropTypes.bool.isRequired,
     size: PropTypes.string.isRequired
-  };
-
-  emailSender = () => {
-    const { name, price, size, hide } = this.props;
-    const { userName, emailAddress, comment } = this.state;
-    const email = `Request to purchase: 
-    Item name: ${name},
-    Item size: ${size},
-    Item price: ${price},
-    
-    Contact data:
-    
-    Client name: ${userName},
-    Email address: ${emailAddress},
-    Additional comment: ${comment}
-    `;
-
-    hide();
-
-    this.props.dispatch(sendOrderMail(email));
-  };
-
-  setClientName = e => {
-    this.setState({ userName: e.target.value });
-  };
-
-  setClientEmail = e => {
-    this.setState({ emailAddress: e.target.value });
-  };
-
-  setClientComment = e => {
-    this.setState({ comment: e.target.value });
   };
 
   render() {
@@ -65,8 +24,7 @@ class ShopModal extends Component {
       image,
       material,
       size,
-      hide,
-      id
+      onHide
     } = this.props;
 
     return (
@@ -76,7 +34,7 @@ class ShopModal extends Component {
         aria-labelledby="contained-modal-title-vcenter"
         centered
         restoreFocus={false}
-        onHide={hide}
+        onHide={onHide}
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
@@ -98,7 +56,7 @@ class ShopModal extends Component {
                       className="ShopModal__item-img"
                       src={image}
                       alt={name}
-                      key={id}
+                      key={image}
                     />
                   ))}
                 </Carousel>
@@ -129,54 +87,17 @@ class ShopModal extends Component {
             </Row>
             <Row>
               <Col>
-                <Form>
-                  <Form.Group controlId="name">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control
-                      onChange={this.setClientName}
-                      type="text"
-                      placeholder="Enter your name"
-                    />
-                    <Form.Text className="text-muted" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control
-                      onChange={this.setClientEmail}
-                      type="email"
-                      placeholder="Enter email"
-                    />
-                    <Form.Text className="text-muted" />
-                  </Form.Group>
-                  <Form.Group controlId="formComment">
-                    <Form.Label>Write some comment here</Form.Label>
-                    <Form.Control
-                      onChange={this.setClientComment}
-                      as="textarea"
-                      rows="3"
-                      placeholder="Any additional info (e.g. share your social profile or clarify something)"
-                    />
-                  </Form.Group>
-                  <Button
-                    variant="dark"
-                    type="button"
-                    onClick={this.emailSender}
-                  >
-                    Purchase
-                  </Button>
-                </Form>
+                <ShopModalForm name={name} price={price} onHide={onHide} />
               </Col>
             </Row>
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={hide}>Close</Button>
+          <Button onClick={onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
   }
 }
-const mapStateToProps = state => ({
-  email: state.sendEmail.email
-});
-export default connect(mapStateToProps)(ShopModal);
+
+export default ShopModal;
