@@ -1,123 +1,1584 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer should render correctly 1`] = `
-<div
-  className="Footer__bg"
->
-  <Container
-    as="div"
-    className="Footer"
-    fluid={false}
-  >
-    <Bootstrap(Row)
-      className="Footer__wrap"
-    >
-      <Col
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ForwardRef
         as="div"
-        className="Footer__coop"
-        lg={4}
-        md={4}
-        xl={4}
+        className="Footer"
+        fluid={false}
       >
-        <a
-          href="mailto:electricindiansband@gmail.com"
+        <ForwardRef(render)
+          className="Footer__wrap"
         >
-          electricindiansband@gmail.com
-        </a>
-      </Col>
-      <Col
-        as="div"
-        className="Footer__social"
-        lg={4}
-        md={4}
-        xl={4}
-      >
-        <div
-          className="Footer__social-wrap"
+          <ForwardRef
+            as="div"
+            className="Footer__coop"
+            lg={4}
+            md={4}
+            xl={4}
+          >
+            <a
+              href="mailto:electricindiansband@gmail.com"
+            >
+              electricindiansband@gmail.com
+            </a>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            className="Footer__social"
+            lg={4}
+            md={4}
+            xl={4}
+          >
+            <div
+              className="Footer__social-wrap"
+            >
+              <a
+                href="https://www.instagram.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Instagram"
+                  className="Footer__social-icon"
+                  src="instagram-logo.svg"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Facebook"
+                  className="Footer__social-icon"
+                  src="facebook-logo-button.svg"
+                />
+              </a>
+              <a
+                href="https://vk.com/electricindians"
+                target="blank"
+              >
+                <img
+                  alt="Vk"
+                  className="Footer__social-icon"
+                  src="vk-social-logotype.svg"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                target="blank"
+              >
+                <img
+                  alt="Youtube"
+                  className="Footer__social-icon"
+                  src="youtube-logotype.svg"
+                />
+              </a>
+              <a
+                href="https://electricindians.bandcamp.com/"
+                target="blank"
+              >
+                <img
+                  alt="Bandcamp"
+                  className="Footer__social-icon"
+                  src="bandcamp-logo.svg"
+                />
+              </a>
+              <a
+                href="https://twitter.com/Electricindian2"
+                target="blank"
+              >
+                <img
+                  alt="Twitter"
+                  className="Footer__social-icon"
+                  src="twitter-logo-button.svg"
+                />
+              </a>
+            </div>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            className="Footer__year"
+            lg={4}
+            md={4}
+            sm={12}
+            xl={4}
+          >
+            <span
+              className="Footer__dev-info-r"
+            >
+              Electric Indians 2019 ©
+            </span>
+          </ForwardRef>
+        </ForwardRef(render)>
+      </ForwardRef>,
+      "className": "Footer__bg",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "as": "div",
+        "children": <ForwardRef(render)
+          className="Footer__wrap"
         >
-          <a
-            href="https://www.instagram.com/electricindians/"
-            key="Instagram"
-            target="blank"
+          <ForwardRef
+            as="div"
+            className="Footer__coop"
+            lg={4}
+            md={4}
+            xl={4}
           >
-            <img
-              alt="Instagram"
-              className="Footer__social-icon"
-              src="instagram-logo.svg"
-            />
-          </a>
-          <a
-            href="https://www.facebook.com/electricindians/"
-            key="Facebook"
-            target="blank"
+            <a
+              href="mailto:electricindiansband@gmail.com"
+            >
+              electricindiansband@gmail.com
+            </a>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            className="Footer__social"
+            lg={4}
+            md={4}
+            xl={4}
           >
-            <img
-              alt="Facebook"
-              className="Footer__social-icon"
-              src="facebook-logo-button.svg"
-            />
-          </a>
-          <a
-            href="https://vk.com/electricindians"
-            key="Vk"
-            target="blank"
+            <div
+              className="Footer__social-wrap"
+            >
+              <a
+                href="https://www.instagram.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Instagram"
+                  className="Footer__social-icon"
+                  src="instagram-logo.svg"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Facebook"
+                  className="Footer__social-icon"
+                  src="facebook-logo-button.svg"
+                />
+              </a>
+              <a
+                href="https://vk.com/electricindians"
+                target="blank"
+              >
+                <img
+                  alt="Vk"
+                  className="Footer__social-icon"
+                  src="vk-social-logotype.svg"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                target="blank"
+              >
+                <img
+                  alt="Youtube"
+                  className="Footer__social-icon"
+                  src="youtube-logotype.svg"
+                />
+              </a>
+              <a
+                href="https://electricindians.bandcamp.com/"
+                target="blank"
+              >
+                <img
+                  alt="Bandcamp"
+                  className="Footer__social-icon"
+                  src="bandcamp-logo.svg"
+                />
+              </a>
+              <a
+                href="https://twitter.com/Electricindian2"
+                target="blank"
+              >
+                <img
+                  alt="Twitter"
+                  className="Footer__social-icon"
+                  src="twitter-logo-button.svg"
+                />
+              </a>
+            </div>
+          </ForwardRef>
+          <ForwardRef
+            as="div"
+            className="Footer__year"
+            lg={4}
+            md={4}
+            sm={12}
+            xl={4}
           >
-            <img
-              alt="Vk"
-              className="Footer__social-icon"
-              src="vk-social-logotype.svg"
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
-            key="Youtube"
-            target="blank"
-          >
-            <img
-              alt="Youtube"
-              className="Footer__social-icon"
-              src="youtube-logotype.svg"
-            />
-          </a>
-          <a
-            href="https://electricindians.bandcamp.com/"
-            key="Bandcamp"
-            target="blank"
-          >
-            <img
-              alt="Bandcamp"
-              className="Footer__social-icon"
-              src="bandcamp-logo.svg"
-            />
-          </a>
-          <a
-            href="https://twitter.com/Electricindian2"
-            key="Twitter"
-            target="blank"
-          >
-            <img
-              alt="Twitter"
-              className="Footer__social-icon"
-              src="twitter-logo-button.svg"
-            />
-          </a>
-        </div>
-      </Col>
-      <Col
-        as="div"
-        className="Footer__year"
-        lg={4}
-        md={4}
-        sm={12}
-        xl={4}
-      >
-        <span
-          className="Footer__dev-info-r"
+            <span
+              className="Footer__dev-info-r"
+            >
+              Electric Indians 2019 ©
+            </span>
+          </ForwardRef>
+        </ForwardRef(render)>,
+        "className": "Footer",
+        "fluid": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef
+              as="div"
+              className="Footer__coop"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <a
+                href="mailto:electricindiansband@gmail.com"
+              >
+                electricindiansband@gmail.com
+              </a>
+            </ForwardRef>,
+            <ForwardRef
+              as="div"
+              className="Footer__social"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <div
+                className="Footer__social-wrap"
+              >
+                <a
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    className="Footer__social-icon"
+                    src="instagram-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    className="Footer__social-icon"
+                    src="facebook-logo-button.svg"
+                  />
+                </a>
+                <a
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    className="Footer__social-icon"
+                    src="vk-social-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    className="Footer__social-icon"
+                    src="youtube-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    className="Footer__social-icon"
+                    src="bandcamp-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    className="Footer__social-icon"
+                    src="twitter-logo-button.svg"
+                  />
+                </a>
+              </div>
+            </ForwardRef>,
+            <ForwardRef
+              as="div"
+              className="Footer__year"
+              lg={4}
+              md={4}
+              sm={12}
+              xl={4}
+            >
+              <span
+                className="Footer__dev-info-r"
+              >
+                Electric Indians 2019 ©
+              </span>
+            </ForwardRef>,
+          ],
+          "className": "Footer__wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": <a
+                href="mailto:electricindiansband@gmail.com"
+              >
+                electricindiansband@gmail.com
+              </a>,
+              "className": "Footer__coop",
+              "lg": 4,
+              "md": 4,
+              "xl": 4,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "electricindiansband@gmail.com",
+                "href": "mailto:electricindiansband@gmail.com",
+              },
+              "ref": null,
+              "rendered": "electricindiansband@gmail.com",
+              "type": "a",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+              },
+              "displayName": "Col",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": <div
+                className="Footer__social-wrap"
+              >
+                <a
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    className="Footer__social-icon"
+                    src="instagram-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    className="Footer__social-icon"
+                    src="facebook-logo-button.svg"
+                  />
+                </a>
+                <a
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    className="Footer__social-icon"
+                    src="vk-social-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    className="Footer__social-icon"
+                    src="youtube-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    className="Footer__social-icon"
+                    src="bandcamp-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    className="Footer__social-icon"
+                    src="twitter-logo-button.svg"
+                  />
+                </a>
+              </div>,
+              "className": "Footer__social",
+              "lg": 4,
+              "md": 4,
+              "xl": 4,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      className="Footer__social-icon"
+                      src="instagram-logo.svg"
+                    />
+                  </a>,
+                  <a
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      className="Footer__social-icon"
+                      src="facebook-logo-button.svg"
+                    />
+                  </a>,
+                  <a
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      className="Footer__social-icon"
+                      src="vk-social-logotype.svg"
+                    />
+                  </a>,
+                  <a
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      className="Footer__social-icon"
+                      src="youtube-logotype.svg"
+                    />
+                  </a>,
+                  <a
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      className="Footer__social-icon"
+                      src="bandcamp-logo.svg"
+                    />
+                  </a>,
+                  <a
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      className="Footer__social-icon"
+                      src="twitter-logo-button.svg"
+                    />
+                  </a>,
+                ],
+                "className": "Footer__social-wrap",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "Instagram",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Instagram"
+                      className="Footer__social-icon"
+                      src="instagram-logo.svg"
+                    />,
+                    "href": "https://www.instagram.com/electricindians/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Instagram",
+                      "className": "Footer__social-icon",
+                      "src": "instagram-logo.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": "Facebook",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Facebook"
+                      className="Footer__social-icon"
+                      src="facebook-logo-button.svg"
+                    />,
+                    "href": "https://www.facebook.com/electricindians/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Facebook",
+                      "className": "Footer__social-icon",
+                      "src": "facebook-logo-button.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": "Vk",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Vk"
+                      className="Footer__social-icon"
+                      src="vk-social-logotype.svg"
+                    />,
+                    "href": "https://vk.com/electricindians",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Vk",
+                      "className": "Footer__social-icon",
+                      "src": "vk-social-logotype.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": "Youtube",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Youtube"
+                      className="Footer__social-icon"
+                      src="youtube-logotype.svg"
+                    />,
+                    "href": "https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Youtube",
+                      "className": "Footer__social-icon",
+                      "src": "youtube-logotype.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": "Bandcamp",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Bandcamp"
+                      className="Footer__social-icon"
+                      src="bandcamp-logo.svg"
+                    />,
+                    "href": "https://electricindians.bandcamp.com/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Bandcamp",
+                      "className": "Footer__social-icon",
+                      "src": "bandcamp-logo.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+                Object {
+                  "instance": null,
+                  "key": "Twitter",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="Twitter"
+                      className="Footer__social-icon"
+                      src="twitter-logo-button.svg"
+                    />,
+                    "href": "https://twitter.com/Electricindian2",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Twitter",
+                      "className": "Footer__social-icon",
+                      "src": "twitter-logo-button.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "a",
+                },
+              ],
+              "type": "div",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+              },
+              "displayName": "Col",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": <span
+                className="Footer__dev-info-r"
+              >
+                Electric Indians 2019 ©
+              </span>,
+              "className": "Footer__year",
+              "lg": 4,
+              "md": 4,
+              "sm": 12,
+              "xl": 4,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Electric Indians 2019 ©",
+                "className": "Footer__dev-info-r",
+              },
+              "ref": null,
+              "rendered": "Electric Indians 2019 ©",
+              "type": "span",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+              },
+              "displayName": "Col",
+              "render": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "Bootstrap(Row)",
+          "propTypes": undefined,
+          "render": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "as": "div",
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
+      },
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          as="div"
+          className="Footer"
+          fluid={false}
         >
-          Electric Indians 2019 ©
-        </span>
-      </Col>
-    </Bootstrap(Row)>
-  </Container>
-</div>
+          <ForwardRef(render)
+            className="Footer__wrap"
+          >
+            <ForwardRef
+              as="div"
+              className="Footer__coop"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <a
+                href="mailto:electricindiansband@gmail.com"
+              >
+                electricindiansband@gmail.com
+              </a>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              className="Footer__social"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <div
+                className="Footer__social-wrap"
+              >
+                <a
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    className="Footer__social-icon"
+                    src="instagram-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    className="Footer__social-icon"
+                    src="facebook-logo-button.svg"
+                  />
+                </a>
+                <a
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    className="Footer__social-icon"
+                    src="vk-social-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    className="Footer__social-icon"
+                    src="youtube-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    className="Footer__social-icon"
+                    src="bandcamp-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    className="Footer__social-icon"
+                    src="twitter-logo-button.svg"
+                  />
+                </a>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              className="Footer__year"
+              lg={4}
+              md={4}
+              sm={12}
+              xl={4}
+            >
+              <span
+                className="Footer__dev-info-r"
+              >
+                Electric Indians 2019 ©
+              </span>
+            </ForwardRef>
+          </ForwardRef(render)>
+        </ForwardRef>,
+        "className": "Footer__bg",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "div",
+          "children": <ForwardRef(render)
+            className="Footer__wrap"
+          >
+            <ForwardRef
+              as="div"
+              className="Footer__coop"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <a
+                href="mailto:electricindiansband@gmail.com"
+              >
+                electricindiansband@gmail.com
+              </a>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              className="Footer__social"
+              lg={4}
+              md={4}
+              xl={4}
+            >
+              <div
+                className="Footer__social-wrap"
+              >
+                <a
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    className="Footer__social-icon"
+                    src="instagram-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    className="Footer__social-icon"
+                    src="facebook-logo-button.svg"
+                  />
+                </a>
+                <a
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    className="Footer__social-icon"
+                    src="vk-social-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    className="Footer__social-icon"
+                    src="youtube-logotype.svg"
+                  />
+                </a>
+                <a
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    className="Footer__social-icon"
+                    src="bandcamp-logo.svg"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    className="Footer__social-icon"
+                    src="twitter-logo-button.svg"
+                  />
+                </a>
+              </div>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+              className="Footer__year"
+              lg={4}
+              md={4}
+              sm={12}
+              xl={4}
+            >
+              <span
+                className="Footer__dev-info-r"
+              >
+                Electric Indians 2019 ©
+              </span>
+            </ForwardRef>
+          </ForwardRef(render)>,
+          "className": "Footer",
+          "fluid": false,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef
+                as="div"
+                className="Footer__coop"
+                lg={4}
+                md={4}
+                xl={4}
+              >
+                <a
+                  href="mailto:electricindiansband@gmail.com"
+                >
+                  electricindiansband@gmail.com
+                </a>
+              </ForwardRef>,
+              <ForwardRef
+                as="div"
+                className="Footer__social"
+                lg={4}
+                md={4}
+                xl={4}
+              >
+                <div
+                  className="Footer__social-wrap"
+                >
+                  <a
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      className="Footer__social-icon"
+                      src="instagram-logo.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      className="Footer__social-icon"
+                      src="facebook-logo-button.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      className="Footer__social-icon"
+                      src="vk-social-logotype.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      className="Footer__social-icon"
+                      src="youtube-logotype.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      className="Footer__social-icon"
+                      src="bandcamp-logo.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      className="Footer__social-icon"
+                      src="twitter-logo-button.svg"
+                    />
+                  </a>
+                </div>
+              </ForwardRef>,
+              <ForwardRef
+                as="div"
+                className="Footer__year"
+                lg={4}
+                md={4}
+                sm={12}
+                xl={4}
+              >
+                <span
+                  className="Footer__dev-info-r"
+                >
+                  Electric Indians 2019 ©
+                </span>
+              </ForwardRef>,
+            ],
+            "className": "Footer__wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <a
+                  href="mailto:electricindiansband@gmail.com"
+                >
+                  electricindiansband@gmail.com
+                </a>,
+                "className": "Footer__coop",
+                "lg": 4,
+                "md": 4,
+                "xl": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "electricindiansband@gmail.com",
+                  "href": "mailto:electricindiansband@gmail.com",
+                },
+                "ref": null,
+                "rendered": "electricindiansband@gmail.com",
+                "type": "a",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <div
+                  className="Footer__social-wrap"
+                >
+                  <a
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      className="Footer__social-icon"
+                      src="instagram-logo.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      className="Footer__social-icon"
+                      src="facebook-logo-button.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      className="Footer__social-icon"
+                      src="vk-social-logotype.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      className="Footer__social-icon"
+                      src="youtube-logotype.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      className="Footer__social-icon"
+                      src="bandcamp-logo.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      className="Footer__social-icon"
+                      src="twitter-logo-button.svg"
+                    />
+                  </a>
+                </div>,
+                "className": "Footer__social",
+                "lg": 4,
+                "md": 4,
+                "xl": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <a
+                      href="https://www.instagram.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Instagram"
+                        className="Footer__social-icon"
+                        src="instagram-logo.svg"
+                      />
+                    </a>,
+                    <a
+                      href="https://www.facebook.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Facebook"
+                        className="Footer__social-icon"
+                        src="facebook-logo-button.svg"
+                      />
+                    </a>,
+                    <a
+                      href="https://vk.com/electricindians"
+                      target="blank"
+                    >
+                      <img
+                        alt="Vk"
+                        className="Footer__social-icon"
+                        src="vk-social-logotype.svg"
+                      />
+                    </a>,
+                    <a
+                      href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                      target="blank"
+                    >
+                      <img
+                        alt="Youtube"
+                        className="Footer__social-icon"
+                        src="youtube-logotype.svg"
+                      />
+                    </a>,
+                    <a
+                      href="https://electricindians.bandcamp.com/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Bandcamp"
+                        className="Footer__social-icon"
+                        src="bandcamp-logo.svg"
+                      />
+                    </a>,
+                    <a
+                      href="https://twitter.com/Electricindian2"
+                      target="blank"
+                    >
+                      <img
+                        alt="Twitter"
+                        className="Footer__social-icon"
+                        src="twitter-logo-button.svg"
+                      />
+                    </a>,
+                  ],
+                  "className": "Footer__social-wrap",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "Instagram",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Instagram"
+                        className="Footer__social-icon"
+                        src="instagram-logo.svg"
+                      />,
+                      "href": "https://www.instagram.com/electricindians/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Instagram",
+                        "className": "Footer__social-icon",
+                        "src": "instagram-logo.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Facebook",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Facebook"
+                        className="Footer__social-icon"
+                        src="facebook-logo-button.svg"
+                      />,
+                      "href": "https://www.facebook.com/electricindians/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Facebook",
+                        "className": "Footer__social-icon",
+                        "src": "facebook-logo-button.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Vk",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Vk"
+                        className="Footer__social-icon"
+                        src="vk-social-logotype.svg"
+                      />,
+                      "href": "https://vk.com/electricindians",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Vk",
+                        "className": "Footer__social-icon",
+                        "src": "vk-social-logotype.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Youtube",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Youtube"
+                        className="Footer__social-icon"
+                        src="youtube-logotype.svg"
+                      />,
+                      "href": "https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Youtube",
+                        "className": "Footer__social-icon",
+                        "src": "youtube-logotype.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Bandcamp",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Bandcamp"
+                        className="Footer__social-icon"
+                        src="bandcamp-logo.svg"
+                      />,
+                      "href": "https://electricindians.bandcamp.com/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Bandcamp",
+                        "className": "Footer__social-icon",
+                        "src": "bandcamp-logo.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Twitter",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="Twitter"
+                        className="Footer__social-icon"
+                        src="twitter-logo-button.svg"
+                      />,
+                      "href": "https://twitter.com/Electricindian2",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "Twitter",
+                        "className": "Footer__social-icon",
+                        "src": "twitter-logo-button.svg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "a",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": <span
+                  className="Footer__dev-info-r"
+                >
+                  Electric Indians 2019 ©
+                </span>,
+                "className": "Footer__year",
+                "lg": 4,
+                "md": 4,
+                "sm": 12,
+                "xl": 4,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Electric Indians 2019 ©",
+                  "className": "Footer__dev-info-r",
+                },
+                "ref": null,
+                "rendered": "Electric Indians 2019 ©",
+                "type": "span",
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "Col",
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "Bootstrap(Row)",
+            "propTypes": undefined,
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "div",
+            "fluid": false,
+          },
+          "displayName": "Container",
+          "render": [Function],
+        },
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;

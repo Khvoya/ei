@@ -1,14 +1,24 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
-import ShopModal from './ShopModal';
+import { ShopModal } from './ShopModal';
 
 describe('ShopModal', () => {
 
+  const props = {
+    description: 'test description',
+    image: ['https://test-image1.url', 'https://test-image2.url'],
+    material: 'material',
+    name: 'test name',
+    onHide: () => {},
+    price: '99',
+    show: false,
+    size: 'xl'
+  };
+
   it('should render correctly', () => {
     const output = shallow(
-      <ShopModal />
+      <ShopModal {...props}/>
     );
-    expect(shallowToJson(output)).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 });

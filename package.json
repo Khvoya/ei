@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "enzyme-to-json": "^3.3.5",
     "firebase": "5.8.4",
     "firebase-tools": "^6.5.2",
     "react": "^16.8.1",
@@ -14,7 +13,6 @@
     "react-image-lightbox": "^5.1.0",
     "react-redux": "^6.0.1",
     "react-scripts": "^2.1.8",
-    "react-test-renderer": "^16.8.6",
     "redux": "^4.0.1",
     "redux-promise-middleware": "^6.1.0",
     "tiny-slider-react": "^0.3.7"

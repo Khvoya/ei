@@ -1,14 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ConcertItem should render correctly 1`] = `
-<a
-  className="ConcertItem__link ConcertItem"
-  target="blank"
->
-  <div />
-  <div
-    className="ConcertItem__country"
-  />
-  <div />
-</a>
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ConcertItem
+    club="Port Sevkabel"
+    country="Russia, Saint-Petersburg"
+    date="09.06.2019"
+    link="https://vk.com/duhulits2"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          09.06.2019
+        </div>,
+        <div
+          className="ConcertItem__country"
+        >
+          Russia, Saint-Petersburg
+        </div>,
+        <div>
+          Port Sevkabel
+        </div>,
+      ],
+      "className": "ConcertItem__link ConcertItem",
+      "href": "https://vk.com/duhulits2",
+      "target": "blank",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "09.06.2019",
+        },
+        "ref": null,
+        "rendered": "09.06.2019",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Russia, Saint-Petersburg",
+          "className": "ConcertItem__country",
+        },
+        "ref": null,
+        "rendered": "Russia, Saint-Petersburg",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Port Sevkabel",
+        },
+        "ref": null,
+        "rendered": "Port Sevkabel",
+        "type": "div",
+      },
+    ],
+    "type": "a",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            09.06.2019
+          </div>,
+          <div
+            className="ConcertItem__country"
+          >
+            Russia, Saint-Petersburg
+          </div>,
+          <div>
+            Port Sevkabel
+          </div>,
+        ],
+        "className": "ConcertItem__link ConcertItem",
+        "href": "https://vk.com/duhulits2",
+        "target": "blank",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "09.06.2019",
+          },
+          "ref": null,
+          "rendered": "09.06.2019",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Russia, Saint-Petersburg",
+            "className": "ConcertItem__country",
+          },
+          "ref": null,
+          "rendered": "Russia, Saint-Petersburg",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Port Sevkabel",
+          },
+          "ref": null,
+          "rendered": "Port Sevkabel",
+          "type": "div",
+        },
+      ],
+      "type": "a",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;

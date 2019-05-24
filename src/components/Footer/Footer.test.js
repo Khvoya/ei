@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
 import Footer from './Footer';
 
 describe('Footer', () => {
@@ -9,6 +8,6 @@ describe('Footer', () => {
     const output = shallow(
       <Footer />
     );
-    expect(shallowToJson(output)).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 });

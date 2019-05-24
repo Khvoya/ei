@@ -6,10 +6,10 @@ import { connect } from "react-redux";
 
 class ShopModalForm extends Component {
   static propTypes = {
-    name: PropTypes.string.isRequired,
-    onHide: PropTypes.func.isRequired,
-    price: PropTypes.string.isRequired
-  };
+      name: PropTypes.string.isRequired,
+      onHide: PropTypes.func.isRequired,
+      price: PropTypes.string.isRequired
+    };
 
   state = { validated: false };
 

@@ -1,59 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShopModalForm should render correctly 1`] = `
-<Form
-  as="form"
-  inline={false}
-  noValidate={true}
-  onSubmit={[Function]}
-  validated={false}
->
-  <FormGroup
-    as="div"
-    controlId="formBasicEmail"
-  >
-    <FormLabel
-      column={false}
-      srOnly={false}
-    >
-      Email address
-    </FormLabel>
-    <FormControl
-      as="input"
-      onChange={[Function]}
-      placeholder="Enter email"
-      required={true}
-      type="email"
-    />
-    <FormText
-      as="small"
-      className="text-muted"
-    />
-  </FormGroup>
-  <FormGroup
-    as="div"
-    controlId="formComment"
-  >
-    <FormLabel
-      column={false}
-      srOnly={false}
-    >
-      Write some comment here
-    </FormLabel>
-    <FormControl
-      as="textarea"
-      onChange={[Function]}
-      placeholder="Any additional info (e.g. share your social profile or clarify something)"
-      rows="3"
-    />
-  </FormGroup>
-  <Button
-    active={false}
-    disabled={false}
-    type="submit"
-    variant="dark"
-  >
-    Order item
-  </Button>
-</Form>
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Connect(ShopModalForm)
+    name="Iphone Sticker Hello Yellow"
+    onHide={[Function]}
+    price="3$"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": [Function],
+    },
+    "ref": null,
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
+        },
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": null,
+        "_currentValue2": null,
+        "_threadCount": 0,
+      },
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": [Function],
+      },
+      "ref": null,
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
+          },
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": null,
+          "_currentValue2": null,
+          "_threadCount": 0,
+        },
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
 `;

@@ -1,0 +1,840 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Shop
+    shop={
+      Array [
+        Object {
+          "description": "test description",
+          "id": "23",
+          "imageUrl": Array [
+            "https://test-image1.url",
+            "https://test-image2.url",
+          ],
+          "material": "material",
+          "name": "test name",
+          "price": "99",
+          "size": "xl",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "as": "div",
+      "children": Array [
+        <ForwardRef(render)>
+          <ForwardRef
+            as="div"
+          >
+            <h1
+              className="Shop__title"
+            >
+              Shop
+            </h1>
+          </ForwardRef>
+        </ForwardRef(render)>,
+        <div
+          className="Shop__button-wrap"
+        >
+          <button
+            className="Shop__slider-arrow Shop__slider-arrow-left"
+            onClick={[Function]}
+            type="button"
+          >
+            <img
+              alt="left-arrow"
+              height="50px"
+              src="arrow-pointing-to-left.svg"
+              width="50px"
+            />
+          </button>
+          <button
+            className="Shop__slider-arrow Shop__slider-arrow-right"
+            onClick={[Function]}
+            type="button"
+          >
+            <img
+              alt="right-arrow"
+              height="50px"
+              src="arrow-pointing-to-left.svg"
+              width="50px"
+            />
+          </button>
+          <TinySlider
+            settings={
+              Object {
+                "arrowKeys": true,
+                "autoHeight": true,
+                "controls": false,
+                "gutter": 20,
+                "lazyload": true,
+                "loop": false,
+                "mouseDrag": true,
+                "nav": false,
+                "responsive": Object {
+                  "0": Object {
+                    "items": 1,
+                  },
+                  "1200": Object {
+                    "items": 3,
+                  },
+                  "1600": Object {
+                    "items": 4,
+                  },
+                  "800": Object {
+                    "autoWidth": true,
+                    "items": 2,
+                  },
+                },
+                "rewind": true,
+                "speed": 500,
+              }
+            }
+          >
+            <ShopItem
+              description="test description"
+              id="23"
+              imageUrl={
+                Array [
+                  "https://test-image1.url",
+                  "https://test-image2.url",
+                ]
+              }
+              material="material"
+              name="test name"
+              price="99"
+              size="xl"
+            />
+          </TinySlider>
+        </div>,
+      ],
+      "className": "align-content-center justify-content-around",
+      "fluid": false,
+      "id": "shop",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ForwardRef
+            as="div"
+          >
+            <h1
+              className="Shop__title"
+            >
+              Shop
+            </h1>
+          </ForwardRef>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "div",
+            "children": <h1
+              className="Shop__title"
+            >
+              Shop
+            </h1>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Shop",
+              "className": "Shop__title",
+            },
+            "ref": null,
+            "rendered": "Shop",
+            "type": "h1",
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+            },
+            "displayName": "Col",
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "Bootstrap(Row)",
+          "propTypes": undefined,
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="Shop__slider-arrow Shop__slider-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <img
+                alt="left-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />
+            </button>,
+            <button
+              className="Shop__slider-arrow Shop__slider-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <img
+                alt="right-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />
+            </button>,
+            <TinySlider
+              settings={
+                Object {
+                  "arrowKeys": true,
+                  "autoHeight": true,
+                  "controls": false,
+                  "gutter": 20,
+                  "lazyload": true,
+                  "loop": false,
+                  "mouseDrag": true,
+                  "nav": false,
+                  "responsive": Object {
+                    "0": Object {
+                      "items": 1,
+                    },
+                    "1200": Object {
+                      "items": 3,
+                    },
+                    "1600": Object {
+                      "items": 4,
+                    },
+                    "800": Object {
+                      "autoWidth": true,
+                      "items": 2,
+                    },
+                  },
+                  "rewind": true,
+                  "speed": 500,
+                }
+              }
+            >
+              <ShopItem
+                description="test description"
+                id="23"
+                imageUrl={
+                  Array [
+                    "https://test-image1.url",
+                    "https://test-image2.url",
+                  ]
+                }
+                material="material"
+                name="test name"
+                price="99"
+                size="xl"
+              />
+            </TinySlider>,
+          ],
+          "className": "Shop__button-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="left-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />,
+              "className": "Shop__slider-arrow Shop__slider-arrow-left",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "left-arrow",
+                "height": "50px",
+                "src": "arrow-pointing-to-left.svg",
+                "width": "50px",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="right-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />,
+              "className": "Shop__slider-arrow Shop__slider-arrow-right",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "right-arrow",
+                "height": "50px",
+                "src": "arrow-pointing-to-left.svg",
+                "width": "50px",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <ShopItem
+                  description="test description"
+                  id="23"
+                  imageUrl={
+                    Array [
+                      "https://test-image1.url",
+                      "https://test-image2.url",
+                    ]
+                  }
+                  material="material"
+                  name="test name"
+                  price="99"
+                  size="xl"
+                />,
+              ],
+              "settings": Object {
+                "arrowKeys": true,
+                "autoHeight": true,
+                "controls": false,
+                "gutter": 20,
+                "lazyload": true,
+                "loop": false,
+                "mouseDrag": true,
+                "nav": false,
+                "responsive": Object {
+                  "0": Object {
+                    "items": 1,
+                  },
+                  "1200": Object {
+                    "items": 3,
+                  },
+                  "1600": Object {
+                    "items": 4,
+                  },
+                  "800": Object {
+                    "autoWidth": true,
+                    "items": 2,
+                  },
+                },
+                "rewind": true,
+                "speed": 500,
+              },
+            },
+            "ref": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "23",
+                "nodeType": "class",
+                "props": Object {
+                  "description": "test description",
+                  "id": "23",
+                  "imageUrl": Array [
+                    "https://test-image1.url",
+                    "https://test-image2.url",
+                  ],
+                  "material": "material",
+                  "name": "test name",
+                  "price": "99",
+                  "size": "xl",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "TinySlider",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "defaultProps": Object {
+        "as": "div",
+        "fluid": false,
+      },
+      "displayName": "Container",
+      "render": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "as": "div",
+        "children": Array [
+          <ForwardRef(render)>
+            <ForwardRef
+              as="div"
+            >
+              <h1
+                className="Shop__title"
+              >
+                Shop
+              </h1>
+            </ForwardRef>
+          </ForwardRef(render)>,
+          <div
+            className="Shop__button-wrap"
+          >
+            <button
+              className="Shop__slider-arrow Shop__slider-arrow-left"
+              onClick={[Function]}
+              type="button"
+            >
+              <img
+                alt="left-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />
+            </button>
+            <button
+              className="Shop__slider-arrow Shop__slider-arrow-right"
+              onClick={[Function]}
+              type="button"
+            >
+              <img
+                alt="right-arrow"
+                height="50px"
+                src="arrow-pointing-to-left.svg"
+                width="50px"
+              />
+            </button>
+            <TinySlider
+              settings={
+                Object {
+                  "arrowKeys": true,
+                  "autoHeight": true,
+                  "controls": false,
+                  "gutter": 20,
+                  "lazyload": true,
+                  "loop": false,
+                  "mouseDrag": true,
+                  "nav": false,
+                  "responsive": Object {
+                    "0": Object {
+                      "items": 1,
+                    },
+                    "1200": Object {
+                      "items": 3,
+                    },
+                    "1600": Object {
+                      "items": 4,
+                    },
+                    "800": Object {
+                      "autoWidth": true,
+                      "items": 2,
+                    },
+                  },
+                  "rewind": true,
+                  "speed": 500,
+                }
+              }
+            >
+              <ShopItem
+                description="test description"
+                id="23"
+                imageUrl={
+                  Array [
+                    "https://test-image1.url",
+                    "https://test-image2.url",
+                  ]
+                }
+                material="material"
+                name="test name"
+                price="99"
+                size="xl"
+              />
+            </TinySlider>
+          </div>,
+        ],
+        "className": "align-content-center justify-content-around",
+        "fluid": false,
+        "id": "shop",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef
+              as="div"
+            >
+              <h1
+                className="Shop__title"
+              >
+                Shop
+              </h1>
+            </ForwardRef>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": <h1
+                className="Shop__title"
+              >
+                Shop
+              </h1>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Shop",
+                "className": "Shop__title",
+              },
+              "ref": null,
+              "rendered": "Shop",
+              "type": "h1",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+              },
+              "displayName": "Col",
+              "render": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "Bootstrap(Row)",
+            "propTypes": undefined,
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="Shop__slider-arrow Shop__slider-arrow-left"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="left-arrow"
+                  height="50px"
+                  src="arrow-pointing-to-left.svg"
+                  width="50px"
+                />
+              </button>,
+              <button
+                className="Shop__slider-arrow Shop__slider-arrow-right"
+                onClick={[Function]}
+                type="button"
+              >
+                <img
+                  alt="right-arrow"
+                  height="50px"
+                  src="arrow-pointing-to-left.svg"
+                  width="50px"
+                />
+              </button>,
+              <TinySlider
+                settings={
+                  Object {
+                    "arrowKeys": true,
+                    "autoHeight": true,
+                    "controls": false,
+                    "gutter": 20,
+                    "lazyload": true,
+                    "loop": false,
+                    "mouseDrag": true,
+                    "nav": false,
+                    "responsive": Object {
+                      "0": Object {
+                        "items": 1,
+                      },
+                      "1200": Object {
+                        "items": 3,
+                      },
+                      "1600": Object {
+                        "items": 4,
+                      },
+                      "800": Object {
+                        "autoWidth": true,
+                        "items": 2,
+                      },
+                    },
+                    "rewind": true,
+                    "speed": 500,
+                  }
+                }
+              >
+                <ShopItem
+                  description="test description"
+                  id="23"
+                  imageUrl={
+                    Array [
+                      "https://test-image1.url",
+                      "https://test-image2.url",
+                    ]
+                  }
+                  material="material"
+                  name="test name"
+                  price="99"
+                  size="xl"
+                />
+              </TinySlider>,
+            ],
+            "className": "Shop__button-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="left-arrow"
+                  height="50px"
+                  src="arrow-pointing-to-left.svg"
+                  width="50px"
+                />,
+                "className": "Shop__slider-arrow Shop__slider-arrow-left",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "left-arrow",
+                  "height": "50px",
+                  "src": "arrow-pointing-to-left.svg",
+                  "width": "50px",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="right-arrow"
+                  height="50px"
+                  src="arrow-pointing-to-left.svg"
+                  width="50px"
+                />,
+                "className": "Shop__slider-arrow Shop__slider-arrow-right",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "right-arrow",
+                  "height": "50px",
+                  "src": "arrow-pointing-to-left.svg",
+                  "width": "50px",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ShopItem
+                    description="test description"
+                    id="23"
+                    imageUrl={
+                      Array [
+                        "https://test-image1.url",
+                        "https://test-image2.url",
+                      ]
+                    }
+                    material="material"
+                    name="test name"
+                    price="99"
+                    size="xl"
+                  />,
+                ],
+                "settings": Object {
+                  "arrowKeys": true,
+                  "autoHeight": true,
+                  "controls": false,
+                  "gutter": 20,
+                  "lazyload": true,
+                  "loop": false,
+                  "mouseDrag": true,
+                  "nav": false,
+                  "responsive": Object {
+                    "0": Object {
+                      "items": 1,
+                    },
+                    "1200": Object {
+                      "items": 3,
+                    },
+                    "1600": Object {
+                      "items": 4,
+                    },
+                    "800": Object {
+                      "autoWidth": true,
+                      "items": 2,
+                    },
+                  },
+                  "rewind": true,
+                  "speed": 500,
+                },
+              },
+              "ref": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "23",
+                  "nodeType": "class",
+                  "props": Object {
+                    "description": "test description",
+                    "id": "23",
+                    "imageUrl": Array [
+                      "https://test-image1.url",
+                      "https://test-image2.url",
+                    ],
+                    "material": "material",
+                    "name": "test name",
+                    "price": "99",
+                    "size": "xl",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "TinySlider",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "as": "div",
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

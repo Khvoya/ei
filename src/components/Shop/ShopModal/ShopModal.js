@@ -4,7 +4,7 @@ import "./ShopModal.css";
 import PropTypes from "prop-types";
 import ShopModalForm from "./ShopModalForm/ShopModalForm";
 
-class ShopModal extends Component {
+export class ShopModal extends Component {
   static propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.arrayOf(PropTypes.string).isRequired,

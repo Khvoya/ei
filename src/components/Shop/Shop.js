@@ -5,10 +5,10 @@ import leftArrow from "media/icons/arrow-pointing-to-left.svg";
 import TinySlider from "tiny-slider-react";
 import ShopItem from "components/Shop/ShopItem/ShopItem";
 import { settings } from "constants/tinySliderSettings";
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
-class Shop extends Component {
+export class Shop extends Component {
   static propTypes = {
     shop: PropTypes.arrayOf(
       PropTypes.shape({

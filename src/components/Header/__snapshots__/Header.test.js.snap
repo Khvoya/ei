@@ -1,224 +1,3424 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should render correctly 1`] = `
-<Bootstrap(undefined)
-  collapseOnSelect="true"
-  expand="md"
-  fixed="top"
-  variant="dark"
->
-  <Container
-    as="div"
-    fluid={false}
-  >
-    <AnchorLink
-      className="Header__logo-container"
-      href="#welcome"
-      offset="100"
-    >
-      <NavLink
-        as="span"
-        className="Header__logo-link"
-        disabled={false}
-        href="#welcome"
-      >
-        <NavbarBrand
-          className="Header__logo"
-        />
-      </NavLink>
-    </AnchorLink>
-    <NavbarToggle
-      aria-controls="basic-navbar-nav"
-      as="button"
-      label="Toggle navigation"
-    />
-    <NavbarCollapse
-      id="basic-navbar-nav"
-    >
-      <Nav
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <ForwardRef
         as="div"
-        className=" justify-content-around align-items-center container-fluid"
-        fill={false}
-        justify={false}
+        fluid={false}
       >
-        <NavItem
+        <AnchorLink
+          className="Header__logo-container"
+          href="#welcome"
+          offset="100"
+        >
+          <ForwardRef
+            as="span"
+            className="Header__logo-link"
+            disabled={false}
+            href="#welcome"
+          >
+            <ForwardRef
+              className="Header__logo"
+            />
+          </ForwardRef>
+        </AnchorLink>
+        <ForwardRef
+          aria-controls="basic-navbar-nav"
+          as="button"
+          label="Toggle navigation"
+        />
+        <ForwardRef
+          id="basic-navbar-nav"
+        >
+          <ForwardRef
+            as="div"
+            className=" justify-content-around align-items-center container-fluid"
+            fill={false}
+            justify={false}
+          >
+            <ForwardRef
+              as="div"
+            >
+              <AnchorLink
+                className="Header__link"
+                href="#band"
+              >
+                <ForwardRef
+                  as="span"
+                  disabled={false}
+                  href="#band"
+                >
+                  band
+                </ForwardRef>
+              </AnchorLink>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+            >
+              <AnchorLink
+                className="Header__link"
+                href="#photo"
+              >
+                <ForwardRef
+                  as="span"
+                  disabled={false}
+                  href="#photo"
+                >
+                  photo
+                </ForwardRef>
+              </AnchorLink>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+            >
+              <AnchorLink
+                className="Header__link"
+                href="#shop"
+              >
+                <ForwardRef
+                  as="span"
+                  disabled={false}
+                  href="#shop"
+                >
+                  shop
+                </ForwardRef>
+              </AnchorLink>
+            </ForwardRef>
+            <ForwardRef
+              as="div"
+            >
+              <AnchorLink
+                className="Header__link"
+                href="#concerts"
+              >
+                <ForwardRef
+                  as="span"
+                  disabled={false}
+                  href="#concerts"
+                >
+                  gigs
+                </ForwardRef>
+              </AnchorLink>
+            </ForwardRef>
+            <NavDropdown
+              className="Header__link-dropdown"
+              id="basic-nav-dropdown"
+              title="Links"
+            >
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://www.instagram.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Instagram"
+                  height="20px"
+                  src="instagram-logo.svg"
+                  width="20px"
+                />
+                <span>
+                  Instagram
+                </span>
+              </ForwardRef>
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://www.facebook.com/electricindians/"
+                target="blank"
+              >
+                <img
+                  alt="Facebook"
+                  height="20px"
+                  src="facebook-logo-button.svg"
+                  width="20px"
+                />
+                <span>
+                  Facebook
+                </span>
+              </ForwardRef>
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://vk.com/electricindians"
+                target="blank"
+              >
+                <img
+                  alt="Vk"
+                  height="20px"
+                  src="vk-social-logotype.svg"
+                  width="20px"
+                />
+                <span>
+                  Vk
+                </span>
+              </ForwardRef>
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                target="blank"
+              >
+                <img
+                  alt="Youtube"
+                  height="20px"
+                  src="youtube-logotype.svg"
+                  width="20px"
+                />
+                <span>
+                  Youtube
+                </span>
+              </ForwardRef>
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://electricindians.bandcamp.com/"
+                target="blank"
+              >
+                <img
+                  alt="Bandcamp"
+                  height="20px"
+                  src="bandcamp-logo.svg"
+                  width="20px"
+                />
+                <span>
+                  Bandcamp
+                </span>
+              </ForwardRef>
+              <ForwardRef
+                as={[Function]}
+                disabled={false}
+                href="https://twitter.com/Electricindian2"
+                target="blank"
+              >
+                <img
+                  alt="Twitter"
+                  height="20px"
+                  src="twitter-logo-button.svg"
+                  width="20px"
+                />
+                <span>
+                  Twitter
+                </span>
+              </ForwardRef>
+            </NavDropdown>
+          </ForwardRef>
+        </ForwardRef>
+      </ForwardRef>,
+      "collapseOnSelect": "true",
+      "expand": "md",
+      "fixed": "top",
+      "variant": "dark",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "as": "div",
+        "children": Array [
+          <AnchorLink
+            className="Header__logo-container"
+            href="#welcome"
+            offset="100"
+          >
+            <ForwardRef
+              as="span"
+              className="Header__logo-link"
+              disabled={false}
+              href="#welcome"
+            >
+              <ForwardRef
+                className="Header__logo"
+              />
+            </ForwardRef>
+          </AnchorLink>,
+          <ForwardRef
+            aria-controls="basic-navbar-nav"
+            as="button"
+            label="Toggle navigation"
+          />,
+          <ForwardRef
+            id="basic-navbar-nav"
+          >
+            <ForwardRef
+              as="div"
+              className=" justify-content-around align-items-center container-fluid"
+              fill={false}
+              justify={false}
+            >
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#band"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#band"
+                  >
+                    band
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#photo"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#photo"
+                  >
+                    photo
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#shop"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#shop"
+                  >
+                    shop
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#concerts"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#concerts"
+                  >
+                    gigs
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <NavDropdown
+                className="Header__link-dropdown"
+                id="basic-nav-dropdown"
+                title="Links"
+              >
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    height="20px"
+                    src="instagram-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Instagram
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    height="20px"
+                    src="facebook-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Facebook
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    height="20px"
+                    src="vk-social-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Vk
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    height="20px"
+                    src="youtube-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Youtube
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    height="20px"
+                    src="bandcamp-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Bandcamp
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    height="20px"
+                    src="twitter-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Twitter
+                  </span>
+                </ForwardRef>
+              </NavDropdown>
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+        "fluid": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <ForwardRef
+              as="span"
+              className="Header__logo-link"
+              disabled={false}
+              href="#welcome"
+            >
+              <ForwardRef
+                className="Header__logo"
+              />
+            </ForwardRef>,
+            "className": "Header__logo-container",
+            "href": "#welcome",
+            "offset": "100",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "span",
+              "children": <ForwardRef
+                className="Header__logo"
+              />,
+              "className": "Header__logo-link",
+              "disabled": false,
+              "href": "#welcome",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "Header__logo",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "NavbarBrand",
+                "render": [Function],
+              },
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": [Function],
+                "disabled": false,
+              },
+              "displayName": "NavLink",
+              "render": [Function],
+            },
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "aria-controls": "basic-navbar-nav",
+            "as": "button",
+            "label": "Toggle navigation",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "button",
+              "label": "Toggle navigation",
+            },
+            "displayName": "NavbarToggle",
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef
+              as="div"
+              className=" justify-content-around align-items-center container-fluid"
+              fill={false}
+              justify={false}
+            >
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#band"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#band"
+                  >
+                    band
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#photo"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#photo"
+                  >
+                    photo
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#shop"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#shop"
+                  >
+                    shop
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#concerts"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#concerts"
+                  >
+                    gigs
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <NavDropdown
+                className="Header__link-dropdown"
+                id="basic-nav-dropdown"
+                title="Links"
+              >
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    height="20px"
+                    src="instagram-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Instagram
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    height="20px"
+                    src="facebook-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Facebook
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    height="20px"
+                    src="vk-social-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Vk
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    height="20px"
+                    src="youtube-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Youtube
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    height="20px"
+                    src="bandcamp-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Bandcamp
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    height="20px"
+                    src="twitter-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Twitter
+                  </span>
+                </ForwardRef>
+              </NavDropdown>
+            </ForwardRef>,
+            "id": "basic-navbar-nav",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": Array [
+                Array [
+                  <ForwardRef
+                    as="div"
+                  >
+                    <AnchorLink
+                      className="Header__link"
+                      href="#band"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#band"
+                      >
+                        band
+                      </ForwardRef>
+                    </AnchorLink>
+                  </ForwardRef>,
+                  <ForwardRef
+                    as="div"
+                  >
+                    <AnchorLink
+                      className="Header__link"
+                      href="#photo"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#photo"
+                      >
+                        photo
+                      </ForwardRef>
+                    </AnchorLink>
+                  </ForwardRef>,
+                  <ForwardRef
+                    as="div"
+                  >
+                    <AnchorLink
+                      className="Header__link"
+                      href="#shop"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#shop"
+                      >
+                        shop
+                      </ForwardRef>
+                    </AnchorLink>
+                  </ForwardRef>,
+                  <ForwardRef
+                    as="div"
+                  >
+                    <AnchorLink
+                      className="Header__link"
+                      href="#concerts"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#concerts"
+                      >
+                        gigs
+                      </ForwardRef>
+                    </AnchorLink>
+                  </ForwardRef>,
+                ],
+                <NavDropdown
+                  className="Header__link-dropdown"
+                  id="basic-nav-dropdown"
+                  title="Links"
+                >
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      height="20px"
+                      src="instagram-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Instagram
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      height="20px"
+                      src="facebook-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Facebook
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      height="20px"
+                      src="vk-social-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Vk
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      height="20px"
+                      src="youtube-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Youtube
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      height="20px"
+                      src="bandcamp-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Bandcamp
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      height="20px"
+                      src="twitter-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Twitter
+                    </span>
+                  </ForwardRef>
+                </NavDropdown>,
+              ],
+              "className": " justify-content-around align-items-center container-fluid",
+              "fill": false,
+              "justify": false,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "band",
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <AnchorLink
+                    className="Header__link"
+                    href="#band"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#band"
+                    >
+                      band
+                    </ForwardRef>
+                  </AnchorLink>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#band"
+                    >
+                      band
+                    </ForwardRef>,
+                    "className": "Header__link",
+                    "href": "#band",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": "span",
+                      "children": "band",
+                      "disabled": false,
+                      "href": "#band",
+                    },
+                    "ref": null,
+                    "rendered": "band",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "NavLink",
+                      "render": [Function],
+                    },
+                  },
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "NavItem",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": "photo",
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <AnchorLink
+                    className="Header__link"
+                    href="#photo"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#photo"
+                    >
+                      photo
+                    </ForwardRef>
+                  </AnchorLink>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#photo"
+                    >
+                      photo
+                    </ForwardRef>,
+                    "className": "Header__link",
+                    "href": "#photo",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": "span",
+                      "children": "photo",
+                      "disabled": false,
+                      "href": "#photo",
+                    },
+                    "ref": null,
+                    "rendered": "photo",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "NavLink",
+                      "render": [Function],
+                    },
+                  },
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "NavItem",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": "shop",
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <AnchorLink
+                    className="Header__link"
+                    href="#shop"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#shop"
+                    >
+                      shop
+                    </ForwardRef>
+                  </AnchorLink>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#shop"
+                    >
+                      shop
+                    </ForwardRef>,
+                    "className": "Header__link",
+                    "href": "#shop",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": "span",
+                      "children": "shop",
+                      "disabled": false,
+                      "href": "#shop",
+                    },
+                    "ref": null,
+                    "rendered": "shop",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "NavLink",
+                      "render": [Function],
+                    },
+                  },
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "NavItem",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": "gigs",
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <AnchorLink
+                    className="Header__link"
+                    href="#concerts"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#concerts"
+                    >
+                      gigs
+                    </ForwardRef>
+                  </AnchorLink>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#concerts"
+                    >
+                      gigs
+                    </ForwardRef>,
+                    "className": "Header__link",
+                    "href": "#concerts",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": "span",
+                      "children": "gigs",
+                      "disabled": false,
+                      "href": "#concerts",
+                    },
+                    "ref": null,
+                    "rendered": "gigs",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "NavLink",
+                      "render": [Function],
+                    },
+                  },
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "NavItem",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.instagram.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Instagram"
+                        height="20px"
+                        src="instagram-logo.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Instagram
+                      </span>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.facebook.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Facebook"
+                        height="20px"
+                        src="facebook-logo-button.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Facebook
+                      </span>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://vk.com/electricindians"
+                      target="blank"
+                    >
+                      <img
+                        alt="Vk"
+                        height="20px"
+                        src="vk-social-logotype.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Vk
+                      </span>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                      target="blank"
+                    >
+                      <img
+                        alt="Youtube"
+                        height="20px"
+                        src="youtube-logotype.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Youtube
+                      </span>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://electricindians.bandcamp.com/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Bandcamp"
+                        height="20px"
+                        src="bandcamp-logo.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Bandcamp
+                      </span>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://twitter.com/Electricindian2"
+                      target="blank"
+                    >
+                      <img
+                        alt="Twitter"
+                        height="20px"
+                        src="twitter-logo-button.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Twitter
+                      </span>
+                    </ForwardRef>,
+                  ],
+                  "className": "Header__link-dropdown",
+                  "id": "basic-nav-dropdown",
+                  "title": "Links",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "Instagram",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Instagram"
+                          height="20px"
+                          src="instagram-logo.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Instagram
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://www.instagram.com/electricindians/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Instagram",
+                          "height": "20px",
+                          "src": "instagram-logo.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Instagram",
+                        },
+                        "ref": null,
+                        "rendered": "Instagram",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Facebook",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Facebook"
+                          height="20px"
+                          src="facebook-logo-button.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Facebook
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://www.facebook.com/electricindians/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Facebook",
+                          "height": "20px",
+                          "src": "facebook-logo-button.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Facebook",
+                        },
+                        "ref": null,
+                        "rendered": "Facebook",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Vk",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Vk"
+                          height="20px"
+                          src="vk-social-logotype.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Vk
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://vk.com/electricindians",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Vk",
+                          "height": "20px",
+                          "src": "vk-social-logotype.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Vk",
+                        },
+                        "ref": null,
+                        "rendered": "Vk",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Youtube",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Youtube"
+                          height="20px"
+                          src="youtube-logotype.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Youtube
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Youtube",
+                          "height": "20px",
+                          "src": "youtube-logotype.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Youtube",
+                        },
+                        "ref": null,
+                        "rendered": "Youtube",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Bandcamp",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Bandcamp"
+                          height="20px"
+                          src="bandcamp-logo.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Bandcamp
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://electricindians.bandcamp.com/",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Bandcamp",
+                          "height": "20px",
+                          "src": "bandcamp-logo.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Bandcamp",
+                        },
+                        "ref": null,
+                        "rendered": "Bandcamp",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Twitter",
+                    "nodeType": "function",
+                    "props": Object {
+                      "as": [Function],
+                      "children": Array [
+                        <img
+                          alt="Twitter"
+                          height="20px"
+                          src="twitter-logo-button.svg"
+                          width="20px"
+                        />,
+                        <span>
+                          Twitter
+                        </span>,
+                      ],
+                      "disabled": false,
+                      "href": "https://twitter.com/Electricindian2",
+                      "target": "blank",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "Twitter",
+                          "height": "20px",
+                          "src": "twitter-logo-button.svg",
+                          "width": "20px",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Twitter",
+                        },
+                        "ref": null,
+                        "rendered": "Twitter",
+                        "type": "span",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "defaultProps": Object {
+                        "as": [Function],
+                        "disabled": false,
+                      },
+                      "displayName": "DropdownItem",
+                      "render": [Function],
+                    },
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "Item": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": "div",
+                },
+                "displayName": "NavItem",
+                "render": [Function],
+              },
+              "Link": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": [Function],
+                  "disabled": false,
+                },
+                "displayName": "NavLink",
+                "render": [Function],
+              },
+              "_Nav": [Circular],
+              "defaultProps": Object {
+                "as": "div",
+                "fill": false,
+                "justify": false,
+              },
+              "displayName": "Nav",
+              "render": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "NavbarCollapse",
+            "render": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "as": "div",
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
+      },
+    },
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "Brand": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "NavbarBrand",
+        "render": [Function],
+      },
+      "Collapse": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "NavbarCollapse",
+        "render": [Function],
+      },
+      "Text": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "NavbarText",
+        "render": [Function],
+      },
+      "Toggle": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "as": "button",
+          "label": "Toggle navigation",
+        },
+        "displayName": "NavbarToggle",
+        "render": [Function],
+      },
+      "defaultProps": undefined,
+      "displayName": "Bootstrap(undefined)",
+      "propTypes": undefined,
+      "render": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ForwardRef
           as="div"
-          key="band"
+          fluid={false}
         >
           <AnchorLink
-            className="Header__link"
-            href="#band"
+            className="Header__logo-container"
+            href="#welcome"
+            offset="100"
           >
-            <NavLink
+            <ForwardRef
               as="span"
+              className="Header__logo-link"
               disabled={false}
-              href="#band"
+              href="#welcome"
             >
-              band
-            </NavLink>
+              <ForwardRef
+                className="Header__logo"
+              />
+            </ForwardRef>
           </AnchorLink>
-        </NavItem>
-        <NavItem
-          as="div"
-          key="photo"
-        >
-          <AnchorLink
-            className="Header__link"
-            href="#photo"
+          <ForwardRef
+            aria-controls="basic-navbar-nav"
+            as="button"
+            label="Toggle navigation"
+          />
+          <ForwardRef
+            id="basic-navbar-nav"
           >
-            <NavLink
-              as="span"
-              disabled={false}
-              href="#photo"
+            <ForwardRef
+              as="div"
+              className=" justify-content-around align-items-center container-fluid"
+              fill={false}
+              justify={false}
             >
-              photo
-            </NavLink>
-          </AnchorLink>
-        </NavItem>
-        <NavItem
-          as="div"
-          key="shop"
-        >
-          <AnchorLink
-            className="Header__link"
-            href="#shop"
-          >
-            <NavLink
-              as="span"
-              disabled={false}
-              href="#shop"
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#band"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#band"
+                  >
+                    band
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#photo"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#photo"
+                  >
+                    photo
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#shop"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#shop"
+                  >
+                    shop
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <ForwardRef
+                as="div"
+              >
+                <AnchorLink
+                  className="Header__link"
+                  href="#concerts"
+                >
+                  <ForwardRef
+                    as="span"
+                    disabled={false}
+                    href="#concerts"
+                  >
+                    gigs
+                  </ForwardRef>
+                </AnchorLink>
+              </ForwardRef>
+              <NavDropdown
+                className="Header__link-dropdown"
+                id="basic-nav-dropdown"
+                title="Links"
+              >
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.instagram.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Instagram"
+                    height="20px"
+                    src="instagram-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Instagram
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.facebook.com/electricindians/"
+                  target="blank"
+                >
+                  <img
+                    alt="Facebook"
+                    height="20px"
+                    src="facebook-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Facebook
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://vk.com/electricindians"
+                  target="blank"
+                >
+                  <img
+                    alt="Vk"
+                    height="20px"
+                    src="vk-social-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Vk
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                  target="blank"
+                >
+                  <img
+                    alt="Youtube"
+                    height="20px"
+                    src="youtube-logotype.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Youtube
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://electricindians.bandcamp.com/"
+                  target="blank"
+                >
+                  <img
+                    alt="Bandcamp"
+                    height="20px"
+                    src="bandcamp-logo.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Bandcamp
+                  </span>
+                </ForwardRef>
+                <ForwardRef
+                  as={[Function]}
+                  disabled={false}
+                  href="https://twitter.com/Electricindian2"
+                  target="blank"
+                >
+                  <img
+                    alt="Twitter"
+                    height="20px"
+                    src="twitter-logo-button.svg"
+                    width="20px"
+                  />
+                  <span>
+                    Twitter
+                  </span>
+                </ForwardRef>
+              </NavDropdown>
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef>,
+        "collapseOnSelect": "true",
+        "expand": "md",
+        "fixed": "top",
+        "variant": "dark",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "div",
+          "children": Array [
+            <AnchorLink
+              className="Header__logo-container"
+              href="#welcome"
+              offset="100"
             >
-              shop
-            </NavLink>
-          </AnchorLink>
-        </NavItem>
-        <NavItem
-          as="div"
-          key="gigs"
-        >
-          <AnchorLink
-            className="Header__link"
-            href="#concerts"
-          >
-            <NavLink
-              as="span"
-              disabled={false}
-              href="#concerts"
+              <ForwardRef
+                as="span"
+                className="Header__logo-link"
+                disabled={false}
+                href="#welcome"
+              >
+                <ForwardRef
+                  className="Header__logo"
+                />
+              </ForwardRef>
+            </AnchorLink>,
+            <ForwardRef
+              aria-controls="basic-navbar-nav"
+              as="button"
+              label="Toggle navigation"
+            />,
+            <ForwardRef
+              id="basic-navbar-nav"
             >
-              gigs
-            </NavLink>
-          </AnchorLink>
-        </NavItem>
-        <NavDropdown
-          className="Header__link-dropdown"
-          id="basic-nav-dropdown"
-          title="Links"
-        >
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://www.instagram.com/electricindians/"
-            key="Instagram"
-            target="blank"
-          >
-            <img
-              alt="Instagram"
-              height="20px"
-              src="instagram-logo.svg"
-              width="20px"
-            />
-            <span>
-              Instagram
-            </span>
-          </DropdownItem>
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://www.facebook.com/electricindians/"
-            key="Facebook"
-            target="blank"
-          >
-            <img
-              alt="Facebook"
-              height="20px"
-              src="facebook-logo-button.svg"
-              width="20px"
-            />
-            <span>
-              Facebook
-            </span>
-          </DropdownItem>
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://vk.com/electricindians"
-            key="Vk"
-            target="blank"
-          >
-            <img
-              alt="Vk"
-              height="20px"
-              src="vk-social-logotype.svg"
-              width="20px"
-            />
-            <span>
-              Vk
-            </span>
-          </DropdownItem>
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
-            key="Youtube"
-            target="blank"
-          >
-            <img
-              alt="Youtube"
-              height="20px"
-              src="youtube-logotype.svg"
-              width="20px"
-            />
-            <span>
-              Youtube
-            </span>
-          </DropdownItem>
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://electricindians.bandcamp.com/"
-            key="Bandcamp"
-            target="blank"
-          >
-            <img
-              alt="Bandcamp"
-              height="20px"
-              src="bandcamp-logo.svg"
-              width="20px"
-            />
-            <span>
-              Bandcamp
-            </span>
-          </DropdownItem>
-          <DropdownItem
-            as={[Function]}
-            disabled={false}
-            href="https://twitter.com/Electricindian2"
-            key="Twitter"
-            target="blank"
-          >
-            <img
-              alt="Twitter"
-              height="20px"
-              src="twitter-logo-button.svg"
-              width="20px"
-            />
-            <span>
-              Twitter
-            </span>
-          </DropdownItem>
-        </NavDropdown>
-      </Nav>
-    </NavbarCollapse>
-  </Container>
-</Bootstrap(undefined)>
+              <ForwardRef
+                as="div"
+                className=" justify-content-around align-items-center container-fluid"
+                fill={false}
+                justify={false}
+              >
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#band"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#band"
+                    >
+                      band
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#photo"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#photo"
+                    >
+                      photo
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#shop"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#shop"
+                    >
+                      shop
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#concerts"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#concerts"
+                    >
+                      gigs
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <NavDropdown
+                  className="Header__link-dropdown"
+                  id="basic-nav-dropdown"
+                  title="Links"
+                >
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      height="20px"
+                      src="instagram-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Instagram
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      height="20px"
+                      src="facebook-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Facebook
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      height="20px"
+                      src="vk-social-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Vk
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      height="20px"
+                      src="youtube-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Youtube
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      height="20px"
+                      src="bandcamp-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Bandcamp
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      height="20px"
+                      src="twitter-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Twitter
+                    </span>
+                  </ForwardRef>
+                </NavDropdown>
+              </ForwardRef>
+            </ForwardRef>,
+          ],
+          "fluid": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <ForwardRef
+                as="span"
+                className="Header__logo-link"
+                disabled={false}
+                href="#welcome"
+              >
+                <ForwardRef
+                  className="Header__logo"
+                />
+              </ForwardRef>,
+              "className": "Header__logo-container",
+              "href": "#welcome",
+              "offset": "100",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "span",
+                "children": <ForwardRef
+                  className="Header__logo"
+                />,
+                "className": "Header__logo-link",
+                "disabled": false,
+                "href": "#welcome",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "Header__logo",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "displayName": "NavbarBrand",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "as": [Function],
+                  "disabled": false,
+                },
+                "displayName": "NavLink",
+                "render": [Function],
+              },
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "aria-controls": "basic-navbar-nav",
+              "as": "button",
+              "label": "Toggle navigation",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "button",
+                "label": "Toggle navigation",
+              },
+              "displayName": "NavbarToggle",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef
+                as="div"
+                className=" justify-content-around align-items-center container-fluid"
+                fill={false}
+                justify={false}
+              >
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#band"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#band"
+                    >
+                      band
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#photo"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#photo"
+                    >
+                      photo
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#shop"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#shop"
+                    >
+                      shop
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <ForwardRef
+                  as="div"
+                >
+                  <AnchorLink
+                    className="Header__link"
+                    href="#concerts"
+                  >
+                    <ForwardRef
+                      as="span"
+                      disabled={false}
+                      href="#concerts"
+                    >
+                      gigs
+                    </ForwardRef>
+                  </AnchorLink>
+                </ForwardRef>
+                <NavDropdown
+                  className="Header__link-dropdown"
+                  id="basic-nav-dropdown"
+                  title="Links"
+                >
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.instagram.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Instagram"
+                      height="20px"
+                      src="instagram-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Instagram
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.facebook.com/electricindians/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Facebook"
+                      height="20px"
+                      src="facebook-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Facebook
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://vk.com/electricindians"
+                    target="blank"
+                  >
+                    <img
+                      alt="Vk"
+                      height="20px"
+                      src="vk-social-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Vk
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                    target="blank"
+                  >
+                    <img
+                      alt="Youtube"
+                      height="20px"
+                      src="youtube-logotype.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Youtube
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://electricindians.bandcamp.com/"
+                    target="blank"
+                  >
+                    <img
+                      alt="Bandcamp"
+                      height="20px"
+                      src="bandcamp-logo.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Bandcamp
+                    </span>
+                  </ForwardRef>
+                  <ForwardRef
+                    as={[Function]}
+                    disabled={false}
+                    href="https://twitter.com/Electricindian2"
+                    target="blank"
+                  >
+                    <img
+                      alt="Twitter"
+                      height="20px"
+                      src="twitter-logo-button.svg"
+                      width="20px"
+                    />
+                    <span>
+                      Twitter
+                    </span>
+                  </ForwardRef>
+                </NavDropdown>
+              </ForwardRef>,
+              "id": "basic-navbar-nav",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "div",
+                "children": Array [
+                  Array [
+                    <ForwardRef
+                      as="div"
+                    >
+                      <AnchorLink
+                        className="Header__link"
+                        href="#band"
+                      >
+                        <ForwardRef
+                          as="span"
+                          disabled={false}
+                          href="#band"
+                        >
+                          band
+                        </ForwardRef>
+                      </AnchorLink>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as="div"
+                    >
+                      <AnchorLink
+                        className="Header__link"
+                        href="#photo"
+                      >
+                        <ForwardRef
+                          as="span"
+                          disabled={false}
+                          href="#photo"
+                        >
+                          photo
+                        </ForwardRef>
+                      </AnchorLink>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as="div"
+                    >
+                      <AnchorLink
+                        className="Header__link"
+                        href="#shop"
+                      >
+                        <ForwardRef
+                          as="span"
+                          disabled={false}
+                          href="#shop"
+                        >
+                          shop
+                        </ForwardRef>
+                      </AnchorLink>
+                    </ForwardRef>,
+                    <ForwardRef
+                      as="div"
+                    >
+                      <AnchorLink
+                        className="Header__link"
+                        href="#concerts"
+                      >
+                        <ForwardRef
+                          as="span"
+                          disabled={false}
+                          href="#concerts"
+                        >
+                          gigs
+                        </ForwardRef>
+                      </AnchorLink>
+                    </ForwardRef>,
+                  ],
+                  <NavDropdown
+                    className="Header__link-dropdown"
+                    id="basic-nav-dropdown"
+                    title="Links"
+                  >
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.instagram.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Instagram"
+                        height="20px"
+                        src="instagram-logo.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Instagram
+                      </span>
+                    </ForwardRef>
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.facebook.com/electricindians/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Facebook"
+                        height="20px"
+                        src="facebook-logo-button.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Facebook
+                      </span>
+                    </ForwardRef>
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://vk.com/electricindians"
+                      target="blank"
+                    >
+                      <img
+                        alt="Vk"
+                        height="20px"
+                        src="vk-social-logotype.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Vk
+                      </span>
+                    </ForwardRef>
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                      target="blank"
+                    >
+                      <img
+                        alt="Youtube"
+                        height="20px"
+                        src="youtube-logotype.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Youtube
+                      </span>
+                    </ForwardRef>
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://electricindians.bandcamp.com/"
+                      target="blank"
+                    >
+                      <img
+                        alt="Bandcamp"
+                        height="20px"
+                        src="bandcamp-logo.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Bandcamp
+                      </span>
+                    </ForwardRef>
+                    <ForwardRef
+                      as={[Function]}
+                      disabled={false}
+                      href="https://twitter.com/Electricindian2"
+                      target="blank"
+                    >
+                      <img
+                        alt="Twitter"
+                        height="20px"
+                        src="twitter-logo-button.svg"
+                        width="20px"
+                      />
+                      <span>
+                        Twitter
+                      </span>
+                    </ForwardRef>
+                  </NavDropdown>,
+                ],
+                "className": " justify-content-around align-items-center container-fluid",
+                "fill": false,
+                "justify": false,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "band",
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <AnchorLink
+                      className="Header__link"
+                      href="#band"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#band"
+                      >
+                        band
+                      </ForwardRef>
+                    </AnchorLink>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#band"
+                      >
+                        band
+                      </ForwardRef>,
+                      "className": "Header__link",
+                      "href": "#band",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": "span",
+                        "children": "band",
+                        "disabled": false,
+                        "href": "#band",
+                      },
+                      "ref": null,
+                      "rendered": "band",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "NavLink",
+                        "render": [Function],
+                      },
+                    },
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "NavItem",
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": "photo",
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <AnchorLink
+                      className="Header__link"
+                      href="#photo"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#photo"
+                      >
+                        photo
+                      </ForwardRef>
+                    </AnchorLink>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#photo"
+                      >
+                        photo
+                      </ForwardRef>,
+                      "className": "Header__link",
+                      "href": "#photo",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": "span",
+                        "children": "photo",
+                        "disabled": false,
+                        "href": "#photo",
+                      },
+                      "ref": null,
+                      "rendered": "photo",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "NavLink",
+                        "render": [Function],
+                      },
+                    },
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "NavItem",
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": "shop",
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <AnchorLink
+                      className="Header__link"
+                      href="#shop"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#shop"
+                      >
+                        shop
+                      </ForwardRef>
+                    </AnchorLink>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#shop"
+                      >
+                        shop
+                      </ForwardRef>,
+                      "className": "Header__link",
+                      "href": "#shop",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": "span",
+                        "children": "shop",
+                        "disabled": false,
+                        "href": "#shop",
+                      },
+                      "ref": null,
+                      "rendered": "shop",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "NavLink",
+                        "render": [Function],
+                      },
+                    },
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "NavItem",
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": "gigs",
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <AnchorLink
+                      className="Header__link"
+                      href="#concerts"
+                    >
+                      <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#concerts"
+                      >
+                        gigs
+                      </ForwardRef>
+                    </AnchorLink>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <ForwardRef
+                        as="span"
+                        disabled={false}
+                        href="#concerts"
+                      >
+                        gigs
+                      </ForwardRef>,
+                      "className": "Header__link",
+                      "href": "#concerts",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": "span",
+                        "children": "gigs",
+                        "disabled": false,
+                        "href": "#concerts",
+                      },
+                      "ref": null,
+                      "rendered": "gigs",
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "NavLink",
+                        "render": [Function],
+                      },
+                    },
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "NavItem",
+                    "render": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://www.instagram.com/electricindians/"
+                        target="blank"
+                      >
+                        <img
+                          alt="Instagram"
+                          height="20px"
+                          src="instagram-logo.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Instagram
+                        </span>
+                      </ForwardRef>,
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://www.facebook.com/electricindians/"
+                        target="blank"
+                      >
+                        <img
+                          alt="Facebook"
+                          height="20px"
+                          src="facebook-logo-button.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Facebook
+                        </span>
+                      </ForwardRef>,
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://vk.com/electricindians"
+                        target="blank"
+                      >
+                        <img
+                          alt="Vk"
+                          height="20px"
+                          src="vk-social-logotype.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Vk
+                        </span>
+                      </ForwardRef>,
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg"
+                        target="blank"
+                      >
+                        <img
+                          alt="Youtube"
+                          height="20px"
+                          src="youtube-logotype.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Youtube
+                        </span>
+                      </ForwardRef>,
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://electricindians.bandcamp.com/"
+                        target="blank"
+                      >
+                        <img
+                          alt="Bandcamp"
+                          height="20px"
+                          src="bandcamp-logo.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Bandcamp
+                        </span>
+                      </ForwardRef>,
+                      <ForwardRef
+                        as={[Function]}
+                        disabled={false}
+                        href="https://twitter.com/Electricindian2"
+                        target="blank"
+                      >
+                        <img
+                          alt="Twitter"
+                          height="20px"
+                          src="twitter-logo-button.svg"
+                          width="20px"
+                        />
+                        <span>
+                          Twitter
+                        </span>
+                      </ForwardRef>,
+                    ],
+                    "className": "Header__link-dropdown",
+                    "id": "basic-nav-dropdown",
+                    "title": "Links",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "Instagram",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Instagram"
+                            height="20px"
+                            src="instagram-logo.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Instagram
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://www.instagram.com/electricindians/",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Instagram",
+                            "height": "20px",
+                            "src": "instagram-logo.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Instagram",
+                          },
+                          "ref": null,
+                          "rendered": "Instagram",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Facebook",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Facebook"
+                            height="20px"
+                            src="facebook-logo-button.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Facebook
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://www.facebook.com/electricindians/",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Facebook",
+                            "height": "20px",
+                            "src": "facebook-logo-button.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Facebook",
+                          },
+                          "ref": null,
+                          "rendered": "Facebook",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Vk",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Vk"
+                            height="20px"
+                            src="vk-social-logotype.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Vk
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://vk.com/electricindians",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Vk",
+                            "height": "20px",
+                            "src": "vk-social-logotype.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Vk",
+                          },
+                          "ref": null,
+                          "rendered": "Vk",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Youtube",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Youtube"
+                            height="20px"
+                            src="youtube-logotype.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Youtube
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://www.youtube.com/channel/UCab_uVuxFhrwyARbotaz4Tg",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Youtube",
+                            "height": "20px",
+                            "src": "youtube-logotype.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Youtube",
+                          },
+                          "ref": null,
+                          "rendered": "Youtube",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Bandcamp",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Bandcamp"
+                            height="20px"
+                            src="bandcamp-logo.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Bandcamp
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://electricindians.bandcamp.com/",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Bandcamp",
+                            "height": "20px",
+                            "src": "bandcamp-logo.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Bandcamp",
+                          },
+                          "ref": null,
+                          "rendered": "Bandcamp",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "Twitter",
+                      "nodeType": "function",
+                      "props": Object {
+                        "as": [Function],
+                        "children": Array [
+                          <img
+                            alt="Twitter"
+                            height="20px"
+                            src="twitter-logo-button.svg"
+                            width="20px"
+                          />,
+                          <span>
+                            Twitter
+                          </span>,
+                        ],
+                        "disabled": false,
+                        "href": "https://twitter.com/Electricindian2",
+                        "target": "blank",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "Twitter",
+                            "height": "20px",
+                            "src": "twitter-logo-button.svg",
+                            "width": "20px",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Twitter",
+                          },
+                          "ref": null,
+                          "rendered": "Twitter",
+                          "type": "span",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "as": [Function],
+                          "disabled": false,
+                        },
+                        "displayName": "DropdownItem",
+                        "render": [Function],
+                      },
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "Item": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "NavItem",
+                  "render": [Function],
+                },
+                "Link": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": [Function],
+                    "disabled": false,
+                  },
+                  "displayName": "NavLink",
+                  "render": [Function],
+                },
+                "_Nav": [Circular],
+                "defaultProps": Object {
+                  "as": "div",
+                  "fill": false,
+                  "justify": false,
+                },
+                "displayName": "Nav",
+                "render": [Function],
+              },
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "NavbarCollapse",
+              "render": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "div",
+            "fluid": false,
+          },
+          "displayName": "Container",
+          "render": [Function],
+        },
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Brand": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "NavbarBrand",
+          "render": [Function],
+        },
+        "Collapse": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "NavbarCollapse",
+          "render": [Function],
+        },
+        "Text": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "NavbarText",
+          "render": [Function],
+        },
+        "Toggle": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "as": "button",
+            "label": "Toggle navigation",
+          },
+          "displayName": "NavbarToggle",
+          "render": [Function],
+        },
+        "defaultProps": undefined,
+        "displayName": "Bootstrap(undefined)",
+        "propTypes": undefined,
+        "render": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;

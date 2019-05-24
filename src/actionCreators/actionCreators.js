@@ -6,7 +6,7 @@ import {
   FIREBASE_GET_SHOP,
   SEND_ORDER_REQUEST_MAIL
 } from "./actionTypes";
-import { refs, getDbCollection } from "middleware/firebase";
+import { refs, getDbCollection } from "helpers/firebase";
 
 export const getImageRef = (bucket, counter, alone = false) => ({
   type: FIREBASE_GET_IMAGE_REFS,

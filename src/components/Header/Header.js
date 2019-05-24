@@ -1,11 +1,10 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container, Alert } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { headerData, socialData } from "constants/headerData";
-import { connect } from "react-redux";
 import "./Header.css";
 
-const Header = props => {
+const Header = () => {
   const headerItems = headerData.map(link => (
     <Nav.Item key={link.name}>
       <AnchorLink className="Header__link" href={link.href}>
@@ -25,11 +24,6 @@ const Header = props => {
 
   return (
     <Navbar collapseOnSelect="true" fixed="top" expand="md" variant="dark">
-      {/*<div className="position-relative">*/}
-          {/*<Alert className={props.sendMailStatus === "fulfilled" ? "Header__mailer-alert-true" : "Header__mailer-alert-false"} variant="success">*/}
-            {/*Success request*/}
-          {/*</Alert>*/}
-      {/*</div>*/}
       <Container>
         <AnchorLink
           offset="100"
@@ -59,8 +53,5 @@ const Header = props => {
   );
 };
 
-const mapStateToProps = state => ({
-  sendMailStatus: state.sendEmail.status
-});
 
-export default connect(mapStateToProps)(Header);
+export default Header;

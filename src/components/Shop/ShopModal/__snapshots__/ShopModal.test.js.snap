@@ -1,7 +1,2009 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ShopModal should render correctly 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ShopModal
+    description="test description"
+    image={
+      Array [
+        "https://test-image1.url",
+        "https://test-image2.url",
+      ]
+    }
+    material="material"
+    name="test name"
+    onHide={[Function]}
+    price="99"
+    show={false}
+    size="xl"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "aria-labelledby": "contained-modal-title-vcenter",
+      "centered": true,
+      "children": Array [
+        <ForwardRef
+          closeButton={true}
+          closeLabel="Close"
+        >
+          <ForwardRef
+            id="contained-modal-title-vcenter"
+          >
+            <h1>
+              Great choice!
+            </h1>
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef>
+          <ForwardRef
+            as="div"
+            fluid={false}
+          >
+            <ForwardRef(render)>
+              <ForwardRef
+                as="div"
+                className="ShopModal__item-info d-flex justify-content-around"
+              >
+                <ForwardRef(render)
+                  controls={false}
+                  fade={true}
+                  interval={3000}
+                  pauseOnHover={false}
+                >
+                  <img
+                    alt="test name"
+                    className="ShopModal__item-img"
+                    src="https://test-image1.url"
+                  />
+                  <img
+                    alt="test name"
+                    className="ShopModal__item-img"
+                    src="https://test-image2.url"
+                  />
+                </ForwardRef(render)>
+                <div
+                  className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                >
+                  <h2>
+                    <strong>
+                      test name
+                    </strong>
+                  </h2>
+                  <span>
+                    <strong>
+                      Material:
+                    </strong>
+                     
+                    material
+                  </span>
+                  <span>
+                    <strong>
+                      Size:
+                    </strong>
+                     
+                    xl
+                  </span>
+                  <span>
+                    <strong>
+                      Price:
+                    </strong>
+                     
+                    99
+                  </span>
+                  <p>
+                    test description
+                  </p>
+                </div>
+              </ForwardRef>
+            </ForwardRef(render)>
+            <ForwardRef(render)
+              className="mt-3"
+            >
+              <ForwardRef
+                as="div"
+              >
+                <p>
+                  For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                </p>
+              </ForwardRef>
+            </ForwardRef(render)>
+            <ForwardRef(render)>
+              <ForwardRef
+                as="div"
+              >
+                <Connect(ShopModalForm)
+                  name="test name"
+                  onHide={[Function]}
+                  price="99"
+                />
+              </ForwardRef>
+            </ForwardRef(render)>
+          </ForwardRef>
+        </ForwardRef>,
+        <ForwardRef>
+          <ForwardRef
+            active={false}
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+            variant="primary"
+          >
+            Close
+          </ForwardRef>
+        </ForwardRef>,
+      ],
+      "description": "test description",
+      "image": Array [
+        "https://test-image1.url",
+        "https://test-image2.url",
+      ],
+      "material": "material",
+      "name": "test name",
+      "onHide": [Function],
+      "price": "99",
+      "restoreFocus": false,
+      "show": false,
+      "size": "lg",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ForwardRef
+            id="contained-modal-title-vcenter"
+          >
+            <h1>
+              Great choice!
+            </h1>
+          </ForwardRef>,
+          "closeButton": true,
+          "closeLabel": "Close",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <h1>
+              Great choice!
+            </h1>,
+            "id": "contained-modal-title-vcenter",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Great choice!",
+            },
+            "ref": null,
+            "rendered": "Great choice!",
+            "type": "h1",
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "ModalTitle",
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "closeButton": false,
+            "closeLabel": "Close",
+          },
+          "displayName": "ModalHeader",
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ForwardRef
+            as="div"
+            fluid={false}
+          >
+            <ForwardRef(render)>
+              <ForwardRef
+                as="div"
+                className="ShopModal__item-info d-flex justify-content-around"
+              >
+                <ForwardRef(render)
+                  controls={false}
+                  fade={true}
+                  interval={3000}
+                  pauseOnHover={false}
+                >
+                  <img
+                    alt="test name"
+                    className="ShopModal__item-img"
+                    src="https://test-image1.url"
+                  />
+                  <img
+                    alt="test name"
+                    className="ShopModal__item-img"
+                    src="https://test-image2.url"
+                  />
+                </ForwardRef(render)>
+                <div
+                  className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                >
+                  <h2>
+                    <strong>
+                      test name
+                    </strong>
+                  </h2>
+                  <span>
+                    <strong>
+                      Material:
+                    </strong>
+                     
+                    material
+                  </span>
+                  <span>
+                    <strong>
+                      Size:
+                    </strong>
+                     
+                    xl
+                  </span>
+                  <span>
+                    <strong>
+                      Price:
+                    </strong>
+                     
+                    99
+                  </span>
+                  <p>
+                    test description
+                  </p>
+                </div>
+              </ForwardRef>
+            </ForwardRef(render)>
+            <ForwardRef(render)
+              className="mt-3"
+            >
+              <ForwardRef
+                as="div"
+              >
+                <p>
+                  For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                </p>
+              </ForwardRef>
+            </ForwardRef(render)>
+            <ForwardRef(render)>
+              <ForwardRef
+                as="div"
+              >
+                <Connect(ShopModalForm)
+                  name="test name"
+                  onHide={[Function]}
+                  price="99"
+                />
+              </ForwardRef>
+            </ForwardRef(render)>
+          </ForwardRef>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "div",
+            "children": Array [
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                  className="ShopModal__item-info d-flex justify-content-around"
+                >
+                  <ForwardRef(render)
+                    controls={false}
+                    fade={true}
+                    interval={3000}
+                    pauseOnHover={false}
+                  >
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image1.url"
+                    />
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image2.url"
+                    />
+                  </ForwardRef(render)>
+                  <div
+                    className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                  >
+                    <h2>
+                      <strong>
+                        test name
+                      </strong>
+                    </h2>
+                    <span>
+                      <strong>
+                        Material:
+                      </strong>
+                       
+                      material
+                    </span>
+                    <span>
+                      <strong>
+                        Size:
+                      </strong>
+                       
+                      xl
+                    </span>
+                    <span>
+                      <strong>
+                        Price:
+                      </strong>
+                       
+                      99
+                    </span>
+                    <p>
+                      test description
+                    </p>
+                  </div>
+                </ForwardRef>
+              </ForwardRef(render)>,
+              <ForwardRef(render)
+                className="mt-3"
+              >
+                <ForwardRef
+                  as="div"
+                >
+                  <p>
+                    For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                  </p>
+                </ForwardRef>
+              </ForwardRef(render)>,
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                >
+                  <Connect(ShopModalForm)
+                    name="test name"
+                    onHide={[Function]}
+                    price="99"
+                  />
+                </ForwardRef>
+              </ForwardRef(render)>,
+            ],
+            "fluid": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef
+                  as="div"
+                  className="ShopModal__item-info d-flex justify-content-around"
+                >
+                  <ForwardRef(render)
+                    controls={false}
+                    fade={true}
+                    interval={3000}
+                    pauseOnHover={false}
+                  >
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image1.url"
+                    />
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image2.url"
+                    />
+                  </ForwardRef(render)>
+                  <div
+                    className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                  >
+                    <h2>
+                      <strong>
+                        test name
+                      </strong>
+                    </h2>
+                    <span>
+                      <strong>
+                        Material:
+                      </strong>
+                       
+                      material
+                    </span>
+                    <span>
+                      <strong>
+                        Size:
+                      </strong>
+                       
+                      xl
+                    </span>
+                    <span>
+                      <strong>
+                        Price:
+                      </strong>
+                       
+                      99
+                    </span>
+                    <p>
+                      test description
+                    </p>
+                  </div>
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": Array [
+                    <ForwardRef(render)
+                      controls={false}
+                      fade={true}
+                      interval={3000}
+                      pauseOnHover={false}
+                    >
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image1.url"
+                      />
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image2.url"
+                      />
+                    </ForwardRef(render)>,
+                    <div
+                      className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                    >
+                      <h2>
+                        <strong>
+                          test name
+                        </strong>
+                      </h2>
+                      <span>
+                        <strong>
+                          Material:
+                        </strong>
+                         
+                        material
+                      </span>
+                      <span>
+                        <strong>
+                          Size:
+                        </strong>
+                         
+                        xl
+                      </span>
+                      <span>
+                        <strong>
+                          Price:
+                        </strong>
+                         
+                        99
+                      </span>
+                      <p>
+                        test description
+                      </p>
+                    </div>,
+                  ],
+                  "className": "ShopModal__item-info d-flex justify-content-around",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          alt="test name"
+                          className="ShopModal__item-img"
+                          src="https://test-image1.url"
+                        />,
+                        <img
+                          alt="test name"
+                          className="ShopModal__item-img"
+                          src="https://test-image2.url"
+                        />,
+                      ],
+                      "controls": false,
+                      "fade": true,
+                      "interval": 3000,
+                      "pauseOnHover": false,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "https://test-image1.url",
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "test name",
+                          "className": "ShopModal__item-img",
+                          "src": "https://test-image1.url",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "https://test-image2.url",
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "test name",
+                          "className": "ShopModal__item-img",
+                          "src": "https://test-image2.url",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "Caption": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": undefined,
+                        "displayName": "CarouselCaption",
+                        "render": [Function],
+                      },
+                      "Item": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": undefined,
+                        "displayName": "CarouselItem",
+                        "render": [Function],
+                      },
+                      "defaultProps": undefined,
+                      "displayName": "Bootstrap(undefined)",
+                      "propTypes": undefined,
+                      "render": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h2>
+                          <strong>
+                            test name
+                          </strong>
+                        </h2>,
+                        <span>
+                          <strong>
+                            Material:
+                          </strong>
+                           
+                          material
+                        </span>,
+                        <span>
+                          <strong>
+                            Size:
+                          </strong>
+                           
+                          xl
+                        </span>,
+                        <span>
+                          <strong>
+                            Price:
+                          </strong>
+                           
+                          99
+                        </span>,
+                        <p>
+                          test description
+                        </p>,
+                      ],
+                      "className": "ShopModal__item-info-text d-flex flex-column justify-content-around",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <strong>
+                            test name
+                          </strong>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "test name",
+                          },
+                          "ref": null,
+                          "rendered": "test name",
+                          "type": "strong",
+                        },
+                        "type": "h2",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <strong>
+                              Material:
+                            </strong>,
+                            " ",
+                            "material",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Material:",
+                            },
+                            "ref": null,
+                            "rendered": "Material:",
+                            "type": "strong",
+                          },
+                          " ",
+                          "material",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <strong>
+                              Size:
+                            </strong>,
+                            " ",
+                            "xl",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Size:",
+                            },
+                            "ref": null,
+                            "rendered": "Size:",
+                            "type": "strong",
+                          },
+                          " ",
+                          "xl",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <strong>
+                              Price:
+                            </strong>,
+                            " ",
+                            "99",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Price:",
+                            },
+                            "ref": null,
+                            "rendered": "Price:",
+                            "type": "strong",
+                          },
+                          " ",
+                          "99",
+                        ],
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "test description",
+                        },
+                        "ref": null,
+                        "rendered": "test description",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "Bootstrap(Row)",
+                "propTypes": undefined,
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef
+                  as="div"
+                >
+                  <p>
+                    For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                  </p>
+                </ForwardRef>,
+                "className": "mt-3",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <p>
+                    For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                  </p>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "For getting this stuff , please fill the form and we'll contact you as soon as possible.",
+                  },
+                  "ref": null,
+                  "rendered": "For getting this stuff , please fill the form and we'll contact you as soon as possible.",
+                  "type": "p",
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "Bootstrap(Row)",
+                "propTypes": undefined,
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <ForwardRef
+                  as="div"
+                >
+                  <Connect(ShopModalForm)
+                    name="test name"
+                    onHide={[Function]}
+                    price="99"
+                  />
+                </ForwardRef>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "div",
+                  "children": <Connect(ShopModalForm)
+                    name="test name"
+                    onHide={[Function]}
+                    price="99"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "name": "test name",
+                    "onHide": [Function],
+                    "price": "99",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "as": "div",
+                  },
+                  "displayName": "Col",
+                  "render": [Function],
+                },
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "Bootstrap(Row)",
+                "propTypes": undefined,
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "as": "div",
+              "fluid": false,
+            },
+            "displayName": "Container",
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "ModalBody",
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ForwardRef
+            active={false}
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+            variant="primary"
+          >
+            Close
+          </ForwardRef>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "active": false,
+            "children": "Close",
+            "disabled": false,
+            "onClick": [Function],
+            "type": "button",
+            "variant": "primary",
+          },
+          "ref": null,
+          "rendered": "Close",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "active": false,
+              "disabled": false,
+              "type": "button",
+              "variant": "primary",
+            },
+            "displayName": "Button",
+            "render": [Function],
+          },
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "ModalFooter",
+          "render": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "BACKDROP_TRANSITION_DURATION": 150,
+      "Body": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "ModalBody",
+        "render": [Function],
+      },
+      "Dialog": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "ModalDialog",
+        "render": [Function],
+      },
+      "Footer": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "ModalFooter",
+        "render": [Function],
+      },
+      "Header": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "closeButton": false,
+          "closeLabel": "Close",
+        },
+        "displayName": "ModalHeader",
+        "render": [Function],
+      },
+      "TRANSITION_DURATION": 300,
+      "Title": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "ModalTitle",
+        "render": [Function],
+      },
+      "defaultProps": undefined,
+      "displayName": "Bootstrap(Modal)",
+      "propTypes": undefined,
+      "render": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "aria-labelledby": "contained-modal-title-vcenter",
+        "centered": true,
+        "children": Array [
+          <ForwardRef
+            closeButton={true}
+            closeLabel="Close"
+          >
+            <ForwardRef
+              id="contained-modal-title-vcenter"
+            >
+              <h1>
+                Great choice!
+              </h1>
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef>
+            <ForwardRef
+              as="div"
+              fluid={false}
+            >
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                  className="ShopModal__item-info d-flex justify-content-around"
+                >
+                  <ForwardRef(render)
+                    controls={false}
+                    fade={true}
+                    interval={3000}
+                    pauseOnHover={false}
+                  >
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image1.url"
+                    />
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image2.url"
+                    />
+                  </ForwardRef(render)>
+                  <div
+                    className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                  >
+                    <h2>
+                      <strong>
+                        test name
+                      </strong>
+                    </h2>
+                    <span>
+                      <strong>
+                        Material:
+                      </strong>
+                       
+                      material
+                    </span>
+                    <span>
+                      <strong>
+                        Size:
+                      </strong>
+                       
+                      xl
+                    </span>
+                    <span>
+                      <strong>
+                        Price:
+                      </strong>
+                       
+                      99
+                    </span>
+                    <p>
+                      test description
+                    </p>
+                  </div>
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef(render)
+                className="mt-3"
+              >
+                <ForwardRef
+                  as="div"
+                >
+                  <p>
+                    For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                  </p>
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                >
+                  <Connect(ShopModalForm)
+                    name="test name"
+                    onHide={[Function]}
+                    price="99"
+                  />
+                </ForwardRef>
+              </ForwardRef(render)>
+            </ForwardRef>
+          </ForwardRef>,
+          <ForwardRef>
+            <ForwardRef
+              active={false}
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+              variant="primary"
+            >
+              Close
+            </ForwardRef>
+          </ForwardRef>,
+        ],
+        "description": "test description",
+        "image": Array [
+          "https://test-image1.url",
+          "https://test-image2.url",
+        ],
+        "material": "material",
+        "name": "test name",
+        "onHide": [Function],
+        "price": "99",
+        "restoreFocus": false,
+        "show": false,
+        "size": "lg",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef
+              id="contained-modal-title-vcenter"
+            >
+              <h1>
+                Great choice!
+              </h1>
+            </ForwardRef>,
+            "closeButton": true,
+            "closeLabel": "Close",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <h1>
+                Great choice!
+              </h1>,
+              "id": "contained-modal-title-vcenter",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Great choice!",
+              },
+              "ref": null,
+              "rendered": "Great choice!",
+              "type": "h1",
+            },
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "ModalTitle",
+              "render": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "closeButton": false,
+              "closeLabel": "Close",
+            },
+            "displayName": "ModalHeader",
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef
+              as="div"
+              fluid={false}
+            >
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                  className="ShopModal__item-info d-flex justify-content-around"
+                >
+                  <ForwardRef(render)
+                    controls={false}
+                    fade={true}
+                    interval={3000}
+                    pauseOnHover={false}
+                  >
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image1.url"
+                    />
+                    <img
+                      alt="test name"
+                      className="ShopModal__item-img"
+                      src="https://test-image2.url"
+                    />
+                  </ForwardRef(render)>
+                  <div
+                    className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                  >
+                    <h2>
+                      <strong>
+                        test name
+                      </strong>
+                    </h2>
+                    <span>
+                      <strong>
+                        Material:
+                      </strong>
+                       
+                      material
+                    </span>
+                    <span>
+                      <strong>
+                        Size:
+                      </strong>
+                       
+                      xl
+                    </span>
+                    <span>
+                      <strong>
+                        Price:
+                      </strong>
+                       
+                      99
+                    </span>
+                    <p>
+                      test description
+                    </p>
+                  </div>
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef(render)
+                className="mt-3"
+              >
+                <ForwardRef
+                  as="div"
+                >
+                  <p>
+                    For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                  </p>
+                </ForwardRef>
+              </ForwardRef(render)>
+              <ForwardRef(render)>
+                <ForwardRef
+                  as="div"
+                >
+                  <Connect(ShopModalForm)
+                    name="test name"
+                    onHide={[Function]}
+                    price="99"
+                  />
+                </ForwardRef>
+              </ForwardRef(render)>
+            </ForwardRef>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "div",
+              "children": Array [
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                    className="ShopModal__item-info d-flex justify-content-around"
+                  >
+                    <ForwardRef(render)
+                      controls={false}
+                      fade={true}
+                      interval={3000}
+                      pauseOnHover={false}
+                    >
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image1.url"
+                      />
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image2.url"
+                      />
+                    </ForwardRef(render)>
+                    <div
+                      className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                    >
+                      <h2>
+                        <strong>
+                          test name
+                        </strong>
+                      </h2>
+                      <span>
+                        <strong>
+                          Material:
+                        </strong>
+                         
+                        material
+                      </span>
+                      <span>
+                        <strong>
+                          Size:
+                        </strong>
+                         
+                        xl
+                      </span>
+                      <span>
+                        <strong>
+                          Price:
+                        </strong>
+                         
+                        99
+                      </span>
+                      <p>
+                        test description
+                      </p>
+                    </div>
+                  </ForwardRef>
+                </ForwardRef(render)>,
+                <ForwardRef(render)
+                  className="mt-3"
+                >
+                  <ForwardRef
+                    as="div"
+                  >
+                    <p>
+                      For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                    </p>
+                  </ForwardRef>
+                </ForwardRef(render)>,
+                <ForwardRef(render)>
+                  <ForwardRef
+                    as="div"
+                  >
+                    <Connect(ShopModalForm)
+                      name="test name"
+                      onHide={[Function]}
+                      price="99"
+                    />
+                  </ForwardRef>
+                </ForwardRef(render)>,
+              ],
+              "fluid": false,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef
+                    as="div"
+                    className="ShopModal__item-info d-flex justify-content-around"
+                  >
+                    <ForwardRef(render)
+                      controls={false}
+                      fade={true}
+                      interval={3000}
+                      pauseOnHover={false}
+                    >
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image1.url"
+                      />
+                      <img
+                        alt="test name"
+                        className="ShopModal__item-img"
+                        src="https://test-image2.url"
+                      />
+                    </ForwardRef(render)>
+                    <div
+                      className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                    >
+                      <h2>
+                        <strong>
+                          test name
+                        </strong>
+                      </h2>
+                      <span>
+                        <strong>
+                          Material:
+                        </strong>
+                         
+                        material
+                      </span>
+                      <span>
+                        <strong>
+                          Size:
+                        </strong>
+                         
+                        xl
+                      </span>
+                      <span>
+                        <strong>
+                          Price:
+                        </strong>
+                         
+                        99
+                      </span>
+                      <p>
+                        test description
+                      </p>
+                    </div>
+                  </ForwardRef>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": Array [
+                      <ForwardRef(render)
+                        controls={false}
+                        fade={true}
+                        interval={3000}
+                        pauseOnHover={false}
+                      >
+                        <img
+                          alt="test name"
+                          className="ShopModal__item-img"
+                          src="https://test-image1.url"
+                        />
+                        <img
+                          alt="test name"
+                          className="ShopModal__item-img"
+                          src="https://test-image2.url"
+                        />
+                      </ForwardRef(render)>,
+                      <div
+                        className="ShopModal__item-info-text d-flex flex-column justify-content-around"
+                      >
+                        <h2>
+                          <strong>
+                            test name
+                          </strong>
+                        </h2>
+                        <span>
+                          <strong>
+                            Material:
+                          </strong>
+                           
+                          material
+                        </span>
+                        <span>
+                          <strong>
+                            Size:
+                          </strong>
+                           
+                          xl
+                        </span>
+                        <span>
+                          <strong>
+                            Price:
+                          </strong>
+                           
+                          99
+                        </span>
+                        <p>
+                          test description
+                        </p>
+                      </div>,
+                    ],
+                    "className": "ShopModal__item-info d-flex justify-content-around",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            alt="test name"
+                            className="ShopModal__item-img"
+                            src="https://test-image1.url"
+                          />,
+                          <img
+                            alt="test name"
+                            className="ShopModal__item-img"
+                            src="https://test-image2.url"
+                          />,
+                        ],
+                        "controls": false,
+                        "fade": true,
+                        "interval": 3000,
+                        "pauseOnHover": false,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": "https://test-image1.url",
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "test name",
+                            "className": "ShopModal__item-img",
+                            "src": "https://test-image1.url",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": "https://test-image2.url",
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "test name",
+                            "className": "ShopModal__item-img",
+                            "src": "https://test-image2.url",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                      ],
+                      "type": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "Caption": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": undefined,
+                          "displayName": "CarouselCaption",
+                          "render": [Function],
+                        },
+                        "Item": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": undefined,
+                          "displayName": "CarouselItem",
+                          "render": [Function],
+                        },
+                        "defaultProps": undefined,
+                        "displayName": "Bootstrap(undefined)",
+                        "propTypes": undefined,
+                        "render": [Function],
+                      },
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h2>
+                            <strong>
+                              test name
+                            </strong>
+                          </h2>,
+                          <span>
+                            <strong>
+                              Material:
+                            </strong>
+                             
+                            material
+                          </span>,
+                          <span>
+                            <strong>
+                              Size:
+                            </strong>
+                             
+                            xl
+                          </span>,
+                          <span>
+                            <strong>
+                              Price:
+                            </strong>
+                             
+                            99
+                          </span>,
+                          <p>
+                            test description
+                          </p>,
+                        ],
+                        "className": "ShopModal__item-info-text d-flex flex-column justify-content-around",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <strong>
+                              test name
+                            </strong>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "test name",
+                            },
+                            "ref": null,
+                            "rendered": "test name",
+                            "type": "strong",
+                          },
+                          "type": "h2",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <strong>
+                                Material:
+                              </strong>,
+                              " ",
+                              "material",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Material:",
+                              },
+                              "ref": null,
+                              "rendered": "Material:",
+                              "type": "strong",
+                            },
+                            " ",
+                            "material",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <strong>
+                                Size:
+                              </strong>,
+                              " ",
+                              "xl",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Size:",
+                              },
+                              "ref": null,
+                              "rendered": "Size:",
+                              "type": "strong",
+                            },
+                            " ",
+                            "xl",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <strong>
+                                Price:
+                              </strong>,
+                              " ",
+                              "99",
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Price:",
+                              },
+                              "ref": null,
+                              "rendered": "Price:",
+                              "type": "strong",
+                            },
+                            " ",
+                            "99",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "test description",
+                          },
+                          "ref": null,
+                          "rendered": "test description",
+                          "type": "p",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "Col",
+                    "render": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "Bootstrap(Row)",
+                  "propTypes": undefined,
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef
+                    as="div"
+                  >
+                    <p>
+                      For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                    </p>
+                  </ForwardRef>,
+                  "className": "mt-3",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <p>
+                      For getting this stuff , please fill the form and we'll contact you as soon as possible.
+                    </p>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "For getting this stuff , please fill the form and we'll contact you as soon as possible.",
+                    },
+                    "ref": null,
+                    "rendered": "For getting this stuff , please fill the form and we'll contact you as soon as possible.",
+                    "type": "p",
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "Col",
+                    "render": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "Bootstrap(Row)",
+                  "propTypes": undefined,
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <ForwardRef
+                    as="div"
+                  >
+                    <Connect(ShopModalForm)
+                      name="test name"
+                      onHide={[Function]}
+                      price="99"
+                    />
+                  </ForwardRef>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "div",
+                    "children": <Connect(ShopModalForm)
+                      name="test name"
+                      onHide={[Function]}
+                      price="99"
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "name": "test name",
+                      "onHide": [Function],
+                      "price": "99",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "as": "div",
+                    },
+                    "displayName": "Col",
+                    "render": [Function],
+                  },
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": undefined,
+                  "displayName": "Bootstrap(Row)",
+                  "propTypes": undefined,
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "as": "div",
+                "fluid": false,
+              },
+              "displayName": "Container",
+              "render": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "ModalBody",
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ForwardRef
+              active={false}
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+              variant="primary"
+            >
+              Close
+            </ForwardRef>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "active": false,
+              "children": "Close",
+              "disabled": false,
+              "onClick": [Function],
+              "type": "button",
+              "variant": "primary",
+            },
+            "ref": null,
+            "rendered": "Close",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "active": false,
+                "disabled": false,
+                "type": "button",
+                "variant": "primary",
+              },
+              "displayName": "Button",
+              "render": [Function],
+            },
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "ModalFooter",
+            "render": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "BACKDROP_TRANSITION_DURATION": 150,
+        "Body": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "ModalBody",
+          "render": [Function],
+        },
+        "Dialog": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "ModalDialog",
+          "render": [Function],
+        },
+        "Footer": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "ModalFooter",
+          "render": [Function],
+        },
+        "Header": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "closeButton": false,
+            "closeLabel": "Close",
+          },
+          "displayName": "ModalHeader",
+          "render": [Function],
+        },
+        "TRANSITION_DURATION": 300,
+        "Title": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "ModalTitle",
+          "render": [Function],
+        },
+        "defaultProps": undefined,
+        "displayName": "Bootstrap(Modal)",
+        "propTypes": undefined,
+        "render": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
 `;

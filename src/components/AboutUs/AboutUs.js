@@ -4,7 +4,7 @@ import "./AboutUs.css";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
-const AboutUs = props => {
+export const AboutUs = props => {
   const { urls } = props;
   const photos = urls.map((item, index) => (
     <Carousel.Item key={index}>

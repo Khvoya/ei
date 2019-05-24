@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
 import Photo from './Photo';
 
 describe('Photo', () => {
@@ -9,6 +8,6 @@ describe('Photo', () => {
     const output = shallow(
       <Photo />
     );
-    expect(shallowToJson(output)).toMatchSnapshot();
+    expect(output).toMatchSnapshot();
   });
 });
