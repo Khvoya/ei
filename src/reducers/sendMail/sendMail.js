@@ -1,26 +1,24 @@
-import { FIREBASE_GET_IMAGE_REFS } from "../actionCreators/actionTypes";
+import { SEND_ORDER_REQUEST_MAIL } from "actionCreators/actionTypes";
 
 const initialState = {
   status: "pending",
-  urls: []
 };
-export const photos = (state = initialState, action) => {
+export const sendEmail = (state = initialState, action) => {
   const type = action.type;
   switch (type) {
-    case FIREBASE_GET_IMAGE_REFS:
+    case SEND_ORDER_REQUEST_MAIL:
       return {
         ...state,
         status: "pending"
       };
-    case `${FIREBASE_GET_IMAGE_REFS}_FULFILLED`:
+    case `${SEND_ORDER_REQUEST_MAIL}_FULFILLED`:
       return {
         ...state,
         status: "fulfilled",
-        urls: action.payload
       };
     default: {
       return {
-        ...state
+        state
       };
     }
   }

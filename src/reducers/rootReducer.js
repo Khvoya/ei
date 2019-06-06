@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-import { welcome } from "./welcome";
-import { photos } from "./photos";
-import { concerts } from "./concerts";
-import { aboutUs } from "./aboutUs";
-import { shop } from "./shop";
-import { sendEmail } from "./sendMail";
+import { welcome } from "./welcome/welcome";
+import { photos } from "./photos/photos";
+import { concerts } from "./concerts/concerts";
+import { aboutUs } from "./aboutUs/aboutUs";
+import { shop } from "./shop/shop";
+import { sendEmail } from "./sendMail/sendMail";
 
 export default combineReducers({
   welcome,

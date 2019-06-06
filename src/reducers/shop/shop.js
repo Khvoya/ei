@@ -20,7 +20,7 @@ export const shop = (state = initialState, action) => {
       };
     default: {
       return {
-        ...state
+        state
       };
     }
   }

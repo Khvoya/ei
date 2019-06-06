@@ -1,6 +1,6 @@
 import { FIREBASE_GET_ABOUT_US } from "actionCreators/actionTypes";
 
-const initialState = {
+export const initialState = {
   status: "pending",
   urls: []
 };
@@ -19,9 +19,7 @@ export const aboutUs = (state = initialState, action) => {
         urls: action.payload
       };
     default: {
-      return {
-        ...state
-      };
+      return state;
     }
   }
 };

@@ -20,7 +20,7 @@ export const concerts = (state = initialState, action) => {
       };
     default: {
       return {
-        ...state
+        state
       };
     }
   }
